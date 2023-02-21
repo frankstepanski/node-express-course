@@ -65,8 +65,6 @@ The [process.env](https://nodejs.org/dist/latest-v8.x/docs/api/process.html#proc
 The PORT variable is set to 8000 if it is not already set. The app variable is set to the Express instance exported from app.js.
 The listener variable is a callback function that will be called once the server is listening.
 
-<p>&nbsp;</p>
-
 ___
 
 **Starting the server:**
@@ -126,7 +124,6 @@ lsof -i tcp:8000
 
 ```
 
-
 ![node instances running](images/list-node-instances.png)
 
 
@@ -166,15 +163,11 @@ app.get("/about", (req, res, next) => {
 });
 ```
 
-
 ![first route](images/first-route.png)
-
 
 You can test this route by visiting `http://localhost:8000/about` in your browser.
 
-
 ![about route](images/about-route.png)
-
 
 We can also add some HTML to the response:
 
@@ -222,9 +215,7 @@ app.get("/about", (req, res, next) => {
   res.status(200).send("<h1>About Code the Dream!</h1>");
 });
 ```
-
 ___
-
 
 ### Middleware
 
