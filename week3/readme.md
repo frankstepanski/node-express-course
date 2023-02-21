@@ -15,12 +15,8 @@ worrying about building certain features from scratch, such as serving individua
 
 Express allows you to concentrate on your application's business logic without having to worry too much about web server technicalities such as URL routing, parsing data, setting HTTP headers, and so on.
 
-<p>&nbsp;</p>
-
 >Other popular Node web server frameworks include [Nest](https://nestjs.com/), [Koa](https://koajs.com/),
 [Socket.io](https://socket.io/), [Fastify](https://www.fastify.io/) and others.
-
-<p>&nbsp;</p>
 
 ### Create a basic Express server
 
