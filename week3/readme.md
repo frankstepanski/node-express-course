@@ -90,7 +90,7 @@ node src/server.js
 
 <p>&nbsp;</p>
 
-![express app running](/week3/images/node-server.png)
+![express app running](images/node-server.png)
 
 <p>&nbsp;</p>
 
@@ -119,7 +119,7 @@ npm run dev
 
 <p>&nbsp;</p>
 
-![express app running](/week3/images/nodemon-server.png)
+![express app running](images/nodemon-server.png)
 
 <p>&nbsp;</p>
 
@@ -129,7 +129,7 @@ To stop the server, press `Ctrl + C` in your terminal window.
 
 If you run into an error of: Error: listen EADDRINUSE: address already in use :::8000
 
-![node instances error](/week3/images/node-instances-error.png)
+![node instances error](images/node-instances-error.png)
 
 <p>&nbsp;</p>
 
@@ -142,7 +142,7 @@ lsof -i tcp:8000
 
 <p>&nbsp;</p>
 
-![node instances running](/week3/images/list-node-instances.png)
+![node instances running](images/list-node-instances.png)
 
 <p>&nbsp;</p>
 
@@ -186,7 +186,7 @@ app.get("/about", (req, res, next) => {
 
 <p>&nbsp;</p>
 
-![first route](/week3/images/first-route.png)
+![first route](images/first-route.png)
 
 <p>&nbsp;</p>
 
@@ -194,7 +194,7 @@ You can test this route by visiting `http://localhost:8000/about` in your browse
 
 <p>&nbsp;</p>
 
-![about route](/week3/images/about-route.png)
+![about route](images/about-route.png)
 
 <p>&nbsp;</p>
 
@@ -208,7 +208,7 @@ app.get("/about", (req, res, next) => {
 
 <p>&nbsp;</p>
 
-![about route html](/week3/images/about-route-html.png)
+![about route html](images/about-route-html.png)
 
 <p>&nbsp;</p>
 
@@ -216,7 +216,7 @@ Everytime we make a changes to our files, nodemon will restart the server for us
 
 <p>&nbsp;</p>
 
-![nodemon restarting](/week3/images/nodemon-restarting.png)
+![nodemon restarting](images/nodemon-restarting.png)
 
 <p>&nbsp;</p>
 
@@ -338,11 +338,11 @@ We can then register this middleware function with the `use()` method in app.js
 
 Hitting the server (localhost:8000/cars/honda) with a request will now log the message to the console.
 
-![/cars/honda route](/week3/images/ccars-route-honda.png)
+![/cars/honda route](images/ccars-route-honda.png)
 
 <p>&nbsp;</p>
 
-![custom middleware](/week3/images/custom-middleware.png)
+![custom middleware](images/custom-middleware.png)
 
 <p>&nbsp;</p>
 
@@ -361,7 +361,7 @@ app.use(morgan("dev"));
 
 <p>&nbsp;</p>
 
-![morgan middleware](/week3/images/morgan-middleware.png)
+![morgan middleware](images/morgan-middleware.png)
 
 
 ### Route Parameters
@@ -401,13 +401,13 @@ So now if we visit `http://localhost:8000/cars/lexus` in our browser, we will se
 
 <p>&nbsp;</p>
 
-![route param](/week3/images/route-param.png)
+![route param](images/route-param.png)
 
 And in our terminal:
 
 <p>&nbsp;</p>
 
-![route param](/week3/images/terminal-route-param.png)
+![route param](images/terminal-route-param.png)
 
 <p>&nbsp;</p>
 
