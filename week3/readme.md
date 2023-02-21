@@ -291,8 +291,9 @@ Hitting the server (localhost:8000/cars/honda) with a request will now log the m
 
 ![custom middleware](images/custom-middleware.png)
 
+Not very exciting, but it's a start. 
 
-Not very exciting, but it's a start. Let's implement the third party logging middleware Morgan.
+Let's implement the third party logging middleware Morgan.
 First, require morgan at the top of your app.js file, right after the other requires.
 
 ```
