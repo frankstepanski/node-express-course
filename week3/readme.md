@@ -290,7 +290,7 @@ We can then register this middleware function with the `use()` method in app.js
 
 Hitting the server (localhost:8000/cars/honda) with a request will now log the message to the console.
 
-![/cars/honda route](images/ccars-route-honda.png)
+![/cars/honda route](images/cars-route-honda.png)
 
 
 ![custom middleware](images/custom-middleware.png)
