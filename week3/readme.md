@@ -40,7 +40,7 @@ We will create a **src** folder that holds the source code that directly relates
 
 <p>&nbsp;</p>
 
-![folder structure](/week3/images/folder-strucuture.png)
+![folder structure](images/folder-strucuture.png)
 
 **app.js:**
 
