@@ -30,11 +30,7 @@ npm i express
 
 >Building an Express application can have unique folder structures to store categories of files, so may find other folder/file structures in other resources.
 
-<p>&nbsp;</p>
-
 We will create a **src** folder that holds the source code that directly relates to the running of the server. The `app.js` file will hold configuration and `server.js` is where you will run your Express server.
-
-<p>&nbsp;</p>
 
 ![folder structure](images/folder-structure.png)
 
@@ -80,15 +76,12 @@ At the command line, run the following command:
 ```
 node src/server.js
 ```
-<p>&nbsp;</p>
 
 >If you get an Error: listen EADDRINUSE: address already in use :::80000 error, you can change the port number in case of another application is already using port 8000.  
 
-<p>&nbsp;</p>
 
 ![express app running](images/node-server.png)
 
-<p>&nbsp;</p>
 
 **The nodemon package**
 
@@ -113,11 +106,9 @@ You can then run the following command on your command line:
 npm run dev
 ```
 
-<p>&nbsp;</p>
 
 ![express app running](images/nodemon-server.png)
 
-<p>&nbsp;</p>
 
 **Stopping the server**
 
@@ -127,7 +118,6 @@ If you run into an error of: Error: listen EADDRINUSE: address already in use ::
 
 ![node instances error](images/node-instances-error.png)
 
-<p>&nbsp;</p>
 
 You use use this command to see which process is using the port:
 
@@ -136,11 +126,9 @@ lsof -i tcp:8000
 
 ```
 
-<p>&nbsp;</p>
 
 ![node instances running](images/list-node-instances.png)
 
-<p>&nbsp;</p>
 
 And then run this command to kill the process repalcing the `<PID>` with the process ID number:
 
@@ -149,8 +137,6 @@ kill -9 <PID>
 ```
 
 ___
-
-<p>&nbsp;</p>
 
 ### Routing 
 
@@ -180,19 +166,15 @@ app.get("/about", (req, res, next) => {
 });
 ```
 
-<p>&nbsp;</p>
 
 ![first route](images/first-route.png)
 
-<p>&nbsp;</p>
 
 You can test this route by visiting `http://localhost:8000/about` in your browser.
 
-<p>&nbsp;</p>
 
 ![about route](images/about-route.png)
 
-<p>&nbsp;</p>
 
 We can also add some HTML to the response:
 
@@ -202,23 +184,18 @@ app.get("/about", (req, res, next) => {
 });
 ```
 
-<p>&nbsp;</p>
 
 ![about route html](images/about-route-html.png)
 
-<p>&nbsp;</p>
 
 Everytime we make a changes to our files, nodemon will restart the server for us. YAY!
 
-<p>&nbsp;</p>
 
 ![nodemon restarting](images/nodemon-restarting.png)
 
-<p>&nbsp;</p>
 
 > If no routes are matched on a client request, the Express server will handle sending a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client.
 
-<p>&nbsp;</p>
 
 **Status Codes**
 
@@ -235,7 +212,6 @@ at the client side, or 5xx when the server fails to process a valid request.
 >400-499: Client error; problem in how client submitted request\
 >500-599: Server error: request accepted, but server error prevented fullfillment
 
-<p>&nbsp;</p>
 
 By default, Express will send a 200 status code when a response is sent. 
 We can implicitly set the status code by using the [res.status()](https://expressjs.com/en/4x/api.html#res.status) method,
@@ -249,7 +225,6 @@ app.get("/about", (req, res, next) => {
 
 ___
 
-<p>&nbsp;</p>
 
 ### Middleware
 
@@ -259,7 +234,6 @@ in listening for, analyzing, filtering, and handling HTTP communication before d
 
 >So an Express application is basically a series of middleware function calls.
 
-<p>&nbsp;</p>
 
 As we know, the server's job is to receive requests and respond to them. Middleware gets between the request-response cycle and
 helps manage the request and can help determine how the server should respond. This can be thought of a 
@@ -292,12 +266,10 @@ const middleware = (req, res, next) => {
   - `res` parameter stands for response; object stores the information and methods related to sending a response back to the client. 
   - `next` parameter, when called, tells Express that this middleware function is complete and goes to the next piece of middleware.
 
-<p>&nbsp;</p>
 
 >Using the **next()** standalone will execute the code after the current middleware function is finished. 
 Using **return next()** will immediately jump out of the callback the code below will be unreachable.
 
-<p>&nbsp;</p>
 
 Middleware functions are callback functions. Express uses the `use()` method to register middleware functions and 
 calls them in the order they are registered.
@@ -336,11 +308,9 @@ Hitting the server (localhost:8000/cars/honda) with a request will now log the m
 
 ![/cars/honda route](images/ccars-route-honda.png)
 
-<p>&nbsp;</p>
 
 ![custom middleware](images/custom-middleware.png)
 
-<p>&nbsp;</p>
 
 Not very exciting, but it's a start. Let's implement the third party logging middleware Morgan.
 First, require morgan at the top of your app.js file, right after the other requires.
@@ -355,7 +325,6 @@ Then register the middleware with the `use()` method.
 app.use(morgan("dev"));
 ```
 
-<p>&nbsp;</p>
 
 ![morgan middleware](images/morgan-middleware.png)
 
@@ -395,17 +364,14 @@ The appropriate car is retrieved by name (the object key) from the cars object a
 
 So now if we visit `http://localhost:8000/cars/lexus` in our browser, we will see the following:
 
-<p>&nbsp;</p>
 
 ![route param](images/route-param.png)
 
 And in our terminal:
 
-<p>&nbsp;</p>
 
 ![route param](images/terminal-route-param.png)
 
-<p>&nbsp;</p>
 
 Express also provides query parameters. Query parameters are used to send additional information to the server.
 
