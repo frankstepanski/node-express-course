@@ -186,7 +186,7 @@ app.get("/about", (req, res, next) => {
 
 HTTP status codes are a standard way of communicating the status of a request.
 
-When executed, each operation will return a [status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status), indicating whether the invocation has bee
+When executed, each operation will return a [status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status), indicating whether the invocation has been
 successful or not. Successful invocation is indicated by an HTTP 2xx status code, while operations
 that are not executed correctly indicate this with erroneous status code — 4xx if the error is
 at the client side, or 5xx when the server fails to process a valid request.
@@ -254,7 +254,7 @@ const middleware = (req, res, next) => {
 Using **return next()** will immediately jump out of the callback the code below will be unreachable.
 
 
-Middleware functions are callback functions. Express uses the `use()` method to register middleware functions and 
+Middleware functions are callback functions. Express uses the **use()** method to register middleware functions and 
 calls them in the order they are registered.
 
 **Third-party Middleware**
