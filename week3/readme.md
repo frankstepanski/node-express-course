@@ -308,13 +308,12 @@ app.use(morgan("dev"));
 
 ![morgan middleware](images/morgan-middleware.png)
 
-
 ### Route Parameters
 
 Routes become more powerful when they can be used dynamically. 
 
 Express provides this with 
-(route parameters)[https://expressjs.com/en/guide/routing.html#route-parameters]. Parameters are route path segments 
+[route parameters](https://expressjs.com/en/guide/routing.html#route-parameters). Parameters are route path segments 
 that begin with `:` in their Express route definitions. They act as wildcards, matching any text at that path segment. 
 
 For example `/todos/:id` will match both **/todos/1** and **/todos/7**.
