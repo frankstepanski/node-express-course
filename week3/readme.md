@@ -198,7 +198,7 @@ at the client side, or 5xx when the server fails to process a valid request.
 >500-599: Server error: request accepted, but server error prevented fullfillment
 
 
-By default, Express will send a 200 status code when a response is sent. 
+By default, Express will send a (200 status code)[https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200] when a response is sent. 
 We can implicitly set the status code by using the [res.status()](https://expressjs.com/en/4x/api.html#res.status) method,
 which is a good practice to follow.
 
