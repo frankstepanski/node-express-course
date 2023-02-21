@@ -106,6 +106,11 @@ npm run dev
 
 ![express app running](images/nodemon-server.png)
 
+
+Now, everytime we make a changes to our files, nodemon will restart the server for us. YAY!
+
+![nodemon restarting](images/nodemon-restarting.png)
+
 **Stopping the server**
 
 To stop the server, press `Ctrl + C` in your terminal window.
@@ -174,12 +179,6 @@ app.get("/about", (req, res, next) => {
 ```
 
 ![about route html](images/about-route-html.png)
-
-
-Everytime we make a changes to our files, nodemon will restart the server for us. YAY!
-
-
-![nodemon restarting](images/nodemon-restarting.png)
 
 > If no routes are matched on a client request, the Express server will handle sending a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client.
 
