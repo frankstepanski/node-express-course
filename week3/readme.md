@@ -104,9 +104,7 @@ You can then run the following command on your command line:
 npm run dev
 ```
 
-
 ![express app running](images/nodemon-server.png)
-
 
 **Stopping the server**
 
@@ -115,7 +113,6 @@ To stop the server, press `Ctrl + C` in your terminal window.
 If you run into an error of: Error: listen EADDRINUSE: address already in use :::8000
 
 ![node instances error](images/node-instances-error.png)
-
 
 You use use this command to see which process is using the port:
 
@@ -132,7 +129,6 @@ And then run this command to kill the process repalcing the `<PID>` with the pro
 ```
 kill -9 <PID>
 ```
-
 ___
 
 ### Routing 
@@ -177,7 +173,6 @@ app.get("/about", (req, res, next) => {
 });
 ```
 
-
 ![about route html](images/about-route-html.png)
 
 
@@ -186,9 +181,7 @@ Everytime we make a changes to our files, nodemon will restart the server for us
 
 ![nodemon restarting](images/nodemon-restarting.png)
 
-
 > If no routes are matched on a client request, the Express server will handle sending a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client.
-
 
 **Status Codes**
 
@@ -315,7 +308,6 @@ Then register the middleware with the `use()` method.
 ```
 app.use(morgan("dev"));
 ```
-
 
 ![morgan middleware](images/morgan-middleware.png)
 
