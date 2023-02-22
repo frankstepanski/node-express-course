@@ -290,7 +290,7 @@ Visiting http://localhost:8000/about in your browser will now log the message to
 
 Not very exciting, but it's a start. :thumbsup:
 
-Let's implement the third party logging middleware Morgan.
+Let's implement the third party logging middleware [Morgan](https://www.npmjs.com/package/morgan).
 First, require morgan at the top of your app.js file, right after the other requires.
 
 ```
