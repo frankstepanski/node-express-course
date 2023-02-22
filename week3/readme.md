@@ -328,7 +328,8 @@ const cars = {
 
 // GET /cars/lexus
 app.get('/cars/:name', (req, res, next) => {
-  console.log(req.params); // { name: 'lexus' }
+  console.log(req.params.name); // lexus
+  console.log(cars[req.params.name]); // { model: 'LX', age: 90000 }
   res.send(cars[req.params.name]);
 });
 ```
