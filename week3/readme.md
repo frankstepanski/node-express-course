@@ -135,7 +135,7 @@ And then run this command to kill the process repalcing the **<PID>** with the p
 kill -9 <PID>
 ```
 
->Remember, we are on the server now, so we will be checking the server's console for errors. :sunglasses:
+>Remember, we are on the server now, so we will checking the server's console for errors and troubshooting. :nerd_face:
 
 ___
 
