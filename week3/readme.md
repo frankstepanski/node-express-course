@@ -219,7 +219,7 @@ A web framework like Express.js operates through functions considered to be midd
 interaction on the web and the Node.js platform. Middleware is a general term applied to code that assists
 in listening for, analyzing, filtering, and handling HTTP communication before data interacts with application logic.
 
->So an Express application is basically a series of middleware function calls.
+>So an Express application is basically a series of middleware function calls. :white_check_mark:
 
 As we know, the server's job is to receive requests and respond to them. Middleware gets between the request-response cycle and
 helps manage the request and can help determine how the server should respond. This can be thought of a 
