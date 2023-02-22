@@ -30,14 +30,14 @@ npm i express
 
 >Building an Express application can have unique folder structures to store categories of files, so may find other folder/file structures in other resources.
 
-We will create a **src** folder that holds the source code that directly relates to the running of the server. The `app.js` file will hold configuration and `server.js` is where you will run your Express server.
+We will create a **src** folder that holds the source code that directly relates to the running of the server. The **app.js** file will hold configuration and **server.js** is where you will run your Express server.
 
 ![folder structure](images/folder-structure.png)
 
 **app.js:**
 
 We want to export the Express instance so that we can use it in our server.js file. 
-We will use `module.exports` to export the Express instance.
+We will use module.exports to export the Express instance.
 
 
 ```
@@ -51,7 +51,7 @@ module.exports = app;
 
 This file is responsible for running the server. We will use the app.listen() method to start the server. The code will "listen" on the specified port. The [app.listen()](https://expressjs.com/en/5x/api.html#app.listen_path_callback) method takes two arguments, the port number and a callback function that will be called once the server is listening.
 
-A `port` is a way of having multiple applications listen on the same server. Each application will listen on a different port. The port number is used to identify the application that should handle the request.
+A **port** is a way of having multiple applications listen on the same server. Each application will listen on a different port. The port number is used to identify the application that should handle the request.
 
 ```
 const { PORT = 8000 } = process.env;
@@ -92,7 +92,7 @@ The nodemon package will monitor any file changes and re-start it for you.
 npm i nodemon --save-dev
 ```
 
-To use nodemon, you have to add a script in your "scripts" object in your `package.json` file.
+To use nodemon, you have to add a script in your "scripts" object in your **package.json** file.
 
 ```
 "dev": "nodemon src/server.js"
@@ -113,7 +113,7 @@ Now, everytime we make a changes to our files, nodemon will restart the server f
 
 **Stopping the server**
 
-To stop the server, press `Ctrl + C` in your terminal window.
+To stop the server, press **Ctrl + C** in your terminal window.
 
 If you run into an error of: Error: listen EADDRINUSE: address already in use :::8000
 
@@ -129,7 +129,7 @@ lsof -i tcp:8000
 ![node instances running](images/list-node-instances.png)
 
 
-And then run this command to kill the process repalcing the `<PID>` with the process ID number:
+And then run this command to kill the process repalcing the **<PID>** with the process ID number:
 
 ```
 kill -9 <PID>
@@ -142,13 +142,13 @@ Once the Express server is running and listening for requests, we need to define
 respond to any given request. 
 
 To tell our Express how to deal with any given request, we register a series of routes. 
-Routes define the control flow for requests based on the request's `path` and `HTTP verb`.
+Routes define the control flow for requests based on the request's path and HTTP verb.
 
-For example, if your server receives a `GET` request at **/about**, we will use a route to define the appropriate functionality
+For example, if your server receives a **GET** request at **/about**, we will use a route to define the appropriate functionality
 for that HTTP verb (GET) and path (/about).
 
-The path is the part of a request URL after the hostname and port number, so in a request to **localhost:8000/about**, 
-the `path` is **/about** (in this example, the `hostname` is **localhost**, the `port number` is **8000**).
+The path is the part of a request URL after the hostname and port number, so in a request to localhost:8000/about, 
+the path is /about (in this example, the **hostname** is localhost, the port number is 8000).
 
 The HTTP verb is always included in the request, and it is one of a [number of options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) used to specify expected functionality. 
 GET requests are used for retrieving resources from a server.
@@ -166,7 +166,7 @@ app.get("/about", (req, res, next) => {
 
 ![first route](images/first-route.png)
 
-You can test this route by visiting `http://localhost:8000/about` in your browser.
+You can test this route by visiting **ttp://localhost:8000/about** in your browser.
 
 ![about route](images/about-route.png)
 
@@ -211,7 +211,7 @@ ___
 
 ### Middleware
 
-A web framework like Express.js operates through functions considered to be `middleware` because they sit between HTTP 
+A web framework like Express.js operates through functions considered to be middleware because they sit between HTTP 
 interaction on the web and the Node.js platform. Middleware is a general term applied to code that assists
 in listening for, analyzing, filtering, and handling HTTP communication before data interacts with application logic.
 
@@ -220,10 +220,10 @@ in listening for, analyzing, filtering, and handling HTTP communication before d
 
 As we know, the server's job is to receive requests and respond to them. Middleware gets between the request-response cycle and
 helps manage the request and can help determine how the server should respond. This can be thought of a 
-`middleware pipeline` where Express puts multiple pieces of middleware together through a series of functions.
+middleware pipeline where Express puts multiple pieces of middleware together through a series of functions.
 
-These functions have access to the request object (req), the response object (res), and the `next` middleware
-function in the application's request-response cycle. The next middleware function is commonly denoted by a variable named `next`.
+These functions have access to the request object (req), the response object (res), and the **next** middleware
+function in the application's request-response cycle. The next middleware function is commonly denoted by a variable named next.
 
 Middleware functions can perform the following tasks:
   - Execute any code.
@@ -245,9 +245,9 @@ const middleware = (req, res, next) => {
 }
 ```
 
-  - `req` parameter stands for request; object stores the information and methods from the incoming request.
-  - `res` parameter stands for response; object stores the information and methods related to sending a response back to the client. 
-  - `next` parameter, when called, tells Express that this middleware function is complete and goes to the next piece of middleware.
+  - **req** parameter stands for request; object stores the information and methods from the incoming request.
+  - **res** parameter stands for response; object stores the information and methods related to sending a response back to the client. 
+  - **next** parameter, when called, tells Express that this middleware function is complete and goes to the next piece of middleware.
 
 
 >Using the **next()** standalone will execute the code after the current middleware function is finished. 
@@ -262,7 +262,7 @@ calls them in the order they are registered.
 Third-party middleware (aka Application-level) is middleware that is not built into Express, 
 but available as a separate Node.js module that can be installed using npm. 
 
-A few commonly used middleware packages that we will be using in this course are:
+A few of the commonly used middleware packages that we will be using in this course are:
 
   - [body-parser](https://www.npmjs.com/package/body-parser): provides parsing for HTTP request bodies; parsing both URL-encoded and JSON-encoded bodies, as well as others.
   - [morgan](https://www.npmjs.com/package/morgan): provides HTTP request logging; logs HTTP requests to the console.
@@ -280,14 +280,11 @@ const logRequest = (req, res, next) => {
 };
 ```
 
-We can then register this middleware function with the `use()` method in app.js
+We can then register this middleware function with the **use()** method in app.js
 
 ```app.use(logRequest);```
 
-Hitting the server (localhost:8000/cars/honda) with a request will now log the message to the console.
-
-![/cars/honda route](images/cars-route-honda.png)
-
+Hitting the server (localhost:8000/about) with a request will now log the message to the console.
 
 ![custom middleware](images/custom-middleware.png)
 
@@ -300,7 +297,7 @@ First, require morgan at the top of your app.js file, right after the other requ
 const morgan = require("morgan");
 ```
 
-Then register the middleware with the `use()` method.
+Then register the middleware with the use() method.
 
 ```
 app.use(morgan("dev"));
@@ -314,9 +311,9 @@ Routes become more powerful when they can be used dynamically.
 
 Express provides this with 
 [route parameters](https://expressjs.com/en/guide/routing.html#route-parameters). Parameters are route path segments 
-that begin with `:` in their Express route definitions. They act as wildcards, matching any text at that path segment. 
+that begin with **:** in their Express route definitions. They act as wildcards, matching any text at that path segment. 
 
-For example `/todos/:id` will match both **/todos/1** and **/todos/7**.
+For example /todos/:id will match both **/todos/1** and **/todos/7**.
 
 Express parses the parameters, extracts the value, and attaches them as an object to the request object: [req.params](https://expressjs.com/en/api.html#req.params). 
 This object's keys are any parameter names in the route, and each key's value is the actual value of 
@@ -341,7 +338,7 @@ which was present in the actual request path.
 
 The appropriate car is retrieved by name (the object key) from the cars object and sent back to the client with res.send().
 
-So now if we visit `http://localhost:8000/cars/lexus` in our browser, we will see the following:
+So now if we visit **ttp://localhost:8000/cars/lexus** in our browser, we will see the following:
 
 
 ![route param](images/route-param.png)
