@@ -166,7 +166,7 @@ app.get("/about", (req, res, next) => {
 
 ![first route](images/first-route.png)
 
-You can test this route by visiting **http://localhost:8000/about** in your browser.
+You can test this route by visiting **localhost:8000/about** in your browser.
 
 ![about route](images/about-route.png)
 
