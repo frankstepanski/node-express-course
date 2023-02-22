@@ -115,7 +115,7 @@ Now, everytime we make a changes to our files, nodemon will restart the server f
 
 To stop the server, press **Ctrl + C** in your terminal window.
 
-If you run into an error of: Error: listen EADDRINUSE: address already in use :::8000
+:rotating_light: If you run into an error of: Error: listen EADDRINUSE: address already in use :::8000 :rotating_light:
 
 ![node instances error](images/node-instances-error.png)
 
