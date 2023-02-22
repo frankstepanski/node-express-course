@@ -353,7 +353,9 @@ ___
 ### Query Parameters
 
 A [query string](https://en.wikipedia.org/wiki/Query_string) is text that comes at the end of a URL following a question mark **?**. 
-It provides additional information to a given route. A query parameter is a key-value pair in a query string. The key and the value are strings separated by an equals sign =. 
+It provides additional information to a given route. 
+
+A query parameter is a key-value pair in a query string. The key and the value are strings separated by an equals sign =. 
 
 ```
 // GET /search?q=javascript
