@@ -36,9 +36,8 @@ We will create a **src** folder that holds the source code that directly relates
 
 **app.js:**
 
-We want to export the Express instance so that we can use it in our server.js file. 
+We want to export our [Express application - app](https://expressjs.com/en/5x/api.html#app) so that we can use it in our server.js file. 
 We will use module.exports to export the Express instance.
-
 
 ```
 const express = require("express); 
