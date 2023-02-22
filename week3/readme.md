@@ -134,9 +134,11 @@ And then run this command to kill the process repalcing the **<PID>** with the p
 ```
 kill -9 <PID>
 ```
-___
 
 >Remember, we are on the server now, so we will be checking the server's console for errors. :sunglasses:
+
+___
+
 
 ### Routing 
 
