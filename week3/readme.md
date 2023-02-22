@@ -251,7 +251,7 @@ const middleware = (req, res, next) => {
  Middleware functions are callback functions. Express uses the **use()** method to register middleware functions and 
 calls them in the order they are registered.
 
->Using the **next()** will execute the code after the current middleware function is finished. 
+>Using **next()** will execute the code after the current middleware function is finished. 
 Using **return next()** will immediately jump out of the callback the code below will be unreachable.
 
 **Third-party Middleware**
