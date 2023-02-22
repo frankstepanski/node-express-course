@@ -170,7 +170,7 @@ app.get("/about", (req, res, next) => {
 
 ![first route](images/first-route.png)
 
-You can test this route by visiting **ttp://localhost:8000/about** in your browser.
+You can test this route by visiting **http://localhost:8000/about** in your browser.
 
 ![about route](images/about-route.png)
 
@@ -285,7 +285,7 @@ We can then register this middleware function with the **use()** method in app.j
 
 ```app.use(logRequest);```
 
-Visiting http://localhost:8000/about in your browser will now log the message to the console.
+Now, visiting **http://localhost:8000/about** in your browser will now log the message to the console.
 
 ![custom middleware](images/custom-middleware.png)
 
