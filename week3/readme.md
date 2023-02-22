@@ -36,8 +36,7 @@ We will create a **src** folder that holds the source code that directly relates
 
 **app.js:**
 
-We want to export our [app](https://expressjs.com/en/5x/api.html#app) so that we can use it in our server.js file. [the brains :brain: of the operation]
-
+We want to export our [app](https://expressjs.com/en/5x/api.html#app) so that we can use it in our server.js file.
 ```
 const express = require("express); 
 const app = express(); 
