@@ -303,7 +303,7 @@ Then register the middleware with the use() method.
 app.use(morgan("dev"));
 ```
 
-Now, we will get a more detailed log of the request in the console.
+Now, we will get a more detailed log of the request in the console (you will see lots useful stuff later).  :wink:
 
 ![morgan middleware](images/morgan-console.png)
 
