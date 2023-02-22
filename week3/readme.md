@@ -389,6 +389,8 @@ app.get('/cars/:name', (req, res, next) => {
 });
 ```
 
+![route and query params](images/route-query-params.png)
+
 ![route and query params](images/terminal-route-query-params.png)
 
 
