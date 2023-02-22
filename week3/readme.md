@@ -210,7 +210,7 @@ app.get("/about", (req, res, next) => {
   res.status(200).send("<h1>About Code the Dream!</h1>");
 });
 ```
-___
+
 
 ### Middleware
 
@@ -306,6 +306,8 @@ app.use(morgan("dev"));
 Now, we will get a more detailed log of the request in the console (you will see lots useful stuff later).  :wink:
 
 ![morgan middleware](images/morgan-console.png)
+
+___
 
 ### Route Parameters
 
