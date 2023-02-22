@@ -333,7 +333,7 @@ app.get('/cars/:name', (req, res, next) => {
 });
 ```
 
-In the above code, a .get() route is defined to match the **/cars/:name** path. When a GET request arrives for **/cars/lexus**, 
+In the above code, a [.get()](https://expressjs.com/en/5x/api.html#app.get) route is defined to match the **/cars/:name** path. When a GET request arrives for **/cars/lexus**, 
 the callback is called. Inside the callback, req.params will be an object containing the key name and the value lexus, 
 which was present in the actual request path.
 
