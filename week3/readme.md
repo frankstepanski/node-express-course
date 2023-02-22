@@ -346,7 +346,7 @@ So now if we visit **localhost:8000/cars/lexus** in our browser, we will see the
 
 And in our terminal:
 
-
+![route param](images/terminal-route-param.png)
 
 ___
 
@@ -372,7 +372,9 @@ using the [req.query](https://expressjs.com/en/api.html#req.query) object. The c
 stored in an object called **req.query**. This object will be empty if there is no parameters, otherwise it will be 
 an object of key value pairs.
 
+___
 
+### Putting Route and Query Parameters Together
 
 
 ## Static Serving
