@@ -337,7 +337,7 @@ In the above code, a [.get()](https://expressjs.com/en/5x/api.html#app.get) rout
 the callback is called. Inside the callback, req.params will be an object containing the key name and the value lexus, 
 which was present in the actual request path.
 
-The appropriate car is retrieved by name (the object key) from the cars object and sent back to the client with res.send().
+The appropriate car is retrieved by name (the object key) from the cars object and sent back to the client with [res.send()](https://expressjs.com/en/5x/api.html#res.send).
 
 So now if we visit **localhost:8000/cars/lexus** in our browser, we will see the following:
 
