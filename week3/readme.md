@@ -225,7 +225,7 @@ As we know, the server's job is to receive requests and respond to them. Middlew
 helps manage the request and can help determine how the server should respond. This can be thought of a 
 middleware pipeline where Express puts multiple pieces of middleware together through a series of functions.
 
-These functions have access to the request object (req), the response object (res), and the **next** middleware
+These functions have access to the request object (**req**), the response object (**res**), and the **next** middleware
 function in the application's request-response cycle. The next middleware function is commonly denoted by a variable named next.
 
 Middleware functions can perform the following tasks:
