@@ -303,7 +303,9 @@ Then register the middleware with the use() method.
 app.use(morgan("dev"));
 ```
 
-![morgan middleware](images/morgan-middleware.png)
+Now, we will get a more detailed log of the request in the console.
+
+![morgan middleware](images/morgan-console.png)
 
 ### Route Parameters
 
