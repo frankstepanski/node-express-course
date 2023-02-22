@@ -281,7 +281,7 @@ We can then register this middleware function with the [.use()](https://expressj
 
 ```app.use(logRequest);```
 
-Now, visiting **http://localhost:8000/about** in your browser will now log the message to the console.
+Now, visiting **localhost:8000/about** in your browser will now log the message to the console.
 
 ![custom middleware](images/custom-middleware.png)
 
@@ -339,7 +339,7 @@ which was present in the actual request path.
 
 The appropriate car is retrieved by name (the object key) from the cars object and sent back to the client with res.send().
 
-So now if we visit **ttp://localhost:8000/cars/lexus** in our browser, we will see the following:
+So now if we visit **localhost:8000/cars/lexus** in our browser, we will see the following:
 
 
 ![route param](images/route-param.png)
