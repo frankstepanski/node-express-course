@@ -233,7 +233,7 @@ Middleware functions can perform the following tasks:
   - End the request-response cycle.
   - Call the **next** middleware function in the stack.
 
-Types of Middleware
+Types of Middleware:
   - Application-level middleware
   - Router-level middleware
   - Error-handling middleware
@@ -284,11 +284,11 @@ We can then register this middleware function with the **use()** method in app.j
 
 ```app.use(logRequest);```
 
-Visiting **ttp://localhost:8000/about** in your browser will now log the message to the console.
+Visiting http://localhost:8000/about in your browser will now log the message to the console.
 
 ![custom middleware](images/custom-middleware.png)
 
-Not very exciting, but it's a start. 
+Not very exciting, but it's a start. :thumbsup:
 
 Let's implement the third party logging middleware Morgan.
 First, require morgan at the top of your app.js file, right after the other requires.
