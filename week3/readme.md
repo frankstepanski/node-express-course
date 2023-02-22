@@ -281,7 +281,7 @@ const logRequest = (req, res, next) => {
 };
 ```
 
-We can then register this middleware function with the **use()** method in app.js
+We can then register this middleware function with the [.use()](https://expressjs.com/en/5x/api.html#app.use) method of the [app](https://expressjs.com/en/5x/api.html#app) object.
 
 ```app.use(logRequest);```
 
