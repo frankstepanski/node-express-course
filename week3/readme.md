@@ -367,7 +367,10 @@ app.get('/search', (req, res, next) => {
 
 ![query param](images/query-param.png)
 
-In the above example, the query parameter key is q and the value is javascript.
+In the above example, the query parameter key is q and the value is javascript. We can access these query parameters by
+using the [req.query](https://expressjs.com/en/api.html#req.query) object. In express, the contents of URLs query string are
+stored in an object called **req.query**. This object will be empty if there is no parameters, otherwise it will be 
+an object of key value pairs.
 
 
 
