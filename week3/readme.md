@@ -346,14 +346,26 @@ So now if we visit **localhost:8000/cars/lexus** in our browser, we will see the
 
 And in our terminal:
 
-![route param](images/terminal-route-param.png)
+
 
 ___
 
 ### Query Parameters
 
 A [query string](https://en.wikipedia.org/wiki/Query_string) is text that comes at the end of a URL following a question mark **?**. 
-It provides additional information to a given route. A query parameter is a key-value pair in a query string. The key and the value are strings separated by an equals sign =. In the above example, the query parameter key is q and the value is javascript.
+It provides additional information to a given route. A query parameter is a key-value pair in a query string. The key and the value are strings separated by an equals sign =. 
+
+```
+// GET /search?q=javascript
+app.get('/search', (req, res, next) => {
+  console.log(req.query.q); // javascript
+  res.send(`You searched for: ${req.query.q}`);
+});
+```
+
+![query param](images/query-param.png)
+
+In the above example, the query parameter key is q and the value is javascript.
 
 
 
