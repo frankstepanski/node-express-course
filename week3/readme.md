@@ -249,13 +249,11 @@ const middleware = (req, res, next) => {
   - **res** parameter stands for response; object stores the information and methods related to sending a response back to the client. 
   - **next** parameter, when called, tells Express that this middleware function is complete and goes to the next piece of middleware.
 
-
->Using the **next()** standalone will execute the code after the current middleware function is finished. 
-Using **return next()** will immediately jump out of the callback the code below will be unreachable.
-
-
-Middleware functions are callback functions. Express uses the **use()** method to register middleware functions and 
+ Middleware functions are callback functions. Express uses the **use()** method to register middleware functions and 
 calls them in the order they are registered.
+
+>Using the **next()** will execute the code after the current middleware function is finished. 
+Using **return next()** will immediately jump out of the callback the code below will be unreachable.
 
 **Third-party Middleware**
 
