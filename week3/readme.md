@@ -378,6 +378,9 @@ ___
 
 We can use the query and route paramters together to create a more dynamic route. 
 This is useful when we want to filter the data we are retrieving from a database.
+
+The following route will match **/cars/lexus?color=red**. 
+The route parameter **name** will be lexus, and the query parameter **color** will be red.
  
 ```
 // GET /cars/lexus?color=red
