@@ -376,6 +376,21 @@ ___
 
 ### Putting Route and Query Parameters Together
 
+We can use the query and route paramters together to create a more dynamic route. 
+This is useful when we want to filter the data we are retrieving from a database.
+ 
+```
+// GET /cars/lexus?color=red
+app.get('/cars/:name', (req, res, next) => {
+  console.log(req.params.name); // lexus
+  console.log(req.query.color); // red
+  console.log(cars[req.params.name]); // { model: 'LX', age: 90000 }
+  res.send(cars[req.params.name]);
+});
+```
+
+![route and query params](images/terminal-route-query-params.png)
+
 
 ## Static Serving
 
