@@ -36,7 +36,7 @@ We will create a **src** folder that holds the source code that directly relates
 
 **app.js:**
 
-We want to export our [app](https://expressjs.com/en/5x/api.html#app) so that we can use it in our server.js file. :brain: [aka, the big brain, aka the big kahuna, aka the head honcho, aka the big cheese]
+We want to export our [app](https://expressjs.com/en/5x/api.html#app) so that we can use it in our server.js file. :brain: [aka. big brain, aka. big kahuna, aka. head honcho
 
 ```
 const express = require("express); 
