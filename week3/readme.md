@@ -103,7 +103,6 @@ npm run dev
 
 ![express app running](images/nodemon-server.png)
 
-
 Now, everytime we make a changes to our files, nodemon will restart the server for us. :partying_face:
 
 ![nodemon restarting](images/nodemon-restarting.png)
@@ -116,7 +115,7 @@ To stop the server, press **Ctrl + C** in your terminal window.
 
 ![node instances error](images/node-instances-error.png)
 
-You use use this command to see which process is using the port:
+You use use this command to find which process is using the port: :eyes:
 
 ```
 lsof -i tcp:8000
@@ -126,7 +125,7 @@ lsof -i tcp:8000
 ![node instances running](images/list-node-instances.png)
 
 
-And then run this command to kill the process repalcing the **<PID>** with the process ID number:
+And then run this command to kill the process replacing the **<PID>** with the process ID number:
 
 ```
 kill -9 <PID>
