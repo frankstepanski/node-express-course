@@ -314,7 +314,7 @@ Express provides this with
 [route parameters](https://expressjs.com/en/guide/routing.html#route-parameters). Parameters are route path segments 
 that begin with **:** in their Express route definitions. They act as wildcards, matching any text at that path segment. 
 
-For example /todos/:id will match both **/todos/1** and **/todos/7**.
+For example **/todos/:id** will match both **/todos/1** and **/todos/7**.
 
 Express parses the parameters, extracts the value, and attaches them as an object to the request object: [req.params](https://expressjs.com/en/api.html#req.params). 
 This object's keys are any parameter names in the route, and each key's value is the actual value of 
