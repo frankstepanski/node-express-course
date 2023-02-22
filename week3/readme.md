@@ -184,7 +184,7 @@ app.get("/about", (req, res, next) => {
 
 ![about route html](images/about-route-html.png)
 
-> If no routes are matched on a client request, the Express server will handle sending a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client.
+> If no routes are matched on a client request, the Express server will handle sending a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client.  :unamused:
 
 **Status Codes**
 
