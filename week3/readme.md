@@ -287,8 +287,8 @@ Now, visiting **localhost:8000/about** in your browser will now log the message 
 
 Not very exciting, but it's a start. :thumbsup:
 
-Let's implement the third party logging middleware [Morgan](https://www.npmjs.com/package/morgan), first we require it at the top of the app.js file,
-right after the other requires.
+Let's implement the third party logging middleware [Morgan](https://www.npmjs.com/package/morgan)./
+First we require it at the top of the app.js file, right after the other requires.
 
 ```
 const morgan = require("morgan");
