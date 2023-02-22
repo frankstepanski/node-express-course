@@ -369,7 +369,7 @@ app.get('/search', (req, res, next) => {
 
 In the above example, the query parameter key is **q** and the value is **javascript**. We can access these query parameters by
 using the [req.query](https://expressjs.com/en/api.html#req.query) object. The contents of URL query strings are
-stored in an object called **req.query**. This object will be empty if there is no parameters, otherwise it will be 
+stored in an object called **req.query**. This object will be empty if there are no parameters, otherwise it will be 
 an object of key value pairs.
 
 ___
