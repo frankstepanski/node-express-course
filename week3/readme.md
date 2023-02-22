@@ -107,7 +107,7 @@ npm run dev
 ![express app running](images/nodemon-server.png)
 
 
-Now, everytime we make a changes to our files, nodemon will restart the server for us. YAY!
+Now, everytime we make a changes to our files, nodemon will restart the server for us. :partying_face:
 
 ![nodemon restarting](images/nodemon-restarting.png)
 
@@ -135,6 +135,8 @@ And then run this command to kill the process repalcing the **<PID>** with the p
 kill -9 <PID>
 ```
 ___
+
+>Remember, we are on the server now, so we will be checking the server's console for errors. :sunglasses:
 
 ### Routing 
 
@@ -197,7 +199,6 @@ at the client side, or 5xx when the server fails to process a valid request.
 >400-499: Client error; problem in how client submitted request\
 >500-599: Server error: request accepted, but server error prevented fullfillment
 
-
 By default, Express will send a [200 status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200) when a response is sent. 
 We can implicitly set the status code by using the [res.status()](https://expressjs.com/en/4x/api.html#res.status) method,
 which is a good practice to follow.
@@ -216,7 +217,6 @@ interaction on the web and the Node.js platform. Middleware is a general term ap
 in listening for, analyzing, filtering, and handling HTTP communication before data interacts with application logic.
 
 >So an Express application is basically a series of middleware function calls.
-
 
 As we know, the server's job is to receive requests and respond to them. Middleware gets between the request-response cycle and
 helps manage the request and can help determine how the server should respond. This can be thought of a 
@@ -282,7 +282,7 @@ We can then register this middleware function with the **use()** method in app.j
 
 ```app.use(logRequest);```
 
-Hitting the server (localhost:8000/about) with a request will now log the message to the console.
+Visiting **ttp://localhost:8000/about** in your browser will now log the message to the console.
 
 ![custom middleware](images/custom-middleware.png)
 
