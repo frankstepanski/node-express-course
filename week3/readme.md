@@ -180,6 +180,14 @@ app.get("/about", (req, res, next) => {
 
 ![about route html](images/about-route-html.png)
 
+**Dev Tools**
+
+You can use the browser's developer tools to view the response from the server.
+
+![about route html](images/browser-devtools-about-tab.png)
+
+
+
 **404 Error Handler** :broken_heart:
 
 If no routes are matched on a client request, the Express server will send a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client.
