@@ -188,7 +188,7 @@ You can use the browser's developer tools to view the response from the server:
 
 ![devtools](images/browser-devtools-about-tab.png)
 
-If you click on the stream for **about** you will see details about the header server response:
+If you click on the **about** stream you will see details about the header server response:
 
 ![devtools headers](images/browser-devtools-headers.png)
 
