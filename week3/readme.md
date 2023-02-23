@@ -192,6 +192,8 @@ If you click on response for aboout it will show you more details about the serv
 
 ![about route html](images/browser-devtools-headers.png)
 
+There are other tools you can use to view the headers (and much, much more), such as [Postman](https://www.postman.com/). Next Week! :zany_face:
+
 >The 404 Status on the **favicon.ico** is normal. The browser is trying to load the favicon.ico file from the root of the server.
 
 **404 Error Handler** :broken_heart:
