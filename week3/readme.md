@@ -192,8 +192,10 @@ If no routes are matched on a client request, the Express server will send a [40
 
 We can add a catch-all route to handle any requests that are not matched by a route.
 
-A 404 error handler is basically a route handler defined **after all of the others** without a path associated with it. 
-These handlers become a catchall for any request that isn't handled by existing routes.
+A 404 error handler can be thought of as a route handler defined **after all of the others** without a path associated with it. 
+Though this type of route is normally used with [app.use()](https://expressjs.com/en/5x/api.html#app.use) instead of [app.get()](https://expressjs.com/en/5x/api.html#app.get) since there is no specific route you are trying to match.
+
+Note: You could use app.get() and just use `*` as the path, but this is not recommended.
 
 ```
 app.use((req, res, next) => {
