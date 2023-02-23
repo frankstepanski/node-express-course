@@ -459,7 +459,7 @@ As with any other middleware function, you need to tell the Express app instance
 
   ![publich folder](images/public-folder.png)
 
-  - Find a **cute** cat image and save it in the public folder
+  - Find a **cute** cat image and create an **images** inside the public folder
  
   - Add the following code to the app.js file:
 
