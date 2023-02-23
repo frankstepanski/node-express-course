@@ -184,13 +184,23 @@ app.get("/about", (req, res, next) => {
 Web requests are more complicated than just the URL. Both requests and responses can have additional data to be sent back and forth, 
 and this process is invisible to most users. This metadata is generally referred to as [headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers).
 
+Headers have mulitple parts associated with them, including a name, a value, and a description. 
+  - The name is the key that identifies the header.
+  - The value is the data associated with the header.
+  - The description is a short description of the header.
+
+
 You can use the browser's developer tools to view the response from the server:
 
-![about route html](images/browser-devtools-about-tab.png)
+![devtools](images/browser-devtools-about-tab.png)
 
-If you click on response for aboout it will show you more details about the server response:
+If you click on the stream for **about** you will see details about the header server response:
 
-![about route html](images/browser-devtools-headers.png)
+![devtools headers](images/browser-devtools-headers.png)
+
+If you click on the Response tab you will see the data that was sent back to the browser:
+
+![devtools response](images/browser-devtools-headers.png)
 
 There are other tools you can use to view the headers (and much, much more), such as [Postman](https://www.postman.com/). Next Week! :zany_face:
 
@@ -223,7 +233,6 @@ app.use((req, res, next) => {
 
 >**Order of routes** - The order of routes is important. Express will match the first route that matches the request.
 If you have a route that matches all requests, it should be the last route registered.
-
 
 **Status Codes**
 
@@ -439,14 +448,12 @@ app.get('/cars/:name', (req, res, next) => {
 
 ![route and query params](images/terminal-route-query-params.png)
 
-
-
 ___
 
 ### Serving Static files
 
 Most web applications contain static files that return the same response to all users. These could include images, favicons, CSS stylesheets, client-side JavaScript, pre-rendered HTML pages, or any other asset.
-Express allows you to define a **single directory** that contains static assets and returns any file that **matches the URL path**.
+Express allows you to define a **single directory** that contains **static assets** and returns any file that matches the URL path.
 
 
 
@@ -473,9 +480,6 @@ This is because you are following a simplified version of the JSON:API specifica
 
 In short, the APIs that you build will always return an object with either a data property or an errors property. Any information sent to the API will also be an object with a data property. You will learn about errors and sending information to the API in a future lesson.
 
-
-
-## app.get app.post
 
 
 
