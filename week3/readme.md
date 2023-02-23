@@ -135,7 +135,6 @@ kill -9 <PID>
 
 ___
 
-
 ### Routing 
 
 Once the Express server is running and listening for requests, we need to define how the server should 
@@ -180,7 +179,10 @@ app.get("/about", (req, res, next) => {
 
 ![about route html](images/about-route-html.png)
 
-**Dev Tools**
+**Headers and Browser Dev Tools**
+
+Web requests are more complicated than just the URL. Both requests and responses can have additional data to be sent back and forth, 
+and this process is invisible to most users. This metadata is generally referred to as [headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers).
 
 You can use the browser's developer tools to view the response from the server:
 
