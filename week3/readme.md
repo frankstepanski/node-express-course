@@ -180,7 +180,7 @@ app.get("/about", (req, res, next) => {
 
 ![about route html](images/about-route-html.png)
 
-**404 Error** :broken_heart:
+**404 Handler Error** :broken_heart:
 
 If no routes are matched on a client request, the Express server will send a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client.
 
@@ -188,6 +188,18 @@ If no routes are matched on a client request, the Express server will send a [40
 
 ![404 terminal](images/404-error.png)
 
+> How can we make this better?
+
+We can add a catch-all route to handle any requests that are not matched by a route.
+This route will send a 404 response to the client.
+
+```
+app.use((req, res, next) => {
+  res.status(404).send("<h1>404: Page not found</h1>");
+});
+```
+
+![404 browser handler](images/browser-404-handler.png)
 
 **Order of routes**
 
