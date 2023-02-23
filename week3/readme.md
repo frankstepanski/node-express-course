@@ -466,7 +466,7 @@ As with any other middleware function, you need to tell the Express app instance
   ```
   app.use(express.static("public"))
   ``` 
-Then visit **localhost:8000/cat.jpg** in your browser. You should see the cat image.
+Then visit **localhost:8000/images/cat.jpg** in your browser. You should see the cat image.
 
 ![publich folder](images/static-cat.png)
 
