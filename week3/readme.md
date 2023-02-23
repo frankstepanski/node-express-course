@@ -448,34 +448,25 @@ ___
 Most web applications contain static files that return the same response to all users. These could include images, favicons, CSS stylesheets, client-side JavaScript, pre-rendered HTML pages, or any other asset.
 Express allows you to define a **single directory** that contains **static assets** and returns any file that matches the URL path.
 
+You would use the [static method](https://expressjs.com/en/starter/static-files.html) from the [express](https://expressjs.com/en/5x/api.html#express) module. 
+This method takes an absolute path to the folder containing your static files.
 
+>Yes, more middleware!!! :partying_face:
 
-### JSON - Static Data
+As with any other middleware function, you need to tell the Express app instance to use this feature. 
+To enable the serving of static files and the code below to app.js file.
+
+```
+app.use(express.static("public"))
+``` 
+
+### JSON
 
 JSON is a common format for storing data. It is a lightweight data-interchange format. It is easy for humans to read and write.
 It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999.
 
-
-
-The term state isn't exclusive to front-end applications (SPAs), it's a common term in the world of web development. 
-It refers to the data that an application needs to keep track of in order to work. For example,  If you're building a blog,
-the state of the application is the list of blog posts, etc.
-
-In the world of web development, state is often stored in a database. But for now, we will use a static data file to store our state.
-
-Create a new file called **data.json** in the root of your project.
-
-**Data Property**
-
-You might be wondering why you returned an object with a data property from your API rather than simply returning the array itself.
-
-This is because you are following a simplified version of the JSON:API specification, a common pattern for APIs returning JSON. You don't need to read or understand this specification right now—just know that it exists. The full specification adds some complexity that you won't find useful right now, so this lesson has simplified it for you.
-
-In short, the APIs that you build will always return an object with either a data property or an errors property. Any information sent to the API will also be an object with a data property. You will learn about errors and sending information to the API in a future lesson.
-
-
-
+...
 
 ### Deployment
 
-
+...
