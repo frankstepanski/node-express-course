@@ -184,12 +184,6 @@ app.get("/about", (req, res, next) => {
 Web requests are more complicated than just the URL. Both requests and responses can have additional data to be sent back and forth, 
 and this process is invisible to most users. This metadata is generally referred to as [headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers).
 
-Headers have mulitple parts associated with them, including a name, a value, and a description. 
-  - The name is the key that identifies the header.
-  - The value is the data associated with the header.
-  - The description is a short description of the header.
-
-
 You can use the browser's developer tools to view the response from the server:
 
 ![devtools](images/browser-devtools-about-tab.png)
