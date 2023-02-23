@@ -182,9 +182,9 @@ app.get("/about", (req, res, next) => {
 
 > If no routes are matched on a client request, the Express server will send a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client.  :sob:
 
-![about route html](images/browser-404.png)
+![404 browser error](images/browser-404-error.png)
 
-![about route html](images/404-error.png)
+![404 terminal](images/404-error.png)
 
 
 **Order of routes**
@@ -193,9 +193,6 @@ The order of routes is important. Express will match the first route that matche
 If you have a route that matches all requests, it should be the last route registered.
 If no routes are matched, Express will send a 404 response. So your last route should be a catch-all route.
   
-  ```
-
-
 
 
 **Status Codes**
