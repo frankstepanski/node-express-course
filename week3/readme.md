@@ -180,7 +180,23 @@ app.get("/about", (req, res, next) => {
 
 ![about route html](images/about-route-html.png)
 
-> If no routes are matched on a client request, the Express server will handle sending a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client.  :sob:
+> If no routes are matched on a client request, the Express server will send a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client.  :sob:
+
+![about route html](images/browser-404.png)
+
+![about route html](images/404-error.png)
+
+
+**Order of routes**
+
+The order of routes is important. Express will match the first route that matches the request.
+If you have a route that matches all requests, it should be the last route registered.
+If no routes are matched, Express will send a 404 response. So your last route should be a catch-all route.
+  
+  ```
+
+
+
 
 **Status Codes**
 
@@ -397,13 +413,38 @@ app.get('/cars/:name', (req, res, next) => {
 ![route and query params](images/terminal-route-query-params.png)
 
 
-## Static Serving
+
+___
+
+### Serving Static files
+
+Most web applications contain static files that return the same response to all users. These could include images, favicons, CSS stylesheets, client-side JavaScript, pre-rendered HTML pages, or any other asset.
+Express allows you to define a **single directory** that contains static assets and returns any file that **matches the URL path**.
 
 
 
+### JSON - Static Data
 
-## JSON
+JSON is a common format for storing data. It is a lightweight data-interchange format. It is easy for humans to read and write.
+It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999.
 
+
+
+The term state isn't exclusive to front-end applications (SPAs), it's a common term in the world of web development. 
+It refers to the data that an application needs to keep track of in order to work. For example,  If you're building a blog,
+the state of the application is the list of blog posts, etc.
+
+In the world of web development, state is often stored in a database. But for now, we will use a static data file to store our state.
+
+Create a new file called **data.json** in the root of your project.
+
+**Data Property**
+
+You might be wondering why you returned an object with a data property from your API rather than simply returning the array itself.
+
+This is because you are following a simplified version of the JSON:API specification, a common pattern for APIs returning JSON. You don't need to read or understand this specification right now—just know that it exists. The full specification adds some complexity that you won't find useful right now, so this lesson has simplified it for you.
+
+In short, the APIs that you build will always return an object with either a data property or an errors property. Any information sent to the API will also be an object with a data property. You will learn about errors and sending information to the API in a future lesson.
 
 
 
