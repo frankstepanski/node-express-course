@@ -182,11 +182,13 @@ app.get("/about", (req, res, next) => {
 
 **Dev Tools**
 
-You can use the browser's developer tools to view the response from the server.
+You can use the browser's developer tools to view the response from the server:
 
 ![about route html](images/browser-devtools-about-tab.png)
 
+If you click on response for aboout it will show you more details about the server response:
 
+![about route html](images/browser-devtools-headers.png)
 
 **404 Error Handler** :broken_heart:
 
