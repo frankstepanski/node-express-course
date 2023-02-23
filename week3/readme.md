@@ -192,7 +192,7 @@ If you click on the **about** stream you will see details about the header serve
 
 ![devtools headers](images/browser-devtools-headers.png)
 
-If you click on the Response tab you will see the data that was sent back to the browser:
+Then you can click on the Response tab you will see the data that was sent back to the browser:
 
 ![devtools response](images/browser-devtools-response.png)
 
