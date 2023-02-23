@@ -181,7 +181,7 @@ app.get("/about", (req, res, next) => {
 
 **Headers and Browser Dev Tools**
 
-Web requests are more complicated than just the URL. Both requests and responses can have additional data to be sent back and forth, 
+Web requests are more complicated than just the URL. Both the request and response can have additional data to be sent back and forth, 
 and this process is invisible to most users. This metadata is generally referred to as [headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers).
 
 You can use the browser's developer tools to view the response from the server:
