@@ -200,7 +200,7 @@ If you click on the stream for **about** you will see details about the header s
 
 If you click on the Response tab you will see the data that was sent back to the browser:
 
-![devtools response](images/browser-devtools-headers.png)
+![devtools response](images/browser-devtools-response.png)
 
 There are other tools you can use to view the headers (and much, much more), such as [Postman](https://www.postman.com/). Next Week! :zany_face:
 
