@@ -141,7 +141,7 @@ ___
 Once the Express server is running and listening for requests, we need to define how the server should 
 respond to any given request. 
 
-To tell our Express how to deal with any given request, we register a series of routes. 
+To tell our Express server how to deal with any given request, we register a series of routes. 
 Routes define the control flow for requests based on the request's path and HTTP verb.
 
 For example, if your server receives a **GET** request at **/about**, we will use a route to define the appropriate functionality
