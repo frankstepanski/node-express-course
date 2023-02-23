@@ -263,9 +263,8 @@ before data interacts with application logic. That is, middleware is code that r
 
 >So an Express application is basically a series of middleware function calls. :white_check_mark:
 
-As we know, the server's job is to receive requests and respond to them. Middleware gets between the request-response cycle and
-helps manage the request and can help determine how the server should respond. This can be thought of a 
-middleware pipeline where Express puts multiple pieces of middleware together through a series of functions.
+Middleware gets between the [request-response cycle](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview) and helps manage the request and can help determine how the server should respond. 
+This can be thought of as a middleware pipeline where Express puts multiple pieces of middleware together through a series of functions.
 
 These functions have access to the request object (**req**), the response object (**res**), and the **next** middleware
 function in the application's request-response cycle. The next middleware function is commonly denoted by a variable named next.
