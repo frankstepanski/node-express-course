@@ -180,9 +180,9 @@ app.get("/about", (req, res, next) => {
 
 ![about route html](images/about-route-html.png)
 
-**404 Error**
+**404 Error** :broken_heart:
 
-If no routes are matched on a client request, the Express server will send a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client. :broken_heart:
+If no routes are matched on a client request, the Express server will send a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client.
 
 ![404 browser error](images/browser-404-error.png)
 
