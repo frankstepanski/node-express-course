@@ -190,6 +190,8 @@ If you click on response for aboout it will show you more details about the serv
 
 ![about route html](images/browser-devtools-headers.png)
 
+>The 404 Status on the **favicon.ico** is normal. The browser is trying to load the favicon.ico file from the root of the server.
+
 **404 Error Handler** :broken_heart:
 
 If no routes are matched on a client request, the Express server will send a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client.
