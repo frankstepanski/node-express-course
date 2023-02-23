@@ -182,7 +182,7 @@ app.get("/about", (req, res, next) => {
 
 **404 Error**
 
-> If no routes are matched on a client request, the Express server will send a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client.  :sob:
+:stop_sign: If no routes are matched on a client request, the Express server will send a [404 Not Found response](https://expressjs.com/en/starter/faq.html#how-do-i-handle-404-responses), to the client. :stop_sign:
 
 ![404 browser error](images/browser-404-error.png)
 
