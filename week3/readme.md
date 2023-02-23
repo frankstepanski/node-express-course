@@ -470,6 +470,7 @@ Then visit **localhost:8000/images/cat.jpg** in your browser. You should see the
 
 ![publich folder](images/static-cat.png)
 
+>**Note:** The **public** folder is a convention. 
 ___
 
 ### JSON
