@@ -211,7 +211,7 @@ We can add a catch-all route to handle any requests that are not matched by a ro
 A 404 error handler can be thought of as a route handler defined **after all of the others** without a path associated with it. 
 Though this type of route is normally used with [app.use()](https://expressjs.com/en/5x/api.html#app.use) instead of [app.get()](https://expressjs.com/en/5x/api.html#app.get) since there is no specific route you are trying to match.
 
-Note: You could use app.get() and just use `*` as the path, but this is not recommended.
+**Note:** You could use app.get() and just use `*` as the path, but this is not recommended.
 
 ```
 app.use((req, res, next) => {
