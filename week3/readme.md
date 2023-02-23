@@ -454,7 +454,7 @@ This method takes an absolute path to the folder containing your static files.
 >Yes, more middleware!!! :partying_face:
 
 As with any other middleware function, you need to tell the Express app instance to use this feature. 
-To enable the serving of static files add the code below to app.js file.
+To enable the serving of static files add the code below to app.js file:
 
 ```
 app.use(express.static("public"))
