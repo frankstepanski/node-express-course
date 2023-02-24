@@ -516,7 +516,7 @@ const car = JSON.parse(json);
 **JSON Browser Extensions**
 
 Although we can view JSON in the browser, it is not very readable.  To make it easier to read, we can install a browser extension that will format the JSON for us.
-Many browsers have extensions to format JSON in a readable format such as [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en).
+There are many extensions that do this, a very popular one for the Chrome browser is [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en).
 
 ![json chrome extension](images/json-browser-extension.png)
 
