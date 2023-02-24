@@ -483,7 +483,7 @@ more specifically the [JavaScript object literal](https://developer.mozilla.org/
 It is easy for humans to read and write to this format as well as easy for machines to parse and generate. We all like easy, right? 
 Just like the [song](https://www.youtube.com/watch?v=0XRrYgByp28) says, "It's easy like Sunday morning". :sunglasses:
 
-** Serialization and Deserialization **
+**Serialization and Deserialization**
 
 The process of sending data in JSON format to a REST API is called **serialization**. 
 
