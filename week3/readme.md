@@ -483,8 +483,6 @@ more specifically the [JavaScript object literal](https://developer.mozilla.org/
 It is easy for humans to read and write to this format as well as easy for machines to parse and generate. We all like easy, right? 
 Just like the [song](https://www.youtube.com/watch?v=0XRrYgByp28) says, "It's easy like Sunday morning". :sunglasses:
 
-But do we as developers really create JSON from scratch? No, we don't. 
-
 **JSON and REST APIs**
 
 Since JSON is the common format for sending and receiving data over the web, we need to know how to use it in our REST APIs.
