@@ -516,15 +516,15 @@ const car = JSON.parse(json);
 The state of an application is all the data that the application must keep track of in order to work.
 This data is usually stored in a database, but for small applications, and for our immediate purpose, it can be stored in a JSON file.
 
-We can create a **data** folder and populate it with some JSON file. To make it easy, let's grab some JSON data from the popular 
-[JSONPlaceholder](https://jsonplaceholder.typicode.com/) API. Head over to their website and click on the [Users](https://jsonplaceholder.typicode.com/users) link.
-Save that page as a JSON file in the **data** folder.
+We will create a **data** folder and store a .json file in it. 
 
-![jsonplaceholder users](images/jsonplaceholder-users.png)
+To make it easy, let's grab some JSON data from the popular [JSONPlaceholder](https://jsonplaceholder.typicode.com/) API. 
+Head over to their website and click on the [Users](https://jsonplaceholder.typicode.com/users) link and save that page as a JSON file in the **data** folder
+you just created.
 
 ![users.json data folder](images/users-json-folder.png)
 
-
+![jsonplaceholder users](images/jsonplaceholder-users.png)
 
 **JSON Browser Extensions**
 
