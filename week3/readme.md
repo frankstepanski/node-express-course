@@ -480,7 +480,7 @@ For REST APIs to be useful, they need to work with data in a format that is **ea
 JSON (JavaScript Object Notation) is a common format for storing and transmitting data over the internet. It is based on a subset of the JavaScript Programming Language, 
 more specifically the [JavaScript object literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#objects_and_properties).
 
-It is easy for humans to read and write and easy for machines to parse and generate. We all like easy, right? 
+It is easy for humans to read and write to this format as well as easy for machines to parse and generate. We all like easy, right? 
 Just like the [song](https://www.youtube.com/watch?v=0XRrYgByp28) says, "It's easy like Sunday morning". :sunglasses:
 
 But do we as developers really create JSON from scratch? No, we don't. 
