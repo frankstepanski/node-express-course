@@ -483,9 +483,7 @@ more specifically the [JavaScript object literal](https://developer.mozilla.org/
 It is easy for humans to read and write to this format as well as easy for machines to parse and generate. We all like easy, right? 
 Just like the [song](https://www.youtube.com/watch?v=0XRrYgByp28) says, "It's easy like Sunday morning". :sunglasses:
 
-**JSON and REST APIs**
-
-Since JSON is the common format for sending and receiving data over the web, we need to know how to use it in our REST APIs.
+** Serialization and Deserialization **
 
 The process of sending data in JSON format to a REST API is called **serialization**. 
 
@@ -513,6 +511,21 @@ const json = '{"model":"LX","age":90000}'; // this would be coming from a REST A
 const car = JSON.parse(json);
 ```
 
+**Static JSON Files**
+
+The state of an application is all the data that the application must keep track of in order to work.
+This data is usually stored in a database, but for small applications, and for our immediate purpose, it can be stored in a JSON file.
+
+We can create a **data** folder and populate it with some JSON file. To make it easy, let's grab some JSON data from the popular 
+[JSONPlaceholder](https://jsonplaceholder.typicode.com/) API. Head over to their website and click on the [Users](https://jsonplaceholder.typicode.com/users) link.
+Save that page as a JSON file in the **data** folder.
+
+![jsonplaceholder users](images/jsonplaceholder-users.png)
+
+![users.json data folder](images/users-json-folder.png)
+
+
+
 **JSON Browser Extensions**
 
 Although we can view JSON in the browser, it is not very readable.  To make it easier to read, we can install a browser extension that will format the JSON for us.
@@ -521,6 +534,10 @@ There are many extensions that do this, a very popular one for the Chrome browse
 ![json chrome extension](images/json-browser-extension.png)
 
 >As mentioned earlier, we will talk about another tool to interact with APIs and JSON next week. So stay tuned! :wink:
+
+
+
+
 
 ___
 
