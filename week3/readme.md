@@ -528,7 +528,24 @@ you just created.
 
 ![jsonplaceholder users](images/jsonplaceholder-users.png)
 
-... [cont.]
+Now we can import this data into our app.js file and use it in our routes.
+
+```
+const users = require('./data/users.json');
+
+  // ... other middleware and routes
+
+app.get('/users', (req, res, next) => {
+  res.send(users);
+});
+```
+
+Then visit **localhost:8000/users** in your browser. You should see the JSON data.
+
+![users.json data folder](images/users-json.png)
+
+>The the JSON data was automatically parsed by Express and returned as a JavaScript object.
+
 
 **JSON Browser Extensions**
 
