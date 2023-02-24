@@ -475,7 +475,7 @@ ___
 
 ### JSON
 
-For REST APIs to be useful, they need to return data in a format that is **easy** to consume. This is where [JSON](https://www.json.org/json-en.html) comes in.
+For REST APIs to be useful, they need to work with data in a format that is **easy** to consume. This is where [JSON](https://www.json.org/json-en.html) comes in.
 
 JSON (JavaScript Object Notation) is a common format for storing data. It is based on a subset of the JavaScript Programming Language, 
 more specifically the [JavaScript object literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#objects_and_properties).
