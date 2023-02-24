@@ -511,7 +511,7 @@ const json = '{"model":"LX","age":90000}'; // this would be coming from a REST A
 const car = JSON.parse(json);
 ```
 
-**Note:** Express automatically parses JSON data for us. So the deserialization happens on the client side when we receive the response from the server.
+**Note:** Express automatically parses JSON data for us, so the deserialization happens on client when we receive the response from the server.
 
 **Static JSON Files**
 
