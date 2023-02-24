@@ -491,7 +491,7 @@ Since JSON is the common format for sending and receiving data over the web, we 
 
 The process of sending data in JSON format to a REST API is called **serialization**. 
 
->Serialization is the process of converting an object into a stream of bytes to store the object or transmit it to memory, a database, or a file. 
+>Serialization is the process of converting an object into a stream of bytes to store the object or transmit it to memory.
 
 To do this in JavaScript we can use the [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) method.
 
