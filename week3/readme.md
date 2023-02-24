@@ -475,11 +475,58 @@ ___
 
 ### JSON
 
-JSON is a common format for storing data. It is a lightweight data-interchange format. It is easy for humans to read and write.
-It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999.
+For REST APIs to be useful, they need to return data in a format that is **easy** to consume. This is where [JSON](https://www.json.org/json-en.html) comes in.
 
-...
+JSON (JavaScript Object Notation) is a common format for storing data. It is based on a subset of the JavaScript Programming Language, 
+more specifically the [JavaScript object literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#objects_and_properties).
+
+It is easy for humans to read and write and easy for machines to parse and generate. We all like easy, right? 
+Just like the [song](https://www.youtube.com/watch?v=0XRrYgByp28) says, "It's easy like Sunday morning". :sunglasses:
+
+But do we as developers really create JSON from scratch? No, we don't. 
+
+**JSON and REST APIs**
+
+Since JSON is the common format for sending and receiving data over the web, we need to know how to use it in our REST APIs.
+
+The process of sending data in JSON format to a REST API is called **serialization**. 
+
+>Serialization is the process of converting an object into a stream of bytes to store the object or transmit it to memory, a database, or a file. 
+
+To do this in JavaScript we can use the [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) method.
+
+```
+const car = {
+  model: 'LX',
+  age: 90000
+};
+
+const json = JSON.stringify(car);
+```
+
+The process of parsing received JSON data from a REST API is called **deserialization**.
+
+>Deserialization is the reverse process where the byte stream is used to recreate the actual JavaScript object in memory. 
+
+To do this in JavaScript we can use the [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) method.
+
+```
+const json = '{"model":"LX","age":90000}'; // this would be coming from a REST API
+const car = JSON.parse(json);
+```
+
+**JSON Browser Extensions**
+
+Although we can view JSON in the browser, it is not very readable.  To make it easier to read, we can install a browser extension that will format the JSON for us.
+Many browsers have extensions that will do this. A common one is [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en).
+
+![json chrome extension](images/json-browser-extension.png)
+
+>As mentioned earlier, we will talk about another tool to interact with APIs and JSON next week. So stay tuned! :wink:
+
+___
 
 ### Deployment
 
 ...
+
