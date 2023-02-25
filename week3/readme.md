@@ -532,15 +532,15 @@ you just created.
 
 ![jsonplaceholder users](images/jsonplaceholder-users.png)
 
-Now we can import this data into our app.js file and use it in our routes.
+Now we can import this data into our **app.js** file and use it in our routes.
 
 ```
-const users = require('./data/users.json');
+const users = require('./data/users.json'); // import users data
 
   // ... other middleware and routes
 
 app.get('/users', (req, res, next) => {
-  res.send(users);
+  res.send(users); // send all users data
 });
 ```
 
@@ -553,9 +553,9 @@ Using the [res.send()](https://expressjs.com/en/api.html#res.send) method, Expre
 
 ![browser users dev tool](images/browser-users-dev-tools.png)
 
-Great, we displayed all of our users, but what if we want just one particular user? 
+Great, we displayed all of our users, but what if we want just one particular user? Maybe a user with a specific **id**?
 
-We can use the **id** property to get a specific user by passing it as a **route parameter**. :cowboy_hat_face:
+We can reference the **id** property to get a specific user by passing that value as a **route parameter**. :cowboy_hat_face:
 
 ```
 app.get('/users/:id', (req, res, next) => {
@@ -564,7 +564,7 @@ app.get('/users/:id', (req, res, next) => {
 });
 ```
 
-Then visit **localhost:8000/users/5** in your browser. You should see the JSON data for the user with the id of 5.
+Then visit **localhost:8000/users/5** in your browser. You should see the JSON data for the user with the **id of 5**.
 
 ![users.json data folder](images/users-json-id.png)
 
