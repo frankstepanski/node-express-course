@@ -544,7 +544,9 @@ Then visit **localhost:8000/users** in your browser. You should see the JSON dat
 
 ![users.json data folder](images/users-json.png)
 
-Great, we displayed our JSON data in the browser. But what if we want just one user? We can use the **id** property to get a specific user.
+Great, we displayed our JSON data in the browser. But what if we want just one user? 
+
+We can use the **id** property to get a specific user by passing it as a route parameter. :cowboy_hat_face:
 
 ```
 app.get('/users/:id', (req, res, next) => {
