@@ -225,8 +225,8 @@ app.use((req, res, next) => {
 
 ![404 browser handler](images/browser-404-handler.png)
 
->**Order of routes** - The order of routes is important. Express will match the first route that matches the request.
-If you have a route that matches all requests, it should be the last route registered.
+>**Order of routes** - The order of routes is important.  Express searches through routes in the order that they are registered in your code.
+The first one that is matched will be used, and its callback will be called.
 
 **Status Codes**
 
