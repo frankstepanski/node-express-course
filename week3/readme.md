@@ -582,11 +582,15 @@ app.get('/greeting', (req, res, next) => {
 });
 ```
 
-Then visit **localhost:8000/greeting** in your browser. You should see the JSON data.
+Then visit **localhost:8000/greeting** in your browser. You should see "Hello World" sent as JSON. :exploding_head:
+
+![greeting json](images/browser-greeting.png)
+
+Checking our browser's dev tools, we can see that the **Content-Type** is **application/json**.
 
 ![res.json](images/browser-json-greeting.png)
 
-
+>When to use res.json() vs res.send()? Use res.json() when you want to send a JSON response that was created from a JavaScript object or not even an object at all.
 
 **JSON Browser Extensions**
 
