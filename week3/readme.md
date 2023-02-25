@@ -143,7 +143,7 @@ respond to any given request.
 To tell our Express server how to deal with any given request, we register a series of routes. 
 Routes define the control flow for requests based on the request's path and HTTP verb.
 
-For example, if your server receives a **GET** request at **/about**, we will use a route to define the appropriate functionality
+For example, if your Express server receives a **GET** request at **/about**, we will use a route to define the appropriate functionality
 for that HTTP verb (GET) and path (/about).
 
 The path is the part of a request URL after the hostname and port number, so in a request to localhost:8000/about, 
@@ -440,6 +440,10 @@ app.get('/cars/:name', (req, res, next) => {
 ![route and query params](images/route-query-params.png)
 
 ![route and query params](images/terminal-route-query-params.png)
+
+>But which is better? Route or Query parameters?\
+
+>It depends on the situation. Route parameters are used to identify a resource, while query parameters are used to filter the results of a query.
 
 ___
 
