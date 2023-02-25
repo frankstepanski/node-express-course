@@ -571,16 +571,20 @@ Then visit **localhost:8000/users/5** in your browser. You should see the JSON d
 **res.json()**
 
 In the previous example, we used the [res.send()](https://expressjs.com/en/api.html#res.send) method to send the JSON data to the browser.
-But what if we want to send a JSON response that was created from a JavaScript object? hmmmm...
+But what if we want to send a JSON response that was created from a JavaScript object or not even an object at all? Like a string?
 
 We can use the [res.json()](https://expressjs.com/en/api.html#res.json) method to send a JSON response.
 
 ```
-app.get('/users/:id', (req, res, next) => {
-  const user = users.find(user => user.id === parseInt(req.params.id));
-  res.json(user);
+app.get('/greeting', (req, res, next) => {
+  const greeting = "Hello World!";
+  res.json(greeting);
 });
 ```
+
+Then visit **localhost:8000/greeting** in your browser. You should see the JSON data.
+
+![res.json](images/browser-json-greeting.png)
 
 
 
