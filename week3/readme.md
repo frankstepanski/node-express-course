@@ -441,7 +441,7 @@ app.get('/cars/:name', (req, res, next) => {
 
 ![route and query params](images/terminal-route-query-params.png)
 
->But which is better? Route or Query parameters?\
+>But which is better? Route or Query parameters?
 
 >It depends on the situation. Route parameters are used to identify a resource, while query parameters are used to filter the results of a query.
 
