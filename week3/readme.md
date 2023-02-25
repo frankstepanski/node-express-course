@@ -619,7 +619,15 @@ When we choose a cloud provider we have to aware of what we are deploying:
 
 >We are using Render over Heroku because Heroku requires a credit card to sign up. Render does not.
 
-...
+**Step 1**
+
+Create a free account on [Render](https://render.com/).
+
+**Step 2**
+
+Create a new app on Render. Give it a name and select the **Node.js** runtime.
+
+
 
 ![congrats](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2EzZDgyNDMwNTBiMWIzNTc3MzEwMTM4YzkyNGIyYjc1MTBlMWIzYyZjdD1n/12Lt1KWHowKtKo/giphy.gif)
 
