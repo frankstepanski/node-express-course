@@ -445,6 +445,7 @@ app.get('/cars/:name', (req, res, next) => {
 
 Route parameters are used to identify a resource, while query parameters are used to filter the results of a query.
 Meaning, you can use query parameters to get a subset of the data from a resource.
+
 __
 
 ### Serving Static files
