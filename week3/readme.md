@@ -605,8 +605,20 @@ ___
 
 ### Deployment
 
-![congrats](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2EzZDgyNDMwNTBiMWIzNTc3MzEwMTM4YzkyNGIyYjc1MTBlMWIzYyZjdD1n/12Lt1KWHowKtKo/giphy.gif)
+Ok, so we know how to create an Express app, create some routes, filter those routes by parameters, and serve JSON. How about we close out this week by deploying our app to the cloud. :cloud:
+This way we can share our app with the world. :earth_americas:
 
+When we choose a cloud provider we have to aware of what we are deploying.
+
+  - Is it a React/Next app? If so, we can use a React hosting service like [Vercel](https://vercel.com/).
+  - Is it a static site? If so, we can use a static site hosting service like [Netlify](https://www.netlify.com/).
+  - Is it a Node.js app? If so, we can use a Node.js hosting service like [Render](https://render.com/) or [Heroku](https://www.heroku.com/).
+  - Is it a Java app? If so, we can use a Java hosting service like [AWS](https://aws.amazon.com/).
+
+>We are using Render over Heroku because Heroku requires a credit card to sign up. Render does not.
 
 ...
+
+![congrats](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2EzZDgyNDMwNTBiMWIzNTc3MzEwMTM4YzkyNGIyYjc1MTBlMWIzYyZjdD1n/12Lt1KWHowKtKo/giphy.gif)
+
 
