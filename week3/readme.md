@@ -517,7 +517,7 @@ const json = '{"model":"LX","age":90000}'; // this would be coming from a REST A
 const car = JSON.parse(json);
 ```
 
-**Static JSON Files**
+**Serving JSON**
 
 The state of an application is all the data that the application must keep track of in order to work.
 This data is usually stored in a database, but for small applications, and for our immediate purpose, it can be stored in a JSON file.
