@@ -601,13 +601,12 @@ There are many extensions that do this, a very popular one for the Chrome browse
 
 >As mentioned earlier, we will talk about another tool to interact with APIs and JSON next week. So stay tuned! :wink:
 
-
-
-
-
 ___
 
 ### Deployment
+
+![congrats](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2EzZDgyNDMwNTBiMWIzNTc3MzEwMTM4YzkyNGIyYjc1MTBlMWIzYyZjdD1n/12Lt1KWHowKtKo/giphy.gif)
+
 
 ...
 
