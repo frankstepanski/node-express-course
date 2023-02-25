@@ -517,8 +517,6 @@ const json = '{"model":"LX","age":90000}'; // this would be coming from a REST A
 const car = JSON.parse(json);
 ```
 
-**Note:** Express automatically [parses JSON data](https://expressjs.com/en/5x/api.html#express.json). The serialization and deserialization would need to happen in the client-side JavaScript code.
-
 **Static JSON Files**
 
 The state of an application is all the data that the application must keep track of in order to work.
@@ -550,7 +548,12 @@ Then visit **localhost:8000/users** in your browser. You should see the JSON dat
 
 ![users.json data folder](images/users-json.png)
 
-Great, we displayed our JSON data in the browser. But what if we want just one user? 
+If we look in our browser's dev tools, we can see that the **Content-Type** is **application/json**. We didn't set this, it was set automatically by Express.
+Using the [res.send()](https://expressjs.com/en/api.html#res.send) method, Express will automatically set the **Content-Type** header based on the data type of the argument.
+
+![browser users dev tool](images/browser-users-dev-tools.png)
+
+Great, we displayed all of our users, but what if we want just one particular user? 
 
 We can use the **id** property to get a specific user by passing it as a **route parameter**. :cowboy_hat_face:
 
@@ -565,8 +568,20 @@ Then visit **localhost:8000/users/5** in your browser. You should see the JSON d
 
 ![users.json data folder](images/users-json-id.png)
 
+**res.json()**
 
->The the JSON data was automatically parsed by Express and returned as a JavaScript object.
+In the previous example, we used the [res.send()](https://expressjs.com/en/api.html#res.send) method to send the JSON data to the browser.
+But what if we want to send a JSON response that was created from a JavaScript object? hmmmm...
+
+We can use the [res.json()](https://expressjs.com/en/api.html#res.json) method to send a JSON response.
+
+```
+app.get('/users/:id', (req, res, next) => {
+  const user = users.find(user => user.id === parseInt(req.params.id));
+  res.json(user);
+});
+```
+
 
 
 **JSON Browser Extensions**
