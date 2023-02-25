@@ -610,7 +610,7 @@ Ok, we learned how to create an Express server, create routes, filter those rout
 How about we close out this week by deploying our app to the cloud. :cloud:
 This way we can share our app with the world. :earth_americas:
 
-When we choose a cloud provider we have to aware of what we are deploying.
+When we choose a cloud provider we have to aware of what we are deploying:
 
   - Is it a React/Next app? If so, we can use a React hosting service like [Vercel](https://vercel.com/).
   - Is it a static site? If so, we can use a static site hosting service like [Netlify](https://www.netlify.com/).
