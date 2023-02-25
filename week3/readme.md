@@ -544,6 +544,20 @@ Then visit **localhost:8000/users** in your browser. You should see the JSON dat
 
 ![users.json data folder](images/users-json.png)
 
+Great, we displayed our JSON data in the browser. But what if we want just one user? We can use the **id** property to get a specific user.
+
+```
+app.get('/users/:id', (req, res, next) => {
+  const user = users.find(user => user.id === parseInt(req.params.id));
+  res.send(user);
+});
+```
+
+Then visit **localhost:8000/users/5** in your browser. You should see the JSON data for the user with the id of 5.
+
+![users.json data folder](images/users-json-id.png)
+
+
 >The the JSON data was automatically parsed by Express and returned as a JavaScript object.
 
 
