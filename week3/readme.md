@@ -615,6 +615,7 @@ When we choose a cloud provider we have to aware of what we are deploying:
   - Is it a React/Next app? If so, we can use a React hosting service like [Vercel](https://vercel.com/) or [Render](https://render.com/)
   - Is it a Node.js app? If so, we can use a Node.js hosting service like [Render](https://render.com/) or [Heroku](https://www.heroku.com/).
   - Is it a Java app? If so, we can use a Java hosting service like [AWS](https://aws.amazon.com/).
+  - The list goes on and on...
 
 >We are using Render over Heroku because Heroku requires a credit card to sign up. Render does not.
 
