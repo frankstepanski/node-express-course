@@ -252,7 +252,6 @@ app.get("/about", (req, res, next) => {
   res.status(200).send("<h1>About Code the Dream!</h1>");
 });
 ```
-
 ___
 
 ### Middleware
