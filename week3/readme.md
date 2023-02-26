@@ -664,10 +664,10 @@ The build process can take a few minutes, so be patient.
 
 ![render build process](images/render-build-process.png)
 
-** Step 6**
+**Step 6**
 
-Test it out a few of the routes you have created. :smile:
+Test out a few of the routes you have created. :smile:
 
->We will configure more options as we go along. For now, we just want to get our app deployed.
+>We will add configuration options as we go along. For now, we just want to get our app deployed.
 
 ![congrats](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2EzZDgyNDMwNTBiMWIzNTc3MzEwMTM4YzkyNGIyYjc1MTBlMWIzYyZjdD1n/12Lt1KWHowKtKo/giphy.gif)
