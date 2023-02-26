@@ -649,7 +649,7 @@ This will install the Render app on your Github account. Then you can select the
 After you select the repo, you will be taken to the **Configure** page. Here you can set the **Name** of your app and the **Branch** to deploy.
 
 The **Build Command** will be $npm i, the **Start Command** will be $node src/server.js.
-The Runtime will be **Node.js** and select the **Free** instance Type. 
+The **Runtime** will be Node.js and select **Instance Type** will be Free. 
 
 >Note: We are telling Render how to install our dependencies and start our app.
 
