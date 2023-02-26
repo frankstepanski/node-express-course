@@ -9,7 +9,7 @@ The API exposed by the http module is pretty minimal and doesn't do a lot of hea
 Building a web application becomes a simpler task with the addition of web frameworks. 
 A web framework in Node.js is a module that offers structure to your application that
 allows you to build and customize the way your application feels without
-worrying about building certain features from scratch, such as serving individual files.
+worrying about building certain features from scratch.
 
 [Express](https://expressjs.com/), is a Node web server framework that promotes itself as "fast, unopinionated, and minimalist". Express can be thought of as an abstraction layer on top of Node's built-in HTTP server.
 
