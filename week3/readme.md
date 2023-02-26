@@ -635,19 +635,24 @@ Create a free account on [Render](https://render.com/).
 
 **Step 2**
 
-Click on New + and select **Web Service**. 
+From your Dashboard, click on New + and select **Web Service**. 
 
-![render new web service](images/render-new-web-service.png)
+![render new web service](images/render-web-service.png)
 
 **Step 3**
 
-You need to select a repository to deploy, if you do not see the repo in the list, click on **Configure account** under Github.
+Select a repository to deploy, if you do not see the repo in the list, click on **Configure account** under Github.
 This will install the Render app on your Github account. Then you can select the repo.
 
 **Step 4**
 
 After you select the repo, you will be taken to the **Configure** page. Here you can set the **Name** of your app and the **Branch** to deploy.
+The **Build Command** will be **$npm i**, the **Start Command** will be **$node src/server.js**.
 The Runtime will be **Node.js** and select the **Free** instance Type. 
+
+>Note: We are telling Render how to install our dependencies and start our app.
+
+![render configuration](images/render-configuration.png)
 
 **Step 5**
 
