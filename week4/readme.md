@@ -4,18 +4,32 @@
 
 ### Request and Response Cycle
 
-To delve a little deeper into the process of how APIs work, let's look at the [request and response](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#http_flow).
+To delve a little deeper into the process of how APIs work, let's look at the [request and response](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#http_flow) cycle.
+
 
 **HTTP Request**
 
 A HTTP request is made up of a few parts:
-  - The HTTP method
+  - The HTTP method - GET, POST, PUT, DELETE
   - The URL
-  - The HTTP version
+  - The HTTP version 
   - The request headers
-  - The request body
+  - The request body 
 
   ![request](images/request.png)
+
+
+
+**HTTP Response**
+
+A HTTP response is made up of a few parts:
+  - The HTTP version
+  - The status code
+  - The status message
+  - The response headers
+  - The response body
+
+  ![response](images/response.png)
 
 
 
