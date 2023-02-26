@@ -607,7 +607,7 @@ ___
 
 Ok, we learned how to create an Express server, create routes, filter those routes by parameters, and serve JSON.
 
-How about we close out this week by deploying our app to the cloud. :cloud:
+Let's try to deploy what we have learned so far to the cloud. :cloud:
 This way we can share our app with the world. :earth_americas:
 
 When we choose a cloud provider we have to aware of what we are deploying:
