@@ -660,6 +660,8 @@ You will see the build process start. Once it is complete, you will see a green 
 The link will be **https://your-app-name.onrender.com**.
 The build process takes a few minutes, so be patient.
 
+![render build process](images/render-build-process.png)
+
 ** Step 6**
 
 Test it out a few of the routes you have created. :smile:
