@@ -599,7 +599,7 @@ There are many extensions that do this, a very popular one for the Chrome browse
 
 ![json chrome extension](images/json-browser-extension.png)
 
->As mentioned earlier, we will talk about another tool to interact with APIs and JSON next week. So stay tuned! :wink:
+>As mentioned earlier, we will talk about another tool to interact with APIs and JSON next week. So stay tuned! :star_struck:
 
 ___
 
