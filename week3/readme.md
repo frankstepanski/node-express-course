@@ -669,6 +669,6 @@ The build process can take a few minutes, so be patient.
 
 Test out a few of the routes you have created. :smile:
 
->We will add more as we go throughout this course. For now, we just want to get our app deployed.
+>We will add more as we go throughout this course. For now, we just wanted to test out deployment.
 
 ![congrats](images/congrats.gif)
