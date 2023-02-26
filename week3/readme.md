@@ -269,7 +269,7 @@ This can be thought of as a middleware pipeline where Express puts multiple piec
 These functions have access to the request object (**req**), the response object (**res**), and the **next** middleware
 function in the application's request-response cycle. The next middleware function is commonly denoted by a variable named next.
 
-Middleware functions are callback functions. Express uses the **use()** method to register middleware functions and 
+(Middleware)[https://expressjs.com/en/guide/writing-middleware.html] functions are callback functions. Express uses the **use()** method to register middleware functions and 
 calls them in the order they are registered.
 
 Middleware functions can perform the following tasks:
@@ -294,7 +294,7 @@ const middleware = (req, res, next) => {
 }
 ```
 
-:rotating_light:  Always include the **next()** parameter in your middleware functions. If you don't, your application will hang and never respond to the client. :rotating_light:
+:rotating_light:  Always include the **next()** parameter in your middleware functions. If not, your Express server will hang. :rotating_light:
 
 >Using **next()** will execute the code after the current middleware function is finished. 
 Using **return next()** will immediately jump out of the callback the code below will be unreachable.
