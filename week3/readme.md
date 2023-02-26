@@ -660,7 +660,7 @@ The **Runtime** will be Node.js and select **Instance Type** will be Free.
 You will then see the build process start. Once it is complete, you will see a green check mark and a link to your app.
 The link will be **your-app-name.onrender.com**.
 
-The build process can take a few minutes, so be patient.
+The build process can take a few minutes, so be patient\
 
 ![render build process](images/render-build-process.png)
 
