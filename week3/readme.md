@@ -612,12 +612,22 @@ This way we can share our app with the world. :earth_americas:
 
 When we choose a cloud provider we have to aware of what we are deploying:
 
-  - Is it a React/Next app? If so, we can use a React hosting service like [Vercel](https://vercel.com/).
-  - Is it a static site? If so, we can use a static site hosting service like [Netlify](https://www.netlify.com/).
+  - Is it a React/Next app? If so, we can use a React hosting service like [Vercel](https://vercel.com/) or [Render](https://render.com/)
   - Is it a Node.js app? If so, we can use a Node.js hosting service like [Render](https://render.com/) or [Heroku](https://www.heroku.com/).
   - Is it a Java app? If so, we can use a Java hosting service like [AWS](https://aws.amazon.com/).
 
 >We are using Render over Heroku because Heroku requires a credit card to sign up. Render does not.
+
+**Render Deploy Steps**
+
+Before we start, Render requires a [specific version of Node.js](https://render.com/docs/node-version). The easiest way to handle this is to 
+specify a Node version in the engines directive in your package.
+
+```
+"engines": {
+  "node": ">=14 <15"
+}
+```
 
 **Step 1**
 
@@ -625,10 +635,30 @@ Create a free account on [Render](https://render.com/).
 
 **Step 2**
 
-Create a new app on Render. Give it a name and select the **Node.js** runtime.
+Click on New + and select **Web Service**. 
 
+![render new web service](images/render-new-web-service.png)
 
+**Step 3**
+
+You need to select a repository to deploy, if you do not see the repo in the list, click on **Configure account** under Github.
+This will install the Render app on your Github account. Then you can select the repo.
+
+**Step 4**
+
+After you select the repo, you will be taken to the **Configure** page. Here you can set the **Name** of your app and the **Branch** to deploy.
+The Runtime will be **Node.js** and select the **Free** instance Type. 
+
+**Step 5**
+
+You will see the build process start. Once it is complete, you will see a green check mark and a link to your app.
+The link will be **https://your-app-name.onrender.com**.
+The build process takes a few minutes, so be patient.
+
+** Step 6**
+
+Test it out a few of the routes you have created. :smile:
+
+>We will configure more options as we go along. For now, we just want to get our app deployed.
 
 ![congrats](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2EzZDgyNDMwNTBiMWIzNTc3MzEwMTM4YzkyNGIyYjc1MTBlMWIzYyZjdD1n/12Lt1KWHowKtKo/giphy.gif)
-
-
