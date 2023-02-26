@@ -651,15 +651,16 @@ After you select the repo, you will be taken to the **Configure** page. Here you
 The **Build Command** will be $npm i, the **Start Command** will be $node src/server.js.
 The **Runtime** will be Node.js and select **Instance Type** will be Free. 
 
->Note: We are telling Render how to install our dependencies and start our app.
+>Note: We are telling Render how to install our dependencies and start our app. 
 
 ![render configuration](images/render-config.png)
 
 **Step 5**
 
-You will see the build process start. Once it is complete, you will see a green check mark and a link to your app.
-The link will be **//your-app-name.onrender.com**.
-The build process takes a few minutes, so be patient.
+You will then see the build process start. Once it is complete, you will see a green check mark and a link to your app.
+The link will be **your-app-name.onrender.com**.
+
+The build process can take a few minutes, so be patient.
 
 ![render build process](images/render-build-process.png)
 
