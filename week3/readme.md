@@ -670,4 +670,4 @@ Test out a few of the routes you have created. :smile:
 
 >We will add more as we go along. For now, we just want to get our app deployed.
 
-![congrats](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2EzZDgyNDMwNTBiMWIzNTc3MzEwMTM4YzkyNGIyYjc1MTBlMWIzYyZjdD1n/12Lt1KWHowKtKo/giphy.gif)
+![congrats](images/congrats.gif)
