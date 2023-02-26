@@ -590,7 +590,7 @@ Checking our browser's dev tools, we can see that the **Content-Type** is **appl
 
 ![res.json](images/browser-json-greeting.png)
 
->When to use res.json() vs res.send()? Use res.json() when you want to send a JSON response that was created from a JavaScript object or not even an object at all.
+>When would we use res.json() vs res.send()? Use res.json() when you want to send a JSON response that was created from a JavaScript object or not even an object at all.
 
 **JSON Browser Extensions**
 
