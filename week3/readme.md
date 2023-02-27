@@ -232,7 +232,7 @@ The first one that is matched will be used, and its callback will be called.
 
 **response.end()**
 
-A special, and not highly used but good to know methods of the response object is [response.end()](https://expressjs.com/en/5x/api.html#res.end) which is used to end the response process.
+A special, and not highly used but good to know method of the response object is [response.end()](https://expressjs.com/en/5x/api.html#res.end) which is used to end the response process.
 There are many ways to end a response process: Calling response.send(), response.json(), etc. 
 
 >But what is the difference between response.end() and response.send()?
