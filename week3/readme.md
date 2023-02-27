@@ -225,6 +225,18 @@ app.use((req, res, next) => {
 
 ![404 browser handler](images/browser-404-handler.png)
 
+**response.end()**
+
+A special, and not highly used but good to know methods of the response object is [response.end()](https://expressjs.com/en/5x/api.html#res.end) which is used to end the response process.
+There are many ways to end a response process: Calling response.send(), response.json(), etc. 
+
+>But what is the difference between response.end() and response.send()?
+
+The difference is that **response.end()** does ends the response process, but it does not send any data back to the client.
+
+>When would this be useful? It can be used when only a status code needs to be sent back to the client.
+
+
 >**Order of routes** - The order of routes is important.  Express searches through routes in the order that they are registered in your code.
 The first one that is matched will be used, and its callback will be called.
 
