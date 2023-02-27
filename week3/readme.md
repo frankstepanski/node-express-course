@@ -241,7 +241,9 @@ The difference is that **response.end()** does ends the response process, but it
 
 >When would this be useful? It can be used when only a status code needs to be sent back to the client.
 
-**Status Codes**
+___
+
+### Status Codes
 
 HTTP status codes are a standard way of communicating the status of a request.
 
