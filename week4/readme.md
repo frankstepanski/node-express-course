@@ -4,7 +4,7 @@
 
 ### Request and Response Cycle
 
-To delve a little deeper into the process of how APIs work, let's look at the [request and response](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#http_flow) cycle.
+Let's review how APIs work a little more and look more at the [request and response](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#http_flow) cycle.
 
 
 **HTTP Request**
