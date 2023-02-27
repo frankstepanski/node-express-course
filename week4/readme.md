@@ -11,11 +11,11 @@ The first line of the request is the [request line](https://developer.mozilla.or
   - The request URI: tells the server what resource is being requested.
   - The HTTP version: tells the server what version of HTTP is being used.
 
-The request line is followed by a series of request headers which contain additional information about the request.
+The rest of the HTTP Request:
 
-The request headers are followed by an empty line, which is used to separate the request headers from the request body.
-
-The request body contains the data that is being sent to the server. The request body is optional. If the request method is GET, then the request body is ignored. If the request method is POST, then the request body is required.
+ - headers:additional information about the request.
+ - empty line: separates the headers from the body. 
+ - body: the data that is being sent to the server.
 
 ![http request](images/http-request.png)
 
