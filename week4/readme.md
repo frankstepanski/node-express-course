@@ -6,7 +6,7 @@
 
 When an end user navigates to a URL, the browser automatically generates an [HTTP Request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#http_requests) for a resource. 
 
-The first line of the request is the request line which contains three parts: the request method, the request URI, and the HTTP version.
+The first line of the request is the [request line](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#start_line) which contains three parts: the request method, the request URI, and the HTTP version.
   - The request method is the first part of the request line. It tells the server what kind of request is being made.
   - The request URI is the second part of the request line. It tells the server what resource is being requested.
   - The HTTP version is the third part of the request line. It tells the server what version of HTTP is being used.
