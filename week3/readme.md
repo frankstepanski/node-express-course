@@ -217,6 +217,8 @@ Though this type of route is normally used with [app.use()](https://expressjs.co
 
 **Note:** You could use app.get() and just use `*` as the path, but this is not recommended.
 
+Let's add a 404 error handler to our app.js file:
+
 ```
 app.use((req, res, next) => {
   res.status(404).send("<h1>404: Page not found</h1>");
@@ -224,6 +226,9 @@ app.use((req, res, next) => {
 ```
 
 ![404 browser handler](images/browser-404-handler.png)
+
+>**Order of routes** - The order of routes is important.  Express searches through routes in the order that they are registered in your code.
+The first one that is matched will be used, and its callback will be called.
 
 **response.end()**
 
@@ -235,10 +240,6 @@ There are many ways to end a response process: Calling response.send(), response
 The difference is that **response.end()** does ends the response process, but it does not send any data back to the client.
 
 >When would this be useful? It can be used when only a status code needs to be sent back to the client.
-
-
->**Order of routes** - The order of routes is important.  Express searches through routes in the order that they are registered in your code.
-The first one that is matched will be used, and its callback will be called.
 
 **Status Codes**
 
