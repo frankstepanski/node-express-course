@@ -5,7 +5,6 @@
 ### HTTP Request Object
 
 When an end user navigates to a URL, the browser automatically generates an [HTTP Request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#http_requests) for a resource. 
-If the request is properly formed, the web server passes the request to the web application.
 
 The first line of the request is the request line. The request line contains three parts: the request method, the request URI, and the HTTP version.
     - The request method is the first part of the request line. It tells the server what kind of request is being made.
