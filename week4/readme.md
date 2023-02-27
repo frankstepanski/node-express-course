@@ -11,7 +11,7 @@ The first line of the request is the [request line](https://developer.mozilla.or
   - The request URI: tells the server what resource is being requested.
   - The HTTP version: tells the server what version of HTTP is being used.
 
-The **request line is followed by a series of request headers. The request headers contain additional information about the request.
+The request line is followed by a series of request headers which contain additional information about the request.
 
 The request headers are followed by an empty line, which is used to separate the request headers from the request body.
 
