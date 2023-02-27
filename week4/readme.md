@@ -4,7 +4,7 @@
 
 ### HTTP Request Object
 
-When an end user navigates to a URL, the browser automatically generates an [HTTP Request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#http_requests) for a resource. 
+When an end user navigates to a URL, the browser automatically generates an [HTTP request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#http_requests) for a resource. 
 
 The first line of the request is the [request line](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#start_line) which contains three parts: the request method, the request URI, and the HTTP version.
   - The request method: tells the server what kind of request is being made.
@@ -21,15 +21,13 @@ The rest of the HTTP Request:
 
 ### HTTP Response Object
 
-After a web server receives an HTTP request, it will process and respond to the request. 
+After a web server receives an HTTP request, it will process and send an [HTTP reponse](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#http_responses) to the client. 
 
-The web server first responds with the protocol version in use, the status code and status message. Like HTTP request headers, there are HTTP response headers. 
-HTTP response headers often provide the browser with instructions for handling the response and security requirements. 
-
-The response body contains the data that is being sent to the client. The response body is optional. If the response status code is 204, then the response body is ignored. If the response status code is 200, then the response body is required.
+ - protocol version in use, the status code and status message. 
+ - headers: instructions for handling the response and security requirements. 
+ - body: data that is being sent to the client. 
 
 ![http response](images/http-response.png)
-
 
 ### REST APIs
 
