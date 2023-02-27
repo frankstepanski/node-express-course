@@ -239,8 +239,7 @@ There are many ways to end a response process: Calling response.send(), response
 
 The difference is that **response.end()** does ends the response process, but it does not send any data back to the client.
 
->When would this be useful? It can be used when only a status code needs to be sent back to the client.
-
+>When would this be used? It is normally used in middleware where you need to end the response (i.e. error handling or logging, etc.)
 ___
 
 ### Status Codes

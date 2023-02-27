@@ -36,6 +36,15 @@ A HTTP response is made up of a few parts:
 
 ### Postman
 
-Postman is a tool that allows you to test your API endpoints. It is a great tool to use when you are developing your API. 
-It allows you to test your endpoints and see the responses that you get back. It also allows you to test different HTTP methods and see how your API responds to them.
 
+
+### Error Handling Middleware
+
+When your app is in error mode, all regular middleware is ignored and Express will execute only error-handling middleware functions. 
+To enter error mode, simply call next with an argument. It's convention to call it with an error object, as in next(new Error ("Something bad happened!")).
+
+These middleware functions take four arguments instead of two or three. The first one is the error (the argument passed into next), 
+and the remainder are the three from before: req, res, and next. You can do anything you want in this middleware. 
+When you're done, it's just like other middleware: you can call res.end or next. 
+
+Calling next with no arguments will exit error mode and move onto the next normal middleware; calling it with an argument will continue onto the next error-handling middleware if one exists.
