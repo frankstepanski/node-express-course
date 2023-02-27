@@ -179,6 +179,9 @@ app.get("/about", (req, res, next) => {
 
 ![about route html](images/about-route-html.png)
 
+>**Order of routes** - The order of routes is important.  Express searches through routes in the order that they are registered in your code.
+The first one that is matched will be used, and its callback will be called.
+
 **Headers and Browser Dev Tools**
 
 Web requests are more complicated than just the URL. Both the request and response can have additional data to be sent back and forth, 
@@ -226,9 +229,6 @@ app.use((req, res, next) => {
 ```
 
 ![404 browser handler](images/browser-404-handler.png)
-
->**Order of routes** - The order of routes is important.  Express searches through routes in the order that they are registered in your code.
-The first one that is matched will be used, and its callback will be called.
 
 **response.end()**
 
