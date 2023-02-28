@@ -199,7 +199,7 @@ Then you can click on the Response tab you will see the data that was sent back 
 
 ![devtools response](images/browser-devtools-response.png)
 
->If you see a **304** status code instead of a 200, don't worry. That just means that the browser has a cached version of the page and is not requesting a new copy from the server.
+>If you see a [304 status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/304) instead of a 200, don't worry. That just means that the browser has a cached version of the page and is not requesting a new copy from the server.
 
 ![304 status code](images/browser-304-about.png)
 
