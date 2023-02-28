@@ -691,6 +691,12 @@ The build process can take a few minutes, so be patient (remember, we are using 
 
 **Step 6**
 
+Now in your dashboard, you should now see your deployed app(s) listed. Click on the app to see the details.
+
+![render dashboard deployed app list](images/render-dashboard-app-list.png)
+
+**Step 7**
+
 Test out a few of the routes you have created. :smile:
 
 >We will continue to deploy our app as we add more functionality to it. For now, we just wanted to test out deployment.
