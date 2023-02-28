@@ -332,6 +332,7 @@ A few of the commonly used middleware packages that we will be using in this cou
 **Using Middleware**
 
 To test out a middleware function, we can create a simple one that logs the request method and the request path to the console.
+We would write this function in the app.js file, right after the other requires:
 
 ```
 const logRequest = (req, res, next) => {
@@ -340,7 +341,7 @@ const logRequest = (req, res, next) => {
 };
 ```
 
-We can then register this middleware function with the [.use()](https://expressjs.com/en/5x/api.html#app.use) method of the [app](https://expressjs.com/en/5x/api.html#app) object.
+And register this middleware function with the [.use()](https://expressjs.com/en/5x/api.html#app.use) method of the [app](https://expressjs.com/en/5x/api.html#app) object.
 
 ```app.use(logRequest);```
 
