@@ -691,6 +691,6 @@ The build process can take a few minutes, so be patient.
 
 Test out a few of the routes you have created. :smile:
 
->We will add more as we go throughout this course. For now, we just wanted to test out deployment.
+>We will continue to deploy our add as we add more functionality to it. For now, we just wanted to test out deployment.
 
 ![congrats](images/congrats.gif)
