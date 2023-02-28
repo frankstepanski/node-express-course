@@ -691,7 +691,7 @@ The build process can take a few minutes, so be patient (remember, we are using 
 
 **Step 6**
 
-Now in your dashboard, you should now see your deployed app(s) listed. Click on the app to see the details.
+Now, in your dashboard you should now see your deployed app(s) listed. Click on the app to see the details.
 
 ![render dashboard deployed app list](images/render-dashboard-app-list.png)
 
