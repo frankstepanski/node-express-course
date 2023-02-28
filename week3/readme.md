@@ -693,4 +693,6 @@ Test out a few of the routes you have created. :smile:
 
 >We will continue to deploy our add as we add more functionality to it. For now, we just wanted to test out deployment.
 
+Grab a :coffee: or a beverage of your choice and enjoy the rest of your day. :sunglasses:
+
 ![congrats](images/congrats.gif)
