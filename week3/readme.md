@@ -201,7 +201,7 @@ Then you can click on the Response tab you will see the data that was sent back 
 
 >If you see a **304** status code instead of a 200, don't worry. That just means that the browser has a cached version of the page and is not requesting a new copy from the server.
 
-![http request](images/http-request.png)
+![304 status code](images/browser-304.png)
 
 
 There are other tools you can use to view the headers (and much, much more), such as [Postman](https://www.postman.com/). Next Week! :zany_face:
