@@ -676,7 +676,7 @@ The **Runtime** will be Node.js and select **Instance Type** will be Free.
 
 ![render configuration](images/render-config.png)
 
->Note: We are telling Render how to install our dependencies and start our app. 
+>Note: We are instructing Render how to install our dependencies and start our app. 
 
 **Step 5**
 
