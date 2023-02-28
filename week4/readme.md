@@ -17,7 +17,7 @@ The rest of the HTTP Request:
 
  - headers: additional information about the request.
  - empty line: separates the headers from the body. 
- - body: the data that is being sent to the server.
+ - body: the data that is being sent to the server (optional).
 
 ![http request](images/http-request.png)
 
@@ -28,7 +28,7 @@ After a web server receives an HTTP request, it will process and send an [HTTP r
 
  - protocol version in use, the status code and status message. 
  - headers: instructions for handling the response and security requirements. 
- - body: data that is being sent to the client. 
+ - body: data that is being sent to the client (optional). 
 
 ![http response](images/http-response.png)
 
