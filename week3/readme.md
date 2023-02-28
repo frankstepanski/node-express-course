@@ -665,9 +665,9 @@ After you select the repo, you will be taken to the **Configure** page. Here you
 The **Build Command** will be $npm i, the **Start Command** will be $node src/server.js.
 The **Runtime** will be Node.js and select **Instance Type** will be Free. 
 
->Note: We are telling Render how to install our dependencies and start our app. 
-
 ![render configuration](images/render-config.png)
+
+>Note: We are telling Render how to install our dependencies and start our app. 
 
 **Step 5**
 
