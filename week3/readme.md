@@ -667,7 +667,7 @@ Once logged in, in your Dashboard, click on **New +** and select **Web Service**
 **Step 3**
 
 Select a repository to deploy, if you do not see the repo in the list, click on **Configure account** under Github.
-This will install the Render app on your Github account. Then you can select the repo.
+This will install the Render app on your Github account, then you can select the repo.
 
 **Step 4**
 
