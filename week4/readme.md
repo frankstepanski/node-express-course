@@ -2,7 +2,7 @@
 
 ##  HTTP Request/Response Object, REST Details, Postman and MVC
 
-Before we continue with other types of HTTP requests, let's take a look at the HTTP Request and Response objects and a tool to help us make HTTP requests.
+Before we continue with other types of HTTP requests, let's review the HTTP Request and Response objects.
 
 ### HTTP Request Object
 
@@ -20,6 +20,7 @@ The rest of the HTTP Request:
  - body: the data that is being sent to the server.
 
 ![http request](images/http-request.png)
+
 
 ### HTTP Response Object
 
