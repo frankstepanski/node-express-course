@@ -660,7 +660,7 @@ Create a free account on [Render](https://render.com/).
 
 **Step 2**
 
-From your Dashboard, click on New + and select **Web Service**. 
+Once logged in, in your Dashboard, click on New + and select **Web Service**. 
 
 ![render new web service](images/render-web-service.png)
 
