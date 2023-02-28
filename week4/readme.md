@@ -15,7 +15,7 @@ The first line of the request is the [request line](https://developer.mozilla.or
 
 The rest of the HTTP Request:
 
- - headers:additional information about the request.
+ - headers: additional information about the request.
  - empty line: separates the headers from the body. 
  - body: the data that is being sent to the server.
 
