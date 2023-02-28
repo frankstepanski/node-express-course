@@ -2,6 +2,8 @@
 
 ##  HTTP Request/Response Object, REST Details, Postman and MVC
 
+Before we continue with other types of HTTP requests, let's take a look at the HTTP Request and Response objects and a tool to help us make HTTP requests.
+
 ### HTTP Request Object
 
 When an end user navigates to a URL, the browser automatically generates an [HTTP request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#http_requests) for a resource. 
@@ -29,19 +31,16 @@ After a web server receives an HTTP request, it will process and send an [HTTP r
 
 ![http response](images/http-response.png)
 
-### REST APIs
-
-The most common type of  API you'll come across on the modern web, is the RESTful API. 
-REST stands for Representational State Transfer, and refers to an architectural style that guides how in terms of how you should create APIs
-
-
-
 ### Postman
 
+In order to build an API, we need a tool that can send all types of HTTP requests and display the HTTP responses that we get back.
 
+The browser does a great job of displaying the HTTP responses that we get back from the server, but it is not very good at making HTTP requests. 
+Apart from GET Requests that were discussed last week, we would need to create an user interface (UI) with forms and buttons to make other types of HTTP requests.
 
+Apart from the browser which we have been using so far, there are many other tools that we can use to make HTTP requests.
+One of the most popular tools is [Postman](https://www.getpostman.com/).
 
-Every API request needs to include some headers. 
 Headers include some of the background information that help the server have some information about the client that is sending the request. 
 Sometimes, we will need to modify or add certain headers in order to get an API to do what we want, but often we can just let the tool that we are using send the default headers that it needs to send without worrying about it.
 
