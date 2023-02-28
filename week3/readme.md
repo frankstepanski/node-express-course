@@ -691,7 +691,7 @@ The build process can take a few minutes, so be patient.
 
 Test out a few of the routes you have created. :smile:
 
->We will continue to deploy our add as we add more functionality to it. For now, we just wanted to test out deployment.
+>We will continue to deploy our app as we add more functionality to it. For now, we just wanted to test out deployment.
 
 Grab a :coffee: or a beverage :tropical_drink: of choice and enjoy the rest of your day. :sunglasses:
 
