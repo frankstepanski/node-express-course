@@ -40,7 +40,7 @@ In addition to GET, there are other HTTP methods that we can use to interact wit
   - [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE): delete an existing resource
 
 
-  
+  ...
 ___
 
 ![questions](images/QA.gif)
