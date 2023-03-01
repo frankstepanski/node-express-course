@@ -45,7 +45,7 @@ ___
 
 ![questions](images/QA.gif)
 
-Let's answer some common questions to help us understand the concepts better.
+>Let's answer some common questions to help us understand the concepts better.
 
 **What is a resource?**
 
