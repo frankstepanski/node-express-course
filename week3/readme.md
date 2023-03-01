@@ -9,8 +9,9 @@
 - Create a basic Express route (GET)
   - Types of routes
   - How to use the app.get() method
-  - The importance of route order
-  - Able to add route and query parameters
+  - The importance of the route order
+  - 404 Not Found route
+  - Implement route and query parameters
   - Understand how JSON data is sent to the client
 - Middleware
   - What is middleware
@@ -19,6 +20,7 @@
   - How to create custom middleware
 - Deployment
   - What is deployment
+  - Setup an account on Render
   - How to deploy an Express app to Render
 
 ## Getting Started with Express
