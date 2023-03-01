@@ -1,6 +1,6 @@
 # Week 4
 
-##  HTTP Request/Response Object, REST Details, Postman and MVC
+##  HTTP Request/Response Object, Postman, CRUD HTTP Requests and MVC
 
 Before we get our hands dirty on other types of HTTP requests, let's review the HTTP Request and Response objects of an [HTTP flow](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#http_flow).
 
@@ -21,7 +21,6 @@ The rest of the HTTP Request:
 
 ![http request](images/http-request.png)
 
-
 ### HTTP Response Object
 
 After a web server receives an HTTP request, it will process and send an [HTTP reponse](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#http_responses) to the client. 
@@ -32,33 +31,91 @@ After a web server receives an HTTP request, it will process and send an [HTTP r
 
 ![http response](images/http-response.png)
 
-### Postman
+### Other HTTP Methods
 
-In order to build an API, we need a tool that can send all types of HTTP requests and display the HTTP responses that we get back.
+In addition to GET, there are other HTTP methods that we can use to interact with resources on a server.
 
-The browser does a great job of displaying the HTTP responses that we get back from the server, but it is not very good at making HTTP requests. 
-Apart from GET Requests that were discussed last week, we would need to create an user interface (UI) with forms and buttons to make other types of HTTP requests.
+  - [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST): creates a new resource
+  - [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT): update an existing resource
+  - [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE): delete an existing resource
 
-Apart from the browser which we have been using so far, there are many other tools that we can use to make HTTP requests.
-One of the most popular tools is [Postman](https://www.getpostman.com/).
+**But what is a resource?**
 
-Headers include some of the background information that help the server have some information about the client that is sending the request. 
-Sometimes, we will need to modify or add certain headers in order to get an API to do what we want, but often we can just let the tool that we are using send the default headers that it needs to send without worrying about it.
+A resource is an object or representation of something. For example, a todo is a resource. A todo can have an id, a desciprtion and a completed property. 
+These are all properties of the todo resource. It is important to note that a resource is not the same as a route.
 
-If you want to create or modify resources with an API, you will need to give the server some information about what kind of properties you want the resource to have. This kind of information is usually specified in the body of a request.
+A resource is an object or representation of something. A route is a path that we can use to access a resource.
+
+>Most resources come from a database. For now, we will be using a static array of todos to represent our resources.
+
+```
+// todos resource
+
+const todos = [
+  {
+    id: 1,
+    description: 'Learn Express',
+    completed: false
+  },
+  {
+    id: 2,
+    description: 'Learn React',
+    completed: false
+  },
+  {
+    id: 3,
+    description: 'Learn Redux',
+    completed: false
+  },
+  {
+    id: 4,
+    description: 'Learn Node',
+    completed: false
+  }
+]
+```
+
+**How do we know which HTTP method to use?**
+We can use the following table to help us decide which HTTP method to use.
+
+| HTTP Method | CRUD Operation | Description                 |
+| ----------- | -------------- | --------------------------- |
+| GET         | Read           | Retrieve a resource         |
+| POST        | Create         | Create a new resource       |
+| PUT         | Update         | Update an existing resource |
+| DELETE      | Delete         | Delete an existing resource |
+
+[CRUD](https://developer.mozilla.org/en-US/docs/Glossary/CRUD) stands for Create, Read, Update, and Delete. These are the four basic operations that we can perform on a resource.
+  
+    - Create: POST
+    - Read: GET
+    - Update: PUT
+    - Delete: DELETE
+
+// API Endpoints
+
+`GET /todos` => returns all todos
+`GET /todos/1` => returns todo with id 1
+
+`POST /todos` => creates a new todo
+
+```
+
+`PUT /todos/1` => updates todo with id 1
+`DELETE /todos/1` => deletes todo with id 1
+```
 
 
-In Postman, you can see what headers will be sent with your request by using the Headers tab. You can also modify the headers and add additional ones here as needed. I will get into more details on how headers work and how to use them in future chapters, but for now, you don't need to worry about them too much. The point of mentioning them here is just to make sure you know the terminology. Let's turn our attention instead to the body of an API request.
 
 
 
-### Error Handling Middleware
+router.put('/:id', (req, res) => {
+  res.send('PUT /monsters/:id');
+});
 
-When your app is in error mode, all regular middleware is ignored and Express will execute only error-handling middleware functions. 
-To enter error mode, simply call next with an argument. It's convention to call it with an error object, as in next(new Error ("Something bad happened!")).
+router.delete('/:id', (req, res) => {
+  res.send('DELETE /monsters/:id');
+});
 
-These middleware functions take four arguments instead of two or three. The first one is the error (the argument passed into next), 
-and the remainder are the three from before: req, res, and next. You can do anything you want in this middleware. 
-When you're done, it's just like other middleware: you can call res.end or next. 
-
-Calling next with no arguments will exit error mode and move onto the next normal middleware; calling it with an argument will continue onto the next error-handling middleware if one exists.
+module.exports = router;
+```
