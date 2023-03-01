@@ -39,6 +39,10 @@ In addition to GET, there are other HTTP methods that we can use to interact wit
   - [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT): update an existing resource
   - [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE): delete an existing resource
 
+
+  
+___
+
 ![questions](images/QA.gif)
 
 Let's answer some common questions to help us understand the concepts better.
@@ -72,9 +76,27 @@ We can use a route parameter to tell the server which resource to access. A rout
 
 **How do we know which HTTP method to use?**
 
-We can use the following table to help us decide which HTTP method to use.
+**What is a CRUD operation?**
+
+CRUD stands for Create, Read, Update, and Delete. These are the four basic operations that we can perform on a resource.
+This is also known as the CRUD principle.
+
+**What is the difference between a CRUD operation and an HTTP method?**
+
+A CRUD operation is a basic operation that we can perform on a resource. An HTTP method is a method that we can use to perform a CRUD operation on a resource.
+It is important to note that not all CRUD operations have an HTTP method associated with them.
+
+CRUD operations come from the world of databases. HTTP methods come from the world of the web.
+We can use HTTP methods to perform CRUD operations on a resource.
+
+**What is the difference between a CRUD operation and an HTTP method?**
+
+A CRUD operation is a basic operation that we can perform on a resource. An HTTP method is a method that we can use to perform a CRUD operation on a resource.
+
+
 
 **How do we know which HTTP method to use?**
+
 We can use the following table to help us decide which HTTP method to use.
 
 | HTTP Method | CRUD Operation | Description                 |
@@ -83,8 +105,6 @@ We can use the following table to help us decide which HTTP method to use.
 | POST        | Create         | Create a new resource       |
 | PUT         | Update         | Update an existing resource |
 | DELETE      | Delete         | Delete an existing resource |
-
-
 
 **Some examples:**
 
