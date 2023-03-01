@@ -1,6 +1,12 @@
 # Week 3
 
-**Objectives**: 
+## Table of Contents links
+  - [Getting Started with Express](#getting-started-with-express)
+  - [Routing](#routing)
+  - [Middleware](#middleware)
+  - [Deployment](#deployment)
+
+##Objectives
 - Understand the basics of Express
 - Learn how to create a basic Express server
   - Understand how to use the app.listen() method
