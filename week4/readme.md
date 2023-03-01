@@ -39,14 +39,42 @@ In addition to GET, there are other HTTP methods that we can use to interact wit
   - [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT): update an existing resource
   - [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE): delete an existing resource
 
+![questions](images/QA.png)
+
+
 **But what is a resource?**
 
 A resource is an object or representation of something. For example, a todo is a resource. A todo can have an id, a desciprtion and a completed property. 
-These are all properties of the todo resource. It is important to note that a resource is not the same as a route.
+These are all properties of the todo resource. 
+
+**How do I get to a resource?**
+
+We can use a route to access a resource. A route is a path that we can use to access a resource.
+
+**What is the difference between a route and a endpoint?**
+
+An endpoint is a combination of a route and a HTTP method. For example, `GET /todos` is an endpoint.
+The route is `/todos` and the HTTP method is `GET`.
+
+**How do we know which HTTP method to use?**
+
+We can use the following table to help us decide which HTTP method to use.
+
+**How do we know which HTTP method to use?**
+We can use the following table to help us decide which HTTP method to use.
+
+| HTTP Method | CRUD Operation | Description                 |
+| ----------- | -------------- | --------------------------- |
+| GET         | Read           | Retrieve a resource         |
+| POST        | Create         | Create a new resource       |
+| PUT         | Update         | Update an existing resource |
+| DELETE      | Delete         | Delete an existing resource |
+
+
+
+It is important to note that a resource is not the same as a route.
 
 A resource is an object or representation of something. A route is a path that we can use to access a resource.
-
->Most resources come from a database. For now, we will be using a static array of todos to represent our resources.
 
 ```
 // todos resource
@@ -75,24 +103,8 @@ const todos = [
 ]
 ```
 
-**How do we know which HTTP method to use?**
-We can use the following table to help us decide which HTTP method to use.
-
-| HTTP Method | CRUD Operation | Description                 |
-| ----------- | -------------- | --------------------------- |
-| GET         | Read           | Retrieve a resource         |
-| POST        | Create         | Create a new resource       |
-| PUT         | Update         | Update an existing resource |
-| DELETE      | Delete         | Delete an existing resource |
-
-[CRUD](https://developer.mozilla.org/en-US/docs/Glossary/CRUD) stands for Create, Read, Update, and Delete. These are the four basic operations that we can perform on a resource.
-  
-    - Create: POST
-    - Read: GET
-    - Update: PUT
-    - Delete: DELETE
-
-// API Endpoints
+```
+// API endpoints and routes
 
 `GET /todos` => returns all todos
 `GET /todos/1` => returns todo with id 1
@@ -104,6 +116,16 @@ We can use the following table to help us decide which HTTP method to use.
 `PUT /todos/1` => updates todo with id 1
 `DELETE /todos/1` => deletes todo with id 1
 ```
+
+
+
+[CRUD](https://developer.mozilla.org/en-US/docs/Glossary/CRUD) stands for Create, Read, Update, and Delete. These are the four basic operations that we can perform on a resource.
+  
+    - Create: POST
+    - Read: GET
+    - Update: PUT
+    - Delete: DELETE
+
 
 
 
