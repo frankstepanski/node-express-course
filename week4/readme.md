@@ -43,7 +43,7 @@ In addition to GET, there are other HTTP methods that we can use to interact wit
   ...
 ___
 
-<center>![questions](images/QA.gif)</center>  
+![questions](images/QA.gif)
 
 >Let's answer some common questions to help us understand the concepts better.
 
