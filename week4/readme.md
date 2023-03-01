@@ -1,5 +1,20 @@
 # Week 4
 
+## Table of Contents
+  - link 1
+  - link 2
+  - link 3
+  - link 4
+
+## Objectives
+- Understand the HTTP Request/Response Object
+- CRUD HTTP Requests
+- Using Postman
+- Error handling
+- MVC
+- Controllers
+- Routers
+
 ##  HTTP Request/Response Object, Postman, CRUD HTTP Requests and MVC
 
 Before we get our hands dirty on other types of HTTP requests, let's review the HTTP Request and Response objects of an [HTTP flow](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#http_flow).
