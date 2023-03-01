@@ -1,5 +1,26 @@
 # Week 3
 
+**Objectives**: 
+- Understand the basics of Express
+- Learn how to create a basic Express server
+  - Understand how to use the app.listen() method
+  - Using node and nodemon to run the server
+  - Separating the Express app from the server
+- Create a basic Express route (GET)
+  - Types of routes
+  - How to use the app.get() method
+  - The importance of route order
+  - Able to add route and query parameters
+  - Understand how JSON data is sent to the client
+- Middleware
+  - What is middleware
+  - Types of middleware
+  - How to use middleware
+  - How to create custom middleware
+- Deployment
+  - What is deployment
+  - How to deploy an Express app to Render
+
 ## Getting Started with Express
 
 Although you can build full web servers with nothing but Node's built-in 
@@ -626,8 +647,6 @@ There are many extensions that do this, a very popular one for the Chrome browse
 ___
 
 ### Deployment
-
-Ok, we learned how to create an Express server, create routes, filter those routes by parameters, and serve JSON.
 
 Let's try to deploy what we have learned so far to the cloud. :cloud:
 This way we can share our app with the world. :earth_americas:
