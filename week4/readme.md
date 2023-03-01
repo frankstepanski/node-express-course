@@ -45,7 +45,7 @@ Let's answer some common questions to help us understand the concepts better.
 
 **What is a resource?**
 
-A resource is an object or representation of something. For example, a todo is a resource. A todo can have an id, a desciprtion and a completed property (among other things). 
+A resource is an object or representation of something. For example, a todo is a resource. A todo can have an id, a description and a completed property (among other things). 
 These are all properties of the todo resource. 
 
 **How do I access a resource?**
