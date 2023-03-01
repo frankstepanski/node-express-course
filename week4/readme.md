@@ -2,7 +2,7 @@
 
 ##  HTTP Request/Response Object, REST Details, Postman and MVC
 
-Before we continue with other types of HTTP requests, let's review the HTTP Request and Response objects of an [HTTP flow](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#http_flow)
+Before we get our hands dirty on other types of HTTP requests, let's review the HTTP Request and Response objects of an [HTTP flow](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#http_flow)
 
 ### HTTP Request Object
 
