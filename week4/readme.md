@@ -41,7 +41,7 @@ In addition to GET, there are other HTTP methods that we can use to interact wit
 
 ![questions](images/QA.gif)
 
-Instead reading paragraphs and paragraphs of explanation, let's do a quick Q & A.
+Let's answer some common questions to help us understand the concepts better.
 
 **What is a resource?**
 
