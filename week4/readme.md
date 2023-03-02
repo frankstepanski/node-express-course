@@ -60,7 +60,7 @@ ___
 
 ![questions](images/QA.gif)
 
->Let's answer some common questions to help us understand the concepts better.
+>Let's answer some common questions to help you put together a mental model of these concepts.
 
 **What is a resource?**
 
