@@ -574,7 +574,7 @@ const car = JSON.parse(json);
 The state of an application is all the data that the application must keep track of in order to work.
 This data is usually stored in a database, but for small applications, and for our immediate purpose, it can be stored in a .js file.
 
-Step 1:
+<u>Step 1:</u>
 
 Let's create a **data** folder and create a **users-data.js** file in it.
 
