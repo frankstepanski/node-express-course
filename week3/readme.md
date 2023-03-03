@@ -657,9 +657,11 @@ Since we didn't create a middleware function to handle errors, Express will auto
 **res.json()**
 
 In the previous example, we used the [res.send()](https://expressjs.com/en/api.html#res.send) method to send the JSON data to the browser.
-But what if we want to send a JSON response that was created from a JavaScript object or not even an object at all? Like a string?
+We techncially should have used the [res.json()](https://expressjs.com/en/api.html#res.json) method instead because the data we were sending was a JavaScript object.
 
-We can use the [res.json()](https://expressjs.com/en/api.html#res.json) method to send a JSON response.
+It worked anyway because Express automatically converts JavaScript objects to JSON.
+
+But we can also use res.json() to send JSON from data that is not even an object at all. :exploding_head:
 
 ```
 app.get('/greeting', (req, res, next) => {
