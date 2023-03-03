@@ -649,6 +649,11 @@ If you tried to visit **localhost:8000/users/50** in our browser, you would get 
 
 ![user params error](images/browser-user-error.png)
 
+The **next()** function with an error message is a way to tell Express that there was an error and to pass the error to the next middleware function.
+Since we didn't create a middleware function to handle errors, Express will automatically send a 500 error to the browser along with the error message.
+
+![500 error](images/terminal-500-error.png)
+
 **res.json()**
 
 In the previous example, we used the [res.send()](https://expressjs.com/en/api.html#res.send) method to send the JSON data to the browser.
