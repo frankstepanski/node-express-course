@@ -572,40 +572,49 @@ const car = JSON.parse(json);
 **Serving JSON**
 
 The state of an application is all the data that the application must keep track of in order to work.
-This data is usually stored in a database, but for small applications, and for our immediate purpose, it can be stored in a JSON file.
+This data is usually stored in a database, but for small applications, and for our immediate purpose, it can be stored in a .js file.
 
-We will create a **data** folder and store a .json file in it. 
+Step 1:
 
-To make it easy, let's grab some JSON data from the popular [JSONPlaceholder](https://jsonplaceholder.typicode.com/) API. 
-Head over to their website and click on the [Users](https://jsonplaceholder.typicode.com/users) link and save that page as a JSON file in the **data** folder
-you just created.
+Let's create a **data** folder and create a users-data.js file in it.
 
-![users.json data folder](images/users-json-folder.png)
+To make it easy, let's grab some data from the popular [JSONPlaceholder](https://jsonplaceholder.typicode.com/) API. 
+Head over to their website and click on the [Users](https://jsonplaceholder.typicode.com/users) and copy that data into your **users-data.js** file.
 
-:rotating_light: But let's make a small modifcation to the users.json file. :rotating_light:
+![data folder](images/data-folder.png)
 
-Add an object at the root of you file with a **data** property containing the array of users. This will give us an object with one property called **data**
+Step 2:
+
+Add an object at the root of you file with a **data** property containing the array of users. This gives us an object with one property called **data**
 that has the array of users we just grabbed from the JSONPlaceholder API.
 
 ![json data property](images/json-data-property.png)
 
-
-
-![jsonplaceholder users](images/jsonplaceholder-users.png)
-
-Now we can import this data into our **app.js** file and use it in our routes.
+Firstly, we need to import the user data into our **app.js** file.
 
 ```
 const users = require('./data/users.json'); // import users data
+```
 
+Secondly, we need to create a route that will return the users data.
+
+```
   // ... other middleware and routes
 
 app.get('/users', (req, res, next) => {
-  res.send(users); // send all users data
+  res.send({ data: users });
 });
 ```
 
-Then visit **localhost:8000/users** in your browser. You should see the JSON data.
+>Why use a **data** property? 
+
+This is because you are following a simplified version of the [JSON:API specification](https://jsonapi.org/), a common pattern for APIs returning JSON. 
+
+The APIs that you build will always return an object with either a data property or an errors property. 
+Any information sent to the API will also be an object with a data property. 
+
+
+Now, thirdly, visit **localhost:8000/users** in your browser. You should see the JSON data. 
 
 ![users.json data folder](images/users-json.png)
 
