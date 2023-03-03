@@ -4,6 +4,7 @@
   - [Getting Started with Express](#getting-started-with-express)
   - [Routing](#routing)
   - [Middleware](#middleware)
+  - [JSON](#json)
   - [Deployment](#deployment)
 
 ## Objectives
