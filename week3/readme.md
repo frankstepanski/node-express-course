@@ -576,27 +576,30 @@ This data is usually stored in a database, but for small applications, and for o
 
 Step 1:
 
-Let's create a **data** folder and create a users-data.js file in it.
+Let's create a **data** folder and create a **users-data.js** file in it.
 
 To make it easy, let's grab some data from the popular [JSONPlaceholder](https://jsonplaceholder.typicode.com/) API. 
-Head over to their website and click on the [Users](https://jsonplaceholder.typicode.com/users) and copy that data into your **users-data.js** file.
+Head over to their website and click on the [users](https://jsonplaceholder.typicode.com/users) link and copy that data into your users-data.js file.
 
 ![data folder](images/data-folder.png)
 
 Step 2:
 
-Add an object at the root of you file with a **data** property containing the array of users. This gives us an object with one property called **data**
-that has the array of users we just grabbed from the JSONPlaceholder API.
+In **users-data.js** add a module.exports statement for the array of users to export it.
 
-![json data property](images/json-data-property.png)
+![json data property](images/user-data.png)
 
-Firstly, we need to import the user data into our **app.js** file.
+Step 3:
+
+Now that we have the data in a .js file, we need to import it into our app.js file.
 
 ```
-const users = require('./data/users.json'); // import users data
+const users = require('./data/users-data.js'); 
 ```
 
-Secondly, we need to create a route that will return the users data.
+Step 4:
+
+Then finally, we create a route that will return the users data.
 
 ```
   // ... other middleware and routes
