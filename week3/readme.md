@@ -645,7 +645,7 @@ Then visit **localhost:8000/users/5** in your browser. You should see the JSON d
 
 ![users data params](images/browser-user-params.png)
 
-If you tried to visit **localhost:8000/users/50** in our browser, we would get an error because there is no user with an **id of 50**.
+If you tried to visit **localhost:8000/users/50** in our browser, you would get an error because there is no user with an **id of 50**.
 
 ![user params error](images/browser-user-error.png)
 
