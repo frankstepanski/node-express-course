@@ -509,7 +509,7 @@ This method takes an absolute path to the folder containing your static files.
 
 >Yes, more middleware!!! :partying_face:
 
-As with any other middleware function, you need to tell your Express app **to use** this feature. 
+As with any other middleware function, you need to tell your Express app **to use** this feature (i.e. app.use())
   
   - Add a **public** folder in your root project folder
 
