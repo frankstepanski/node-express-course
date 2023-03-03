@@ -584,7 +584,7 @@ you just created.
 
 :rotating_light: But let's make a small modifcation to the users.json file. :rotating_light:
 
-We will add an object with a root **data** property to the array of users. This will give us an object with one property called **data**
+Add an object at the root of you file with a **data** property containing the array of users. This will give us an object with one property called **data**
 that has the array of users we just grabbed from the JSONPlaceholder API.
 
 ![json data property](images/json-data-property.png)
