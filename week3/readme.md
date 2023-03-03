@@ -616,7 +616,6 @@ This is because you are following a simplified version of the [JSON:API specific
 The APIs that you build will always return an object with either a data property or an errors property. 
 Any information sent to the API will also be an object with a data property. 
 
-
 Now visit **localhost:8000/users** in your browser. You should see the JSON data. 
 
 ![users data browser](images/browser-users-data.png)
@@ -632,14 +631,23 @@ We can reference the **id** property to get a specific user by passing that valu
 
 ```
 app.get('/users/:id', (req, res, next) => {
-  const user = users.find(user => user.id === parseInt(req.params.id));
-  res.send(user);
+  const { id } = req.params;
+  const foundUser = users.find(user => user.id === Number(id));
+  if (foundUser) {
+      res.send({ data: foundUser });
+  } else {
+      next(`User not found! ID: ${id}`);
+  }
 });
 ```
 
 Then visit **localhost:8000/users/5** in your browser. You should see the JSON data for the user with the **id of 5**.
 
-![users.json data folder](images/users-json-id.png)
+![users data params](images/browser-user-params.png)
+
+If you tried to visit **localhost:8000/users/50** in our browser, we would get an error because there is no user with an **id of 50**.
+
+![user params error](images/browser-user-error.png)
 
 **res.json()**
 
