@@ -619,7 +619,7 @@ Any information sent to the API will also be an object with a data property.
 
 Now, thirdly, visit **localhost:8000/users** in your browser. You should see the JSON data. 
 
-![users.json data folder](images/users-json.png)
+![users.json data folder](images/browsers-users-data.png)
 
 If we look in our browser's dev tools, we can see that the **Content-Type** is **application/json**. We didn't set this, it was set automatically by Express.
 Using the [res.send()](https://expressjs.com/en/api.html#res.send) method, Express will automatically set the **Content-Type** header based on the data type of the argument.
