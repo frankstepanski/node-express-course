@@ -582,6 +582,15 @@ you just created.
 
 ![users.json data folder](images/users-json-folder.png)
 
+But let's make a small modifcation to the users.json file. 
+
+We will add an object with a root **data** property to the array of users. This will give us an object with one property called **data**
+that has the array of users we just grabbed from the JSONPlaceholder API.
+
+![json data property](images/jsonplaceholder-users.png)
+
+
+
 ![jsonplaceholder users](images/jsonplaceholder-users.png)
 
 Now we can import this data into our **app.js** file and use it in our routes.
