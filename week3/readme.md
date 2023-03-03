@@ -517,7 +517,7 @@ As with any other middleware function, you need to tell your Express app **to us
 
   - Find a **cute** cat image and create an **images** folder inside the public folder. Then putting the cat image in the images folder.
  
-  - Add the following code to the app.js file (before route definitions):
+  - Add the line of code below to the app.js file (before your route definitions):
 
   ```
   app.use(express.static("public"))
