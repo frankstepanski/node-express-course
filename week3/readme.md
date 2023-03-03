@@ -617,7 +617,7 @@ The APIs that you build will always return an object with either a data property
 Any information sent to the API will also be an object with a data property. 
 
 
-Now, thirdly, visit **localhost:8000/users** in your browser. You should see the JSON data. 
+Now visit **localhost:8000/users** in your browser. You should see the JSON data. 
 
 ![users data browser](images/browser-users-data.png)
 
