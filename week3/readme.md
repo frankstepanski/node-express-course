@@ -578,7 +578,7 @@ Step 1:
 
 Let's create a **data** folder and create a **users-data.js** file in it.
 
-To make it easy, let's grab some data from the popular [JSONPlaceholder](https://jsonplaceholder.typicode.com/) API. 
+To make it easy, let's grab some data from the popular [JSONPlaceholder API](https://jsonplaceholder.typicode.com/). 
 Head over to their website and click on the [users](https://jsonplaceholder.typicode.com/users) link and copy that data into your users-data.js file.
 
 ![data folder](images/data-folder.png)
