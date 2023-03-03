@@ -670,7 +670,7 @@ app.get('/greeting', (req, res, next) => {
 });
 ```
 
-Then visit **localhost:8000/greeting** in your browser. You should see "Hello World" sent as JSON. :exploding_head:
+Then visit **localhost:8000/greeting** in your browser. You should see "Hello World" sent as JSON. 
 
 ![greeting json](images/browser-greeting.png)
 
