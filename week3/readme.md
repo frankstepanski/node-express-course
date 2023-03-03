@@ -515,7 +515,7 @@ As with any other middleware function, you need to tell your Express app **to us
 
   ![publich folder](images/public-folder.png)
 
-  - Find a **cute** cat image and create an **images** folder inside the public folder
+  - Find a **cute** cat image and create an **images** folder inside the public folder. Putting the cat image in the images folder.
  
   - Add the following code to the app.js file (before route definitions):
 
