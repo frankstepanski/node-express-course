@@ -7,13 +7,36 @@
   - link 4
 
 ## Objectives
-- Understand the HTTP Request/Response Object
+- RESTful APIs
 - CRUD HTTP Requests
 - Using Postman
 - Error handling
 - MVC
 - Controllers
 - Routers
+
+## RESTful APIs
+
+When an web API follows the [constraints of REST](https://restfulapi.net/rest-architectural-constraints/), the API called a RESTful API. :sleeping:
+A RESTful API is all about URLs. 
+
+A RESTful API is all about URLs, which provide access to resources such as HTML page, image, JSON, and so on that are returned by a request.
+
+There are [design principles](https://apiguide.readthedocs.io/en/latest/build_and_publish/use_RESTful_urls.html) that each RESTful API usually follows: 
+
+  - Use nouns to identify resources (e.g. /todos)
+  - Use plural nouns to identify collections of resources (e.g. /todos)
+  - Use HTTP methods to specify what to do with a resource (e.g. GET /todos, POST /todos, PUT /todos/:id, DELETE /todos/:id)
+  - Use route parameters to specify which resource to access (e.g. /todos/:id)
+  - Use query parameters to filter resources (e.g. /todos?completed=true)
+  - Use HTTP status codes to specify the result of a request (e.g. 200 OK, 201 Created, 400 Bad Request, 404 Not Found, 500 Internal Server Error)
+  - Use HTTP headers to specify additional information about the request (e.g. Content-Type, Authorization)
+  - Use HTTP body to specify the data to send to the server (e.g. JSON, XML, etc.)
+  - Use JSON to specify the data to send to the server (e.g. {"title": "Learn RESTful APIs", "completed": false})
+
+
+
+
 
 ##  HTTP Request/Response Object, Postman, CRUD HTTP Requests and MVC
 
