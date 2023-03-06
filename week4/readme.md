@@ -60,16 +60,16 @@ ___
 
 >Let's take a quick break to review and answer some questions about RESTful APIs and HTTP methods.
 
-**How do we access a resource on a server?**
+**How do we access a resource on a server?**\
 We can use a route to access a resource. A route is a path that we can use to access a resource.
 
-**How does a route specify what to do with a resource?**
+**How does a route specify what to do with a resource?**\
 We use an HTTP method to specify what to do with a resource, such as GET, POST, PUT, and DELETE.
 
-**What is an endpoint?**
+**What is an endpoint?**\
 An endpoint is a combination of an HTTP method and a route. An endpoint specifies what to do with a resource.
 
-**What is the difference between a route and an endpoint?**
+**What is the difference between a route and an endpoint?**\
 A route is a path that we can use to access a resource. An endpoint is a combination of an HTTP method and a route. An endpoint specifies what to do with a resource.
 
 **What is the difference between a CRUD operation and an HTTP method?**
