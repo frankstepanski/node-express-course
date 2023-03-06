@@ -19,7 +19,7 @@
 
 When an web API follows the [constraints of REST](https://restfulapi.net/rest-architectural-constraints/), the API called a RESTful API. :sleeping:
 
-A RESTful API is all about URLs, which provide access to resources such as HTML page, image, JSON, and so on that are returned by a request.
+A RESTful API is all about URLs, which provide access to resources such as HTML, CSS, image, JSON, that are returned by a request.
 
 There are [design principles](https://apiguide.readthedocs.io/en/latest/build_and_publish/use_RESTful_urls.html) that each RESTful API usually follows: 
 
