@@ -29,7 +29,6 @@ A few of the most important principles are:
   - Use HTTP methods to specify what to do with a resource (e.g. GET /todos, POST /todos, PUT /todos/:id, DELETE /todos/:id)
   - Use route parameters to specify which resource to access (e.g. /todos/:id)
   - Use query parameters to filter resources (e.g. /todos?completed=true)
-  - Use HTTP body to specify the data to send to the server (e.g. JSON, XML, etc.)
 
 
 ##  HTTP Request Methods
