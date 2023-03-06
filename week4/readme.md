@@ -24,23 +24,25 @@ A RESTful API is all about URLs, which provide access to resources such as HTML 
 
 There are [design principles](https://apiguide.readthedocs.io/en/latest/build_and_publish/use_RESTful_urls.html) that each RESTful API usually follows: 
 
+A few of the most important principles are:
   - Use nouns to identify resources (e.g. /todos)
   - Use plural nouns to identify collections of resources (e.g. /todos)
   - Use HTTP methods to specify what to do with a resource (e.g. GET /todos, POST /todos, PUT /todos/:id, DELETE /todos/:id)
   - Use route parameters to specify which resource to access (e.g. /todos/:id)
   - Use query parameters to filter resources (e.g. /todos?completed=true)
-  - Use HTTP status codes to specify the result of a request (e.g. 200 OK, 201 Created, 400 Bad Request, 404 Not Found, 500 Internal Server Error)
-  - Use HTTP headers to specify additional information about the request (e.g. Content-Type, Authorization)
   - Use HTTP body to specify the data to send to the server (e.g. JSON, XML, etc.)
-  - Use JSON to specify the data to send to the server (e.g. {"title": "Learn RESTful APIs", "completed": false})
 
 
+##  HTTP Request Methods
+
+Up to this point, we have only used the GET method to retrieve data from a server.
+But there are other HTTP methods that we can use to interact with resources on a server.
+
+  - [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST): creates a new resource
+  - [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT): update an existing resource
+  - [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE): delete an existing resource
 
 
-
-##  HTTP Request/Response Object, Postman, CRUD HTTP Requests and MVC
-
-Before we get our hands dirty on other types of HTTP requests, let's review the HTTP Request and Response objects of an [HTTP flow](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#http_flow).
 
 ### HTTP Request Object
 
@@ -77,8 +79,21 @@ In addition to GET, there are other HTTP methods that we can use to interact wit
   - [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT): update an existing resource
   - [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE): delete an existing resource
 
+The following table shows the HTTP methods, Express method and [CRUD](https://developer.mozilla.org/en-US/docs/Glossary/CRUD) operations 
+that each HTTP method can perform to interact with resources on a server. 
 
-  ...
+A **CRUD operation** is a basic operation that we can perform on a resource. CRUD stands for Create, Read, Update, and Delete.
+
+
+| HTTP Method |  Express Method | CRUD Operation | Description                 |
+| ----------- |  -------------- | -------------- | --------------------------- |
+| GET         |  app.get()      | Read           | Retrieve a resource         |
+| POST        |  app.post()     | Create         | Create a new resource       |
+| PUT         |  app.put()      | Update         | Update an existing resource |
+| DELETE      |  app.delete()   | Delete         | Delete an existing resource |
+
+
+
 ___
 
 ![questions](images/QA.gif)
@@ -133,16 +148,6 @@ A CRUD operation is a basic operation that we can perform on a resource. An HTTP
 
 
 
-**How do we know which HTTP method to use?**
-
-We can use the following table to help us decide which HTTP method to use.
-
-| HTTP Method | CRUD Operation | Description                 |
-| ----------- | -------------- | --------------------------- |
-| GET         | Read           | Retrieve a resource         |
-| POST        | Create         | Create a new resource       |
-| PUT         | Update         | Update an existing resource |
-| DELETE      | Delete         | Delete an existing resource |
 
 **Some examples:**
 
