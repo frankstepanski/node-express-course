@@ -30,7 +30,6 @@ A few of the most important principles are:
   - Use route parameters to specify which resource to access (e.g. /todos/:id)
   - Use query parameters to filter resources (e.g. /todos?completed=true)
 
-
 ##  HTTP Request Methods
 
 Up to this point, we have only used the [GET](https://expressjs.com/en/5x/api.html#app.get) method to retrieve data from a server.
@@ -55,61 +54,28 @@ A **CRUD operation** is a basic operation that we can perform on a resource. CRU
 | PUT         |  app.put()      | Update         | Update an existing resource |
 | DELETE      |  app.delete()   | Delete         | Delete an existing resource |
 
-
-
 ___
 
 ![questions](images/QA.gif)
 
->Let's answer some common questions to help you put together a mental model of these concepts.
+>Let's take a quick break to review and answer some questions about RESTful APIs and HTTP methods.
 
-**What is a resource?**
-
-A resource is an object or representation of something. For example, a todo is a resource. A todo can have an id, a description and a completed property (among other things). 
-These are all properties of the todo resource. 
-
-**How do I access a resource?**
-
+** How do we access a resource on a server?**
 We can use a route to access a resource. A route is a path that we can use to access a resource.
 
 **How does a route specify what to do with a resource?**
-
 We use an HTTP method to specify what to do with a resource, such as GET, POST, PUT, and DELETE.
-An HTTP method combined with a route specifies what to do with a resource.
-This is called an endpoint.
 
-**So, what is an endpoint exactly?**
-
+**what is an endpoint?**
 An endpoint is a combination of an HTTP method and a route. An endpoint specifies what to do with a resource.
 
 **What is the difference between a route and an endpoint?**
-
 A route is a path that we can use to access a resource. An endpoint is a combination of an HTTP method and a route. An endpoint specifies what to do with a resource.
 
-**How does a route know which resource to access?**
-
-We can use a route parameter to tell the server which resource to access. A route parameter is a variable that we can use to access a resource.
-
-**How do we know which HTTP method to use?**
-
-**What is a CRUD operation?**
-
-CRUD stands for Create, Read, Update, and Delete. These are the four basic operations that we can perform on a resource.
-This is also known as the CRUD principle.
-
 **What is the difference between a CRUD operation and an HTTP method?**
 
 A CRUD operation is a basic operation that we can perform on a resource. An HTTP method is a method that we can use to perform a CRUD operation on a resource.
-It is important to note that not all CRUD operations have an HTTP method associated with them.
-
 CRUD operations come from the world of databases. HTTP methods come from the world of the web.
-We can use HTTP methods to perform CRUD operations on a resource.
-
-**What is the difference between a CRUD operation and an HTTP method?**
-
-A CRUD operation is a basic operation that we can perform on a resource. An HTTP method is a method that we can use to perform a CRUD operation on a resource.
-
-
 
 
 **Some examples:**
