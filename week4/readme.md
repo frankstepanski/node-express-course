@@ -66,7 +66,7 @@ We can use a route to access a resource. A route is a path that we can use to ac
 **How does a route specify what to do with a resource?**
 We use an HTTP method to specify what to do with a resource, such as GET, POST, PUT, and DELETE.
 
-**what is an endpoint?**
+**What is an endpoint?**
 An endpoint is a combination of an HTTP method and a route. An endpoint specifies what to do with a resource.
 
 **What is the difference between a route and an endpoint?**
