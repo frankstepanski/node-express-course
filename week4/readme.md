@@ -18,7 +18,6 @@
 ## RESTful APIs
 
 When an web API follows the [constraints of REST](https://restfulapi.net/rest-architectural-constraints/), the API called a RESTful API. :sleeping:
-A RESTful API is all about URLs. 
 
 A RESTful API is all about URLs, which provide access to resources such as HTML page, image, JSON, and so on that are returned by a request.
 
@@ -36,44 +35,8 @@ A few of the most important principles are:
 ##  HTTP Request Methods
 
 Up to this point, we have only used the GET method to retrieve data from a server.
+
 But there are other HTTP methods that we can use to interact with resources on a server.
-
-  - [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST): creates a new resource
-  - [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT): update an existing resource
-  - [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE): delete an existing resource
-
-
-
-### HTTP Request Object
-
-When an end user navigates to a URL, the browser automatically generates an [HTTP request](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#http_requests) for a resource. 
-
-The first line of the request is the [request line](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#start_line) which contains three parts: the request method, the request URI, and the HTTP version.
-  - The request method: tells the server what kind of request is being made.
-  - The request URI: tells the server what resource is being requested.
-  - The HTTP version: tells the server what version of HTTP is being used.
-
-The rest of the HTTP Request:
-
- - headers: additional information about the request.
- - empty line: separates the headers from the body. 
- - body: the data that is being sent to the server (optional).
-
-![http request](images/http-request.png)
-
-### HTTP Response Object
-
-After a web server receives an HTTP request, it will process and send an [HTTP reponse](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages#http_responses) to the client. 
-
- - protocol version in use, the status code and status message. 
- - headers: instructions for handling the response and security requirements. 
- - body: data that is being sent to the client (optional). 
-
-![http response](images/http-response.png)
-
-### Other HTTP Methods
-
-In addition to GET, there are other HTTP methods that we can use to interact with resources on a server.
 
   - [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST): creates a new resource
   - [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT): update an existing resource
@@ -83,7 +46,6 @@ The following table shows the HTTP methods, Express method and [CRUD](https://de
 that each HTTP method can perform to interact with resources on a server. 
 
 A **CRUD operation** is a basic operation that we can perform on a resource. CRUD stands for Create, Read, Update, and Delete.
-
 
 | HTTP Method |  Express Method | CRUD Operation | Description                 |
 | ----------- |  -------------- | -------------- | --------------------------- |
