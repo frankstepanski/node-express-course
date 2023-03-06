@@ -33,7 +33,7 @@ A few of the most important principles are:
 
 ##  HTTP Request Methods
 
-Up to this point, we have only used the GET method to retrieve data from a server.
+Up to this point, we have only used the [GET](https://expressjs.com/en/5x/api.html#app.get) method to retrieve data from a server.
 
 But there are other HTTP methods that we can use to interact with resources on a server.
 
