@@ -35,12 +35,9 @@ A few of the most important principles are:
 
 Up to this point, we have only used the [GET](https://expressjs.com/en/5x/api.html#app.get) method to retrieve data from a server.
 
-But, there's more!
+But, there's more! :raised_hands:
 
-![more](images/more.gif)
-
-
-But there are other HTTP methods that we can use to interact with resources on a server.
+Other common HTTP methods that we can use to interact with resources on a server would be:
 
   - [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST): creates a new resource
   - [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT): update an existing resource
