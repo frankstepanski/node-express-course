@@ -394,7 +394,7 @@ npm install morgan
 ```
 const express = require('express');
 const app = express();
-**const morgan = require("morgan");**
+const morgan = require("morgan");
 ```
 
 - Then finally, we register the middleware with the use() method (right after the require statement):
