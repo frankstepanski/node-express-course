@@ -383,13 +383,13 @@ Not very exciting, but it's a start. :thumbsup:
 
 Let's implement the third party logging middleware [Morgan](https://www.npmjs.com/package/morgan).
 
-First, we have to install it:
+ - First, we have to install it:
 
 ```
 npm install morgan
 ```
 
-Second, we require it at the top of the app.js file, right after the other requires:
+- Second, we require it at the top of the app.js file, right after the other requires:
 
 ```
 const express = require('express');
@@ -397,7 +397,7 @@ const app = express();
 **const morgan = require("morgan");**
 ```
 
-Then finally, we register the middleware with the use() method (right after the require statement):
+- Then finally, we register the middleware with the use() method (right after the require statement):
 
 ```
 app.use(morgan("dev"));
