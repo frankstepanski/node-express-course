@@ -121,9 +121,7 @@ node src/server.js
 
 >If you get an Error: listen EADDRINUSE: address already in use :::80000 error, you can change the port number (in server.js) in case of another application is already using port 8000.  
 
-
 ![express app running](images/node-server.png)
-
 
 **The nodemon package**
 
@@ -140,9 +138,7 @@ npm i nodemon --save-dev
 
 To use nodemon, you have to add a script in your "scripts" object in your **package.json** file.
 
-```
-"dev": "nodemon src/server.js"
-```
+![nodemon package.json](images/nodemon-package.png)
 
 You can then run the following command on your command line:
 
