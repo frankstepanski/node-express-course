@@ -123,16 +123,17 @@ node src/server.js
 
 **EADDRINUSE error:** :scream:
 
-If at the first time you run your server you get an error like this:
+If you get an error like this:
 
 ![node instances error](images/node-instances-error.png)
 
-You already have an application already running on port 8000. If so you can either change the port number in your server.js file.
+Either of two things may be happening:
 
-If you get this error while you have been running your server for awhile then at some point along the way, mulitple instances of your server may have been started. 
-It happens sometimes when you are testing your code. :man_shrugging:
+  - You already have an application already running on port 8000. The quickest solution is to just change the port number in your server.js file.
+  
+  - You have been running and re-starting your server to test new changes and at some point, mulitple instances of your server may have been started. 
 
-You can use this command to find which process is using the port: :eyes:
+For the second option, you can use this command to find which process is using the port: :eyes:
 
 ```
 lsof -i tcp:8000
