@@ -85,7 +85,7 @@ module.exports = app;
 
 This file is responsible for running the server. We will use the app.listen() method to start the server. The code will "listen" on the specified port. The [app.listen()](https://expressjs.com/en/5x/api.html#app.listen_path_callback) method takes two arguments, the port number and a callback function that will be called once the server is listening.
 
->A server is just some software that is always running that **listens** for requests from other programs. When a request is received, the server performs some action and sends a response back to the requesting program.
+>A [server](https://www.computerhope.com/jargon/s/server.htm) is just some software that is always running that **listens** for requests from other programs. When a request is received, the server performs some action and sends a response back to the requesting program.
 
 
 
