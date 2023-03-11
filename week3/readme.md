@@ -127,10 +127,12 @@ node src/server.js
 
 **The nodemon package**
 
-Every time you make a change to one of your files, you will need to re-start your server. 
+Every time you make a change to one of your files, you will need to re-start your server in order for the changes to take effect
 You can automate this by using the [nodemon](https://www.npmjs.com/package/nodemon) package.
 
 The nodemon package will monitor any file changes and re-start it for you. 
+
+To install nodemon, run the following command:
 
 ```
 npm i nodemon --save-dev
