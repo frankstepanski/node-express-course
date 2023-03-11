@@ -107,6 +107,8 @@ The listener variable is a callback function that will be called once the server
 
 >Environment variables are variables that can contain sensitive (e.g. api keys, database url, etc.) data in your project. 
 
+The callback function will log a message to the console once the server is listening.
+
 ___
 
 **Starting the server:**
