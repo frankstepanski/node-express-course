@@ -297,7 +297,7 @@ sending a custom message to the client.
 
 **response.end()**
 
-A special, and not highly used but good to know method of the response object is [response.end()](https://expressjs.com/en/5x/api.html#res.end) which is used to end the response process.
+A special, but not highly used but good to know method of the response object is [response.end()](https://expressjs.com/en/5x/api.html#res.end) which is used to end the response process.
 There are many ways to end a response process: Calling response.send(), response.json(), etc. 
 
 >What is the difference between response.end() and response.send()?
@@ -322,7 +322,9 @@ at the client side, or 5xx when the server fails to process a valid request.
 >400-499: Client error; problem in how client submitted request\
 >500-599: Server error: request accepted, but server error prevented fullfillment
 
-By default, Express will send a [200 status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200) when a response is sent. 
+By default, Express will send a [200 status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200) when a response is sent,
+but sometimes, we may want to respond with a different status code.
+
 We can implicitly set the status code by using the [res.status()](https://expressjs.com/en/4x/api.html#res.status) method,
 which is a good practice to follow.
 
