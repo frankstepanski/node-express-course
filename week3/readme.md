@@ -290,6 +290,9 @@ app.use((req, res, next) => {
 });
 ```
 
+Here we are using the [res.status()](https://expressjs.com/en/5x/api.html#res.status) method to set the status code to 404 and 
+sending a custom message to the client.
+
 ![404 browser handler](images/browser-404-handler.png)
 
 **response.end()**
