@@ -105,6 +105,8 @@ The [process.env](https://nodejs.org/dist/latest-v8.x/docs/api/process.html#proc
 The PORT variable is set to 8000 if it is not already set. The app variable is set to the Express instance exported from app.js.
 The listener variable is a callback function that will be called once the server is listening.
 
+>Environment variables are variables that can contain sensitive (e.g. api keys, database url, etc.) data in your project. 
+```
 ___
 
 **Starting the server:**
