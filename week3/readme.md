@@ -63,7 +63,7 @@ npm i express
 
 ![npm init](images/vsc-npm-init.png)
 
->Building an Express application can have unique folder structures to store categories of files, so may find other folder/file structures in other resources.
+>Because Express is unopinionated, it does not force you to do things in a certain way. If you see something that is diferent in how I set up my project, that's ok!
 
 We will create a **src** folder that holds the source code that directly relates to the running of the server. The **app.js** file will hold configuration and **server.js** is where you will run your Express server.
 
