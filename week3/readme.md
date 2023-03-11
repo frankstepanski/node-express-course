@@ -207,6 +207,8 @@ GET requests are used for retrieving resources from a server.
 Express uses [app.get()](https://expressjs.com/en/4x/api.html#app.get) to register routes to match GET requests. 
 Express routes take up to three arguments, a path (usually a string), a callback function to handle the request and send a response, and a callback argument to the middleware funcvtion, called "next" by convention (optional).
 
+To send a response, we use the [res.send()](https://expressjs.com/en/5x/api.html#res.send) method which sends a response to the client.
+
 >The callback will have three arguments (req, res, next) which we will delve deeper in to later.
 
 Let's add the following route to app.js: 
@@ -245,7 +247,7 @@ You can use the browser's developer tools to view the response from the server:
 
 ![devtools](images/browser-devtools-about-tab.png)
 
-If you click on the **about** stream you will see details about the header server response:
+If you click on an individual request from the list you will see details about the header server response:
 
 ![devtools headers](images/browser-devtools-headers.png)
 
