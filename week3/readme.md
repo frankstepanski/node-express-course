@@ -251,7 +251,7 @@ If you click on an individual request from the list you will see details about t
 
 ![devtools headers](images/browser-devtools-headers.png)
 
-Then you can click on the Response tab you will see the data that was sent back to the browser:
+Then you can click on the Response tab and you will see the data that was sent back to the browser:
 
 ![devtools response](images/browser-devtools-response.png)
 
@@ -262,7 +262,9 @@ Then you can click on the Response tab you will see the data that was sent back 
 
 There are other tools you can use to view the headers (and much, much more), such as [Postman](https://www.postman.com/). Next Week! :zany_face:
 
->The 404 Status on the **favicon.ico** is normal. The browser is trying to load the favicon.ico file from the root of the server.
+>The 404 Status on the **favicon.ico** is normal. The browser is trying to load the favicon.ico file from the root of the server but we don't have one.
+
+When we try to visit a route that is not defined, we get a 404 error:
 
 **404 Error Handler** :broken_heart:
 
