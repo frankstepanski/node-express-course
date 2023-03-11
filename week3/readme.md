@@ -101,7 +101,7 @@ const listener = () => console.log(`Listening on Port ${PORT}!`);
 app.listen(PORT, listener);
 ```
 
-The [process.env](https://nodejs.org/dist/latest-v8.x/docs/api/process.html#process_process_env) object is a global object that stores environment variables.
+The [process.env](https://nodejs.org/dist/latest-v8.x/docs/api/process.html#process_process_env) object is a global Node object that stores environment variables.
 The PORT variable is set to 8000 if it is not already set. The app variable is set to the Express instance exported from app.js.
 The listener variable is a callback function that will be called once the server is listening.
 
