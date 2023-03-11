@@ -148,6 +148,8 @@ And then run this command to kill the process replacing the **<PID>** with the p
 kill -9 <PID>
 ```
 
+>Instead of using the Terminal, both Mac and Windows have a GUI tool that can do the same thing. Mac has the [Activity Monitor](https://support.apple.com/en-gb/guide/activity-monitor/welcome/mac) and Windows has the [Task Manager](https://learn.microsoft.com/en-us/shows/inside/task-manager) that you can use to find and kill processes.
+
 **The nodemon package**
 
 Every time you make a change to one of your files, you will need to re-start your server in order for the changes to take effect
