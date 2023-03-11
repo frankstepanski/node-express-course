@@ -276,10 +276,9 @@ If no routes are matched on a client request, the Express server will send a [40
 
 > That's not a useful or pretty looking message. How can we make this better? :thinking:
 
-We can add a catch-all route to handle any requests that are not matched by a route.
+We can add a catch-all route as the last route defined in our app.js file to handle any requests that are not matched by a route defined above. This will be, if effect, our 404 error handler.
 
-A 404 error handler can be thought of as a route handler defined **after all of the others** without a path associated with it. 
-Though this type of route is normally used with [app.use()](https://expressjs.com/en/5x/api.html#app.use) instead of [app.get()](https://expressjs.com/en/5x/api.html#app.get) since there is no specific route you are trying to match.
+A 404 error handler route is defined with app.use() since it considered more "middleware" as this is for any non-existing routes.
 
 **Note:** You could use app.get() and just use `*` as the path, but this is not recommended.
 
