@@ -547,7 +547,7 @@ ___
 Most web applications contain static files that return the same response to all users. These could include images, favicons, CSS stylesheets, client-side JavaScript, pre-rendered HTML pages, or any other asset.
 Express allows you to define a **single directory** that contains **static assets** and returns any file that matches the URL path.
 
-You would use the [static method](https://expressjs.com/en/starter/static-files.html) from the [express](https://expressjs.com/en/5x/api.html#express) module. 
+To access these static files, you would use the [static method](https://expressjs.com/en/starter/static-files.html) from the [express](https://expressjs.com/en/5x/api.html#express) module. 
 This method takes an absolute path to the folder containing your static files.
 
 >Yes, more middleware!!! :partying_face:
