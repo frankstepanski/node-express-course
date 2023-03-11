@@ -600,6 +600,8 @@ const car = {
 const json = JSON.stringify(car);
 ```
 
+And voila! The car variable now holds a regular javascript object that we can work with in our code.
+
 The process of parsing received JSON data from a REST API is called **deserialization**.
 
 >Deserialization is the reverse process where the byte stream is used to recreate the actual JavaScript object in memory. 
