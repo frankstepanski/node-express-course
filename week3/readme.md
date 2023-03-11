@@ -85,13 +85,9 @@ module.exports = app;
 
 This file is responsible for running the server. We will use the app.listen() method to start the server. The code will "listen" on the specified port. The [app.listen()](https://expressjs.com/en/5x/api.html#app.listen_path_callback) method takes two arguments, the port number and a callback function that will be called once the server is listening.
 
->A [server](https://www.computerhope.com/jargon/s/server.htm) is just some software that is always running that **listens** for requests from other programs. When a request is received, the server performs some action and sends a response back to the requesting program.
+A [server](https://www.computerhope.com/jargon/s/server.htm) is just some software that is always running that **listens** for requests from other programs. When a request is received, the server performs some action and sends a response back to the requesting program.
 
-
-
-
-
-A **port** is a way of having multiple applications listen on the same server. Each application will listen on a different port. The port number is used to identify the application that should handle the request.
+A **port** is a way of having multiple applications listen on the same server. Each application will listen on a different port. Think of a port as mailboxes for an apartment building. Each apartment has a mailbox with a number on it. When the mailman delivers mail, he will put the mail in the mailbox with the correct number. The mailman doesn't care what's in the mailbox, he just puts the mail in the correct mailbox.
 
 ```
 const { PORT = 8000 } = process.env;
