@@ -76,7 +76,7 @@ We create a **src** folder that will hold the source code that directly relates 
 We want to export our [app](https://expressjs.com/en/5x/api.html#app) so that we can use it in our server.js file.
 ```
 const express = require("express"); 
-const app = express(); 
+const app = express(); // the express() function returns an Express application instance
 
 module.exports = app;
 ```
