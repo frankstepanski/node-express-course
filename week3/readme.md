@@ -381,7 +381,7 @@ const middleware = (req, res, next) => {
 :rotating_light:  Always include and call **next()** in your middleware functions. If not, your Express server will hang (i.e. just stop working). :rotating_light:
 
 >Using **next()** will execute the code after the current middleware function is finished. 
-Using **return next()** will immediately jump out of the callback the code below will be unreachable.
+Using **return next()** will immediately jump out of the callback the code below will be unreachable. Normally next() is used and only return next() when in some sort of conditional statement.
 
 **Third-party Middleware**
 
@@ -403,7 +403,7 @@ We would write this function in the app.js file, right after the other requires:
 ```
 const logRequest = (req, res, next) => {
   console.log("A request is being made!");
-  next();
+  next(); 
 };
 ```
 
