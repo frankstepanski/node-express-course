@@ -207,6 +207,8 @@ GET requests are used for retrieving resources from a server.
 Express uses [app.get()](https://expressjs.com/en/4x/api.html#app.get) to register routes to match GET requests. 
 Express routes take up to three arguments, a path (usually a string), a callback function to handle the request and send a response, and a callback argument to the middleware funcvtion, called "next" by convention (optional).
 
+>We will get more into **next()** later.
+
 Let's add the following route to app.js: 
 
 ```
