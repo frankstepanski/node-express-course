@@ -758,6 +758,8 @@ When we choose a cloud provider we have to aware of what we are deploying:
 
 Before we start, Render requires a [specific version of Node.js](https://render.com/docs/node-version). Refer to the link for more information.
 
+>You have to implement one of the options described in the link in your code before you deploy.
+
 **Step 1**
 
 Create a free account on [Render](https://render.com/).
