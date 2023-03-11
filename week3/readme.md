@@ -756,14 +756,7 @@ When we choose a cloud provider we have to aware of what we are deploying:
 
 **Render Deploy Steps**
 
-Before we start, Render requires a [specific version of Node.js](https://render.com/docs/node-version). The easiest way to handle this is to 
-specify a Node version in the engines directive in your package.
-
-```
-"engines": {
-  "node": ">=14 <15"
-}
-```
+Before we start, Render requires a [specific version of Node.js](https://render.com/docs/node-version). Refer to the link for more information.
 
 **Step 1**
 
