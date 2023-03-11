@@ -65,7 +65,8 @@ npm i express
 
 >Because Express is unopinionated, it does not force you to do things in a certain way. If you see something that is diferent in how I set up my project, that's ok!
 
-We will create a **src** folder that holds the source code that directly relates to the running of the server. The **app.js** file will hold configuration and **server.js** is where you will run your Express server.
+We create a **src** folder that will hold the source code that directly relates to the running of the server. The **app.js** file will hold configuration and **server.js** is where you will run your Express server.
+Again, you can name the files whatever you want, but these are commmon names.
 
 ![folder structure](images/folder-structure.png)
 
