@@ -50,13 +50,18 @@ Express allows you to concentrate on your application's business logic without h
 
 ### Create a basic Express server
 
-First we need to initialize a new npm project and install Express. At the command line, run the following commands:
+First we need to initialize a new npm project and install Express. 
+
+Let us create a folder (I called mine getting-started) and open it in VS Code. 
+Open up the Terminal in VS Code and run the following commands:
 
 ```
 npm init
 npm i express
 
 ```
+
+![npm init](images/vsc-npm-init.png)
 
 >Building an Express application can have unique folder structures to store categories of files, so may find other folder/file structures in other resources.
 
