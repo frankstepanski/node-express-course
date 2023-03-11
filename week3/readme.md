@@ -585,7 +585,7 @@ Just like the [song](https://www.youtube.com/watch?v=0XRrYgByp28) says, "It's ea
 
 **Serialization and Deserialization**
 
-The process of sending data in JSON format to a REST API is called **serialization**. 
+The process of sending data in JSON format to REST API (request or response) is called **serialization**. 
 
 >Serialization is the process of converting an object into a stream of bytes to store the object or transmit it to memory.
 
