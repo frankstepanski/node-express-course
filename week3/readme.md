@@ -378,7 +378,7 @@ const middleware = (req, res, next) => {
 }
 ```
 
-:rotating_light:  Always include and call **next()** in your middleware functions. If not, your Express server will hang. :rotating_light:
+:rotating_light:  Always include and call **next()** in your middleware functions. If not, your Express server will hang (i.e. just stop working). :rotating_light:
 
 >Using **next()** will execute the code after the current middleware function is finished. 
 Using **return next()** will immediately jump out of the callback the code below will be unreachable.
