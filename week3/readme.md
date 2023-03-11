@@ -67,7 +67,7 @@ npm i express
 
 We create a **src** folder that will hold the source code that directly relates to the running of the server. The **app.js** file will hold configuration and **server.js** is where you will run your Express server.
 
-Again, you can name the files whatever you want (e.g. unopinionated), but these are commmon names.
+>Again, you can name the files whatever you want (e.g. unopinionated), but these are commmon names.
 
 ![folder structure](images/folder-structure.png)
 
