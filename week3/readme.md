@@ -119,7 +119,7 @@ At the command line, run the following command:
 node src/server.js
 ```
 
->If you get an Error: listen EADDRINUSE: address already in use :::80000 error, you can change the port number in case of another application is already using port 8000.  
+>If you get an Error: listen EADDRINUSE: address already in use :::80000 error, you can change the port number (in server.js) in case of another application is already using port 8000.  
 
 
 ![express app running](images/node-server.png)
