@@ -89,7 +89,7 @@ A [server](https://www.computerhope.com/jargon/s/server.htm) is just some softwa
 
 A **port** is a way of having multiple applications listen on the same server. Each application will listen on a different port. Think of a port as mailboxes for an apartment building. Each apartment has a mailbox with a number on it. When the mailman delivers mail, he will put the mail in the mailbox with the correct number. The mailman doesn't care what's in the mailbox, he just puts the mail in the correct mailbox.
 
-![cat mailbox](images/cat-mailbox.png)
+![cat mailbox](images/cat-mailbox.gif)
 
 ```
 const { PORT = 8000 } = process.env;
