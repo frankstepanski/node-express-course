@@ -106,7 +106,7 @@ The PORT variable is set to 8000 if it is not already set. The app variable is s
 The listener variable is a callback function that will be called once the server is listening.
 
 >Environment variables are variables that can contain sensitive (e.g. api keys, database url, etc.) data in your project. 
-```
+
 ___
 
 **Starting the server:**
