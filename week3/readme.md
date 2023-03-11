@@ -274,7 +274,7 @@ If no routes are matched on a client request, the Express server will send a [40
 
 ![404 terminal](images/404-error.png)
 
-> How can we make this better? :thinking:
+> That's not a useful or pretty looking message. How can we make this better? :thinking:
 
 We can add a catch-all route to handle any requests that are not matched by a route.
 
