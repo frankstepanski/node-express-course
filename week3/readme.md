@@ -354,7 +354,7 @@ function in the application's request-response cycle. The next middleware functi
 [Middleware](https://expressjs.com/en/guide/writing-middleware.html) functions are callback functions. Express uses the **use()** method to register middleware functions and 
 calls them in the order they are registered.
 
->Middleware is probably the most misunderstood but most important part of Express. Don't worry, once we start building middleware ourselved in upcoming lessons, you will start to understand it better. :sweat_smile
+>Middleware is the most confusing and most important part of Express. Don't worry, once we start building middleware ourselved in upcoming lessons, you will start to understand it better. :sweat_smile
 
 Middleware functions can perform the following tasks:
   - Execute any code.
