@@ -129,9 +129,9 @@ If you get an error like this:
 
 Either of two things may be happening:
 
-  - You already have an application already running on port 8000. The quickest solution is to just change the port number in your server.js file.
+  - You already have an application already running on port 8000, and you can just change the port number in your server.js file.
   
-  - You have been running and re-starting your server to test new changes and at some point, mulitple instances of your server may have been started. 
+  - As you have been testing new changes to your Express application, mulitple instances of your server may have been started. 
 
 For the second option, you can use this command to find which process is using the port: :eyes:
 
