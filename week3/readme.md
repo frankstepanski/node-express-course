@@ -121,7 +121,7 @@ node src/server.js
 
 ![express app running](images/node-server.png)
 
-**EADDRINUSE error:**
+**EADDRINUSE error:** :scream:
 
 If at the first time you run your server you get an error like this:
 
