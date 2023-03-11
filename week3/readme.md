@@ -119,9 +119,33 @@ At the command line, run the following command:
 node src/server.js
 ```
 
->If you get an Error: listen EADDRINUSE: address already in use :::80000 error, you can change the port number (in server.js) in case of another application is already using port 8000.  
-
 ![express app running](images/node-server.png)
+
+**EADDRINUSE error:**
+
+If at the first time you run your server you get an error like this:
+
+![node instances error](images/node-instances-error.png)
+
+You already have an application already running on port 8000. If so you can either change the port number in your server.js file.
+
+If you get this error while you have been running your server for awhile then at some point along the way, mulitple instances of your server may have been started. 
+It happens sometimes when you are testing your code. :man_shrugging:
+
+You can use this command to find which process is using the port: :eyes:
+
+```
+lsof -i tcp:8000
+
+```
+
+![node instances running](images/list-node-instances.png)
+
+And then run this command to kill the process replacing the **<PID>** with the process ID number:
+
+```
+kill -9 <PID>
+```
 
 **The nodemon package**
 
@@ -155,26 +179,6 @@ Now, everytime we make a changes to our files, nodemon will restart the server f
 **Stopping the server**
 
 To stop the server, press **Ctrl + C** in your terminal window.
-
-:rotating_light: If you run into an error of: Error: listen EADDRINUSE: address already in use :::8000 :rotating_light:
-
-![node instances error](images/node-instances-error.png)
-
-You use use this command to find which process is using the port: :eyes:
-
-```
-lsof -i tcp:8000
-
-```
-
-![node instances running](images/list-node-instances.png)
-
-
-And then run this command to kill the process replacing the **<PID>** with the process ID number:
-
-```
-kill -9 <PID>
-```
 
 >Remember, we are on the server now, so we will be referencing the terminal more to help us troubshoot errors. :nerd_face:
 
