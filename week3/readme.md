@@ -623,7 +623,7 @@ Step 1:
 Let's create a **data** folder and create a **users-data.js** file in it.
 
 To make it easy, let's grab some data from the popular [JSONPlaceholder API](https://jsonplaceholder.typicode.com/). 
-Head over to their website and click on the [users](https://jsonplaceholder.typicode.com/users) link.
+Head over to their website, scroll down a bit and click on the [users](https://jsonplaceholder.typicode.com/users) link under Resources.
 
 ![JSONPlaceholder Resources](images/json-placeholder-users.png)
 
