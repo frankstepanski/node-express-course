@@ -37,7 +37,7 @@ REST uses various representations of a resource such as JSON, XML, HTML, and pla
 
 The HTTP Protocol represents an [HTTP message](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages) as text, it may look like JSON, or even JavaScript, but it is always text.
 
-![http messages](images/http-message.gif)
+![http messages](images/http-messages.png)
 
 ##  HTTP Request Methods
 
