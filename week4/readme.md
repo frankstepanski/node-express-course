@@ -15,9 +15,9 @@
 - Controllers
 - Routers
 
-## RESTful APIs
+## Representational state transfer (REST)
 
-When an web API follows the [constraints of REST](https://restfulapi.net/rest-architectural-constraints/), the API called a RESTful API. :sleeping:
+When a web API follows the [constraints of REST](https://restfulapi.net/rest-architectural-constraints/), the API called a RESTful API. :sleeping:
 
 A RESTful API is all about URLs, which provide access to resources such as HTML, CSS, image, JSON, that are returned by a request.
 
@@ -29,6 +29,15 @@ A few of the most important principles are:
   - Use HTTP methods to specify what to do with a resource (e.g. GET /todos, POST /todos, PUT /todos/:id, DELETE /todos/:id)
   - Use route parameters to specify which resource to access (e.g. /todos/:id)
   - Use query parameters to filter resources (e.g. /todos?completed=true)
+
+So example, the URL /todos provides access to a collection of todo resources, while the URL /todo/1 provides access to a single todo resource. 
+A collection of resources is also considered one resource.
+
+REST uses various representations of a resource such as JSON, XML, HTML, and plain text. The most common representation is JSON.
+
+The HTTP Protocol represents an [HTTP message](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages) as text, it may look like JSON, or even JavaScript, but it is always text.
+
+![http messages](images/http-message.gif)
 
 ##  HTTP Request Methods
 
