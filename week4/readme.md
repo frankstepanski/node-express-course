@@ -67,16 +67,15 @@ A **CRUD operation** is a basic operation that we can perform on a resource. CRU
 
 >A table of how we would map a route to its URL path and HTTP method:
 
-| Route name   |  URL path       | HTTP Method    | Description                            |
-| ------------ |  -------------- | -------------- | -------------------------------------- |
-| Index (list) |  /todos         | GET            | Return a list of todos.                |
-| Create       |  /todos         | POST           | Create a new todo.                     |
-| Read         |  /todos/:id     | GET            | Return the todo with the speficied id, |
-|              |                 |                |  or return 404 if not found.           |
-| Update       |  /todos:/id     | PUT            | Update and existing todo with data in  |
-|              |                 |                |  request.                              |
-| Delete       |  /todos/:id     | DELETE         | Delete the todo with the specified id, |
-|              |                 |                |  or return 404 if not found.           |
+| Route name   |  URL path       | HTTP Method    | Description                                   |
+| ------------ |  -------------- | -------------- | --------------------------------------------- |
+| Index (list) |  /todos         | GET            | Return a list of todos.                       |
+| Create       |  /todos         | POST           | Create a new todo.                            |
+| Read         |  /todos/:id     | GET            | Return the todo with the speficied id,        |
+|              |                 |                |  or return 404 if not found.                  |
+| Update       |  /todos:/id     | PUT            | Update and existing todo with data in request |
+| Delete       |  /todos/:id     | DELETE         | Delete the todo with the specified id,        |
+|              |                 |                |  or return 404 if not found.                  |
 
 ___
 
