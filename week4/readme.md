@@ -162,3 +162,27 @@ router.get('/:id', (req, res) => { // => attaching a route to the router object
 
 module.exports = router;
 ```
+
+This way, we can keep our routes organized and separate from our main app file. :sunglasses:
+
+You can have as many routers as you want. For example, you can have a router for your todo resource, a router for your user resource, and a router for your blog resource.
+
+You can also have a route that starts with a specific **starting point**. This is called a route prefix. 
+
+```
+// app.js
+const express = require('express');
+const app = express();
+
+const todoRouter = require('./routes/todos');
+const userRouter = require('./routes/users');
+const blogRouter = require('./routes/blogs');
+
+app.use('/api/v1/todos', todoRouter);
+app.use('/api/v1/users', userRouter);
+app.use('/api/v1/blogs', blogRouter);
+
+app.listen(8000, () => {
+  console.log('Server is listening on port 8000');
+});
+```
