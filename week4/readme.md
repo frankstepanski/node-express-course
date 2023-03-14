@@ -122,7 +122,6 @@ A payload is the data that we send to a server in a request. The payload is the 
   "completed": false
 }
 ```
-
 ___
 ### Routes 
 
@@ -151,26 +150,14 @@ app.listen(8000, () => {
 ```
 // routes/todos.js
 const express = require('express');
-const router = express.Router();
+const router = express.Router(); // => instantiate a router object
 
-router.get('/', (req, res) => {
+router.get('/', (req, res) => { // => attaching a route to the router object
   res.send('GET /api/v1/todos');
 });
 
-router.post('/', (req, res) => {
-  res.send('POST /api/v1/todos');
-});
-
-router.get('/:id', (req, res) => {
+router.get('/:id', (req, res) => { // => attaching a route to the router object
   res.send('GET /api/v1/todos/:id');
-});
-
-router.put('/:id', (req, res) => {
-  res.send('PUT /api/v1/todos/:id');
-});
-
-router.delete('/:id', (req, res) => {
-  res.send('DELETE /api/v1/todos/:id');
 });
 
 module.exports = router;
