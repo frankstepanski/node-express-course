@@ -126,7 +126,7 @@ A payload is the data that we send to a server in a request. The payload is the 
 ___
 ### Routes 
 
-But, before we get knee deep into HTTP methods, let's take a step back talk about routes and we can structure our routes more efficiently.
+Before we get knee deep into other HTTP methods, let's take a step back talk about how we can structure our routes a bit more efficiently.
 
 What do I mean more efficiently?\
 
