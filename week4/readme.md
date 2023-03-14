@@ -165,7 +165,7 @@ module.exports = router;
 
 This way, we can keep our routes organized and separate from our main app file. :sunglasses:
 
-You can have as many routers as you want. For example, you can have a router for your todo resource, a router for your user resource, and a router for your blog resource.
+>You can have as many routers as you want. For example, you can have a router for your todo resource, a router for your user resource, and a router for your blog resource.
 
 You can also have a route that starts with a specific **starting point**. This is called a route prefix. 
 
