@@ -128,7 +128,7 @@ ___
 
 Before we get knee deep into other HTTP methods, let's take a step back talk about how we can structure our routes a bit more efficiently.
 
-What do I mean more efficiently?\
+What do I mean more efficiently?
 
 Well, we can use a router to group routes together. A router is a mini Express application that we can use to group routes together.
 
