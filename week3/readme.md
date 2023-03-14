@@ -467,8 +467,8 @@ const cars = {
 
 // GET /cars/lexus
 app.get('/cars/:name', (req, res, next) => {
-  console.log(req.params.name); // lexus
-  console.log(cars[req.params.name]); // { model: 'LX', age: 90000 }
+  console.log(req.params.name); // => lexus
+  console.log(cars[req.params.name]); // => { model: 'LX', age: 90000 }
   res.send(cars[req.params.name]);
 });
 ```
@@ -524,9 +524,9 @@ The route parameter **name** will be lexus, and the query parameter **color** wi
 ```
 // GET /cars/lexus?color=red
 app.get('/cars/:name', (req, res, next) => {
-  console.log(req.params.name); // lexus
-  console.log(req.query.color); // red
-  console.log(cars[req.params.name]); // { model: 'LX', age: 90000 }
+  console.log(req.params.name); // => lexus
+  console.log(req.query.color); // => red
+  console.log(cars[req.params.name]); // => { model: 'LX', age: 90000 }
   res.send(cars[req.params.name]);
 });
 ```
@@ -609,7 +609,7 @@ The process of parsing received JSON data from a REST API is called **deserializ
 To do this in JavaScript we can use the [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) method.
 
 ```
-const json = '{"model":"LX","age":90000}'; // this would be coming from a REST API
+const json = '{"model":"LX","age":90000}'; // => this would be coming from a REST API
 const car = JSON.parse(json);
 ```
 
