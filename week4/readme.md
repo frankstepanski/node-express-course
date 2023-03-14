@@ -41,7 +41,7 @@ The HTTP Protocol represents an [HTTP message](https://developer.mozilla.org/en-
 
 ##  HTTP Request Methods
 
-Up to this point, we have only used the [GET](https://expressjs.com/en/5x/api.html#app.get) method to retrieve data from a server.
+Up to this point, we have only used the HTTP request method [GET](https://expressjs.com/en/5x/api.html#app.get) method to retrieve data from a request to a server.
 
 But, there's more! :raised_hands:
 
@@ -51,10 +51,12 @@ Other common HTTP methods that we can use to interact with resources on a server
   - [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT): update an existing resource
   - [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE): delete an existing resource
 
-The following table shows the HTTP methods, Express method and [CRUD](https://developer.mozilla.org/en-US/docs/Glossary/CRUD) operations 
+The following table shows thew common HTTP methods, Express method and [CRUD](https://developer.mozilla.org/en-US/docs/Glossary/CRUD) operations 
 that each HTTP method can perform to interact with resources on a server. 
 
 A **CRUD operation** is a basic operation that we can perform on a resource. CRUD stands for Create, Read, Update, and Delete.
+
+A table of the common HTTP methods, Express methods, CRUD operations, and their descriptions:
 
 | HTTP Method |  Express Method | CRUD Operation | Description                 |
 | ----------- |  -------------- | -------------- | --------------------------- |
@@ -63,11 +65,26 @@ A **CRUD operation** is a basic operation that we can perform on a resource. CRU
 | PUT         |  app.put()      | Update         | Update an existing resource |
 | DELETE      |  app.delete()   | Delete         | Delete an existing resource |
 
+
+A table of how we would map a route to its URL path and HTTP method:
+
+
+| Route name   |  URL path       | HTTP Method    | Description                            |
+| ------------ |  -------------- | -------------- | -------------------------------------- |
+| Index (list) |  /todos         | GET            | Return a list of todos.                |
+| Create       |  /todos         | POST           | Create a new todo.                     |
+| Read         |  /todos/:id     | GET            | Return the todo with the speficied id, |
+|              |                 |                |  or return 404 if not found.           |
+| Update       |  /todos:/id     | PUT            | Update and existing todo with data in  |
+|              |                 |                |  request.                              |
+| Delete       |  /todos/:id     | DELETE         | Delete the todo with the specified id, |
+|              |                 |                |  or return 404 if not found.           |
+
 ___
 
 ![questions](images/QA.gif)
 
->Let's take a quick break to review and answer some questions about RESTful APIs and HTTP methods.
+>Before continuing, let's take a brief intermissions to answer some questions about RESTful APIs and HTTP methods.
 
 **How do we access a resource on a server?**\
 We can use a route to access a resource. A route is a path that we can use to access a resource.
