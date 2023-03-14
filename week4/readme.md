@@ -73,7 +73,7 @@ A **CRUD operation** is a basic operation that we can perform on a resource. CRU
 | Create       |  /todos         | POST           | Create a new todo.                            |
 | Read         |  /todos/:id     | GET            | Return the todo with the speficied id,        |
 |              |                 |                |  or return 404 if not found.                  |
-| Update       |  /todos:/id     | PUT            | Update and existing todo with data in request |
+| Update       |  /todos/id      | PUT            | Update and existing todo with data in request |
 | Delete       |  /todos/:id     | DELETE         | Delete the todo with the specified id,        |
 |              |                 |                |  or return 404 if not found.                  |
 
@@ -96,62 +96,16 @@ An endpoint is a combination of an HTTP method and a route. An endpoint specifie
 A route is a path that we can use to access a resource. An endpoint is a combination of an HTTP method and a route. An endpoint specifies what to do with a resource.
 
 ```
-// route
-app.get('/todos', (req, res) => {
-  res.send('GET /todos')
-})
-// endpoint
-GET /todos
+// route:
+/api/v1/todos/:id
 
-
-
+// endpoint:
+GET /api/v1/todos/:id
+POST /api/v1/todos/:id
+PUT /api/v1/todos/:id
+DELETE /api/v1/todos/:id
 ```
 
 **What is the difference between a CRUD operation and an HTTP method?**\
 A CRUD operation is a basic operation that we can perform on a resource. An HTTP method is a method that we can use to perform a CRUD operation on a resource.
 CRUD operations come from the world of databases. HTTP methods come from the world of the web.
-
-
-**Some examples:**
-
-```
-// todos resource
-
-const todos = [
-  {
-    id: 1,
-    description: 'Learn Express',
-    completed: false
-  },
-  {
-    id: 2,
-    description: 'Learn React',
-    completed: false
-  },
-  {
-    id: 3,
-    description: 'Learn Redux',
-    completed: false
-  },
-  {
-    id: 4,
-    description: 'Learn Node',
-    completed: false
-  }
-]
-
-// API endpoints:
-
-`GET /todos` => returns all todos
-`GET /todos/1` => returns todo with id 1
-
-`POST /todos` => creates a new todo
-`POST /todos/1` => creates a new todo with id 1
-
-`PUT /todos` => updates all todos
-`PUT /todos/1` => updates todo with id 1
-
-`DELETE /todos` => deletes all todos
-`DELETE /todos/1` => deletes todo with id 1
-
-```
