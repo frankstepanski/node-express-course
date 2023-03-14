@@ -153,11 +153,11 @@ const express = require('express');
 const router = express.Router(); // => instantiate a router object
 
 router.get('/', (req, res) => { // => attaching a route to the router object
-  res.send('GET /api/v1/todos');
+  ... 
 });
 
 router.get('/:id', (req, res) => { // => attaching a route to the router object
-  res.send('GET /api/v1/todos/:id');
+  ...
 });
 
 module.exports = router;
@@ -178,9 +178,9 @@ const todoRouter = require('./routes/todos');
 const userRouter = require('./routes/users');
 const blogRouter = require('./routes/blogs');
 
-app.use('/api/v1/todos', todoRouter);
-app.use('/api/v1/users', userRouter);
-app.use('/api/v1/blogs', blogRouter);
+app.use('/api/v1/todos', todoRouter); // => route prefix that starts with /api/v1/todos
+app.use('/api/v1/users', userRouter); // => route prefix that starts with /api/v1/users
+app.use('/api/v1/blogs', blogRouter); // => route prefix that starts with /api/v1/blogs
 
 app.listen(8000, () => {
   console.log('Server is listening on port 8000');
