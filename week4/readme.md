@@ -56,7 +56,7 @@ that each HTTP method can perform to interact with resources on a server.
 
 A **CRUD operation** is a basic operation that we can perform on a resource. CRUD stands for Create, Read, Update, and Delete.
 
-A table of the common HTTP methods, Express methods, CRUD operations, and their descriptions:
+>A table of the common HTTP methods, Express methods, CRUD operations, and their descriptions:
 
 | HTTP Method |  Express Method | CRUD Operation | Description                 |
 | ----------- |  -------------- | -------------- | --------------------------- |
@@ -65,9 +65,7 @@ A table of the common HTTP methods, Express methods, CRUD operations, and their 
 | PUT         |  app.put()      | Update         | Update an existing resource |
 | DELETE      |  app.delete()   | Delete         | Delete an existing resource |
 
-
-A table of how we would map a route to its URL path and HTTP method:
-
+>A table of how we would map a route to its URL path and HTTP method:
 
 | Route name   |  URL path       | HTTP Method    | Description                            |
 | ------------ |  -------------- | -------------- | -------------------------------------- |
