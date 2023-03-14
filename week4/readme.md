@@ -110,5 +110,16 @@ DELETE /api/v1/todos/:id
 A CRUD operation is a basic operation that we can perform on a resource. An HTTP method is a method that we can use to perform a CRUD operation on a resource.
 CRUD operations come from the world of databases. HTTP methods come from the world of the web.
 
+**What is a payload?**\
+A payload is the data that we send to a server in a request. The payload is the data that we send to a server in a request.
+
+```
+// payload:
+{
+  "id": 1,
+  "title": "Buy milk",
+  "completed": false
+}
+```
+
 ___
-dfgdfgdf
