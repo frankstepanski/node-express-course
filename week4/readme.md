@@ -30,7 +30,8 @@ A few of the most important principles are:
   - Use route parameters to specify which resource to access (e.g. /todos/:id)
   - Use query parameters to filter resources (e.g. /todos?completed=true)
 
-So example, the URL /todos provides access to a collection of todo resources, while the URL /todo/1 provides access to a single todo resource. 
+
+So for example, the URL /todos provides access to a collection of todo resources, while the URL /todo/1 provides access to a single todo resource. 
 A collection of resources is also considered one resource.
 
 REST uses various representations of a resource such as JSON, XML, HTML, and plain text. The most common representation is JSON.
@@ -81,7 +82,7 @@ ___
 
 ![questions](images/QA.gif)
 
->Before continuing, let's take a brief intermissions to review some common questions about RESTful APIs and HTTP methods.
+>Before continuing, let's take a brief intermission to review some common questions about RESTful APIs and HTTP methods.
 
 **How do we access a resource on a server?**\
 We can use a route to access a resource. A route is a path that we can use to access a resource.
@@ -123,3 +124,54 @@ A payload is the data that we send to a server in a request. The payload is the 
 ```
 
 ___
+### Routes 
+
+But, before we get knee deep into HTTP methods, let's take a step back talk about routes and we can structure our routes more efficiently.
+
+What do I mean more efficiently?\
+
+Well, we can use a router to group routes together. A router is a mini Express application that we can use to group routes together.
+
+We can use a router to group routes together. A router is a mini Express application that we can use to group routes together.
+
+```
+// app.js
+const express = require('express');
+const app = express();
+
+const todoRouter = require('./routes/todos');
+
+app.use('/api/v1/todos', todoRouter);
+
+app.listen(3000, () => {
+  console.log('Server is listening on port 3000');
+});
+```
+
+```
+// routes/todos.js
+const express = require('express');
+const router = express.Router();
+
+router.get('/', (req, res) => {
+  res.send('GET /api/v1/todos');
+});
+
+router.post('/', (req, res) => {
+  res.send('POST /api/v1/todos');
+});
+
+router.get('/:id', (req, res) => {
+  res.send('GET /api/v1/todos/:id');
+});
+
+router.put('/:id', (req, res) => {
+  res.send('PUT /api/v1/todos/:id');
+});
+
+router.delete('/:id', (req, res) => {
+  res.send('DELETE /api/v1/todos/:id');
+});
+
+module.exports = router;
+```
