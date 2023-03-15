@@ -149,8 +149,6 @@ app.use('/todos', todoRouter);
 
 ... 
 ```
-
-```
 // routes/todos.js
 const express = require('express');
 const router = express.Router(); // => instantiate a router object
