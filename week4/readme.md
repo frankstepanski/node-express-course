@@ -82,7 +82,7 @@ ___
 
 ![questions](images/QA.gif)
 
->Before continuing, let's take a brief intermission to review some common questions about RESTful APIs and HTTP methods.
+>Before continuing, let's take a brief intermission to review some common questions about RESTful APIs jargon.
 
 **How do we access a resource on a server?**\
 We can use a route to access a resource. A route is a path that we can use to access a resource.
