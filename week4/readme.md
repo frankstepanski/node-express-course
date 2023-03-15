@@ -193,4 +193,4 @@ app.listen(8000, () => {
 });
 ```
 
->**Note:**\ /api/v1 is a common route prefix that we use to indicate that we are using version 1 of our API. 
+>**Note:** /api/v1 is a common route prefix that we use to indicate that we are using version 1 of our API. 
