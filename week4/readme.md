@@ -136,7 +136,7 @@ The router file will contain all of the routes for a specific resource. For exam
 
 We would import the router into our app file and use it to handle all of the routes for our todo resource.
 
->The [todo resource](https://jsonplaceholder.typicode.com/todos) is just an example. You can use this pattern for any resource. :nerd_face:
+>The [todo resource](https://jsonplaceholder.typicode.com/todos) is just another example I grabbed from [JSON Placeholder](https://jsonplaceholder.typicode.com/).  You can use this pattern for any resource. :nerd_face:
 
 ```
 // app.js
