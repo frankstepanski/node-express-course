@@ -125,12 +125,12 @@ A payload is the data that we send to a server in a request. The payload is the 
 ___
 ### Routes 
 
-Before we get knee deep into other HTTP methods, let's take a step back talk about how we can structure our routes a bit more efficiently.
+Before we get knee deep into the other HTTP methods, let's take a step back talk about how we can structure our routes a bit more efficiently.
 
 We can use [Express router](https://expressjs.com/en/guide/routing.html#express-router) to group routes together. 
 A router is a mini Express application that we can use to group routes together.
 
-The router file will contain all of the routes for a specific resource. For example, we can create a router file for our todo resource.
+The router file will contain all of the routes for a specific resource. For example, we can create a router file for a todo resource.
 
 ![routes file](images/routes-file.png)
 
