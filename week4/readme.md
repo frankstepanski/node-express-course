@@ -147,7 +147,7 @@ const todoRouter = require('./routes/todos');
 
 app.use('/todos', todoRouter);
 
-...
+... 
 ```
 
 ```
@@ -156,11 +156,11 @@ const express = require('express');
 const router = express.Router(); // => instantiate a router object
 
 router.get('/', (req, res) => { // => attaching a route to the router object
-  ... 
+  // ... handle the request 
 });
 
 router.get('/:id', (req, res) => { // => attaching a route to the router object
-  ...
+  // ... handle the request
 });
 
 module.exports = router;
