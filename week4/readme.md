@@ -134,6 +134,10 @@ The router file will contain all of the routes for a specific resource. For exam
 
 ![routes file](images/routes-file.png)
 
+We would import the router into our app file and use it to handle all of the routes for our todo resource.
+
+>The [todo resource](https://jsonplaceholder.typicode.com/todos) is just an example. You can use this pattern for any resource. 
+
 ```
 // app.js
 const express = require('express');
