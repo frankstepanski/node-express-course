@@ -164,6 +164,7 @@ router.get('/:id', (req, res) => { // => attaching a route to the router object
 module.exports = router;
 ```
 
+
 This way, we can keep our routes organized and separate from our main app file. :sunglasses:
 
 >You can have as many router files as you want. For example, you can have a router for your todo resource, a router for your user resource, and a router for your blog resource.
