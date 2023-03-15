@@ -147,7 +147,10 @@ const todoRouter = require('./routes/todos');
 
 app.use('/todos', todoRouter);
 
-... 
+// ... rest of the app
+```
+
+
 ```
 // routes/todos.js
 const express = require('express');
