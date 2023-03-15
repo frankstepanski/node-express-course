@@ -194,3 +194,26 @@ app.listen(8000, () => {
 ```
 
 >**Note:** /api/v1 is a common route prefix that we use to indicate that we are using version 1 of our API. 
+
+___
+
+### POST 
+
+Now that we have a better understanding of how to structure our routes, let's talk about the POST method.
+
+The POST method is used to create a new resource. We can use the POST method to create a new todo.
+
+```
+// routes/todos.js
+
+router.post('/', (req, res) => {
+
+
+});
+```
+
+We can use the POST method to create a new todo. We can use the POST method to create a new todo.
+
+```
+
+
