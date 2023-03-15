@@ -132,6 +132,7 @@ A router is a mini Express application that we can use to group routes together.
 
 The router file will contain all of the routes for a specific resource. For example, we can create a router file for our todo resource.
 
+![routes file](images/routes-file.png)
 
 ```
 // app.js
