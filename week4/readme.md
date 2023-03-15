@@ -173,6 +173,7 @@ This way, we can keep our routes organized and separate from our main app file. 
 >You can have as many router files as you want. For example, you can have a router for your todo resource, a router for your user resource, and a router for your blog resource.
 
 You can also have a route that starts with a specific **starting point**. This is called a route prefix. 
+In the example below, we have a route prefix that starts with either /api/v1/todos, /api/v1/users, and /api/v1/blogs.
 
 ```
 // app.js
@@ -191,3 +192,5 @@ app.listen(8000, () => {
   console.log('Server is listening on port 8000');
 });
 ```
+
+>**Note:**\ /api/v1 is a common route prefix that we use to indicate that we are using version 1 of our API. 
