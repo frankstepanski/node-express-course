@@ -254,5 +254,13 @@ Select **POST** from the dropdown menu.
 
 ![postman post](images/postman-post.png)
 
+Now, we can send a POST request to our API. 
 
+ - In the URL field, enter the URL for our API. 
+ - In the Body tab, select **raw** from the first dropdown **JSON** from second dropdown menu.
+ - Enter the payload in the text area.
+ - Click the **Send** button.
+
+
+ ![postman post body](images/postman-post-body.png)
 
