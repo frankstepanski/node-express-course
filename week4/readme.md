@@ -226,6 +226,15 @@ Once you have created an account, you can start sending requests to your API.
 First, let's setup a POST route for our todo resource.
 
 ```
+// app.js
+
+// ... rest of the app
+
+app.use('/api/v1/todos', todoRouter);
+
+// ... rest of the app
+```
+
 // routes/todos.js
 const express = require('express');
 const router = express.Router();
@@ -258,9 +267,7 @@ Now, we can send a POST request to our API.
 
  - In the URL field, enter the URL for our API. 
  - In the Body tab, select **raw** from the first dropdown **JSON** from second dropdown menu.
- - Enter the payload in the text area.
- - Click the **Send** button.
-
+ - Enter the payload in the text area (aka our JSON)
 
  ![postman post body](images/postman-post-body.png)
 
