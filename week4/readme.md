@@ -277,4 +277,9 @@ Now, we can send a POST request to our API.
   ![postman post send](images/postman-post-send.png)
 
   We did it!!! :tada: :tada: :tada:
-  
+
+  **But what did we do actually?** :thinking:
+
+  >We sent a POST request to our API. We sent a payload with the request. The payload contained a todo. We then handled the request in our route. We got the todo from the payload and sent it back to the client.
+
+  ![very cool](images/very-cool.gif)
