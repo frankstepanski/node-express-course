@@ -265,9 +265,11 @@ Select **POST** from the dropdown menu.
 
 Now, we can send a POST request to our API. 
 
- - In the URL field, enter the URL for our API. 
+ - In the URL field, enter the URL for our route (http://localhost:8000/api/v1/todos). 
  - In the Body tab, select **raw** from the first dropdown **JSON** from second dropdown menu.
  - Enter the payload in the text area (aka our JSON)
+
+ >**Note:** The payload must be in a JSON format.
 
  ![postman post body](images/postman-post-body.png)
 
