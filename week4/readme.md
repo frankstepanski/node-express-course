@@ -199,21 +199,39 @@ ___
 
 ### POST 
 
-Now that we have a better understanding of how to structure our routes, let's talk about the POST method.
+Now that we have a better understanding of how to structure our routes, let's finally move on to other HTTP methods.
 
-The POST method is used to create a new resource. We can use the POST method to create a new todo.
+The [POST method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) is used to create a new resource. For examplke, we can use the POST method to create a new todo.
+With POST you have to send a **payload** with the request. Remember, the payload is the data that we send to the server in a request.
+
+>**Note:** We actually did send a payload with a GET request previously, that was when we used a query string. But not every GET request has a query string. 
+
+With a POST request, a payload is required. It is sent in the body of the request. The body of the request is the part of the request that contains the data that we send to the server.
+
+**How do we send a payload with a POST request?**\
+
+The request that is coming from the client (i.e. the browser) would normally be coming from a form.
+
+We will not be using a form to send a POST request. Instead, we will be using [Postman](https://www.postman.com/) to send a POST request.
+
+#### Postman
+
+[Postman](https://www.postman.com/) is a tool that we can use to test our API. It is a great tool to use when we are building an API. It allows us to send requests to our API and see the response.
 
 ```
-// routes/todos.js
-
-router.post('/', (req, res) => {
 
 
-});
+``` 
+// POST request with payload in the body
+POST /todos
+{
+  "title": "Buy milk",
+  "completed": false
+}
 ```
 
-We can use the POST method to create a new todo. We can use the POST method to create a new todo.
+>**Note:** The body of the request is the part of the request that contains the data that we send to the server.
 
-```
+
 
 
