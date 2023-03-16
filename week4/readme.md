@@ -233,7 +233,6 @@ First, let's setup a POST route for our todo resource.
 app.use('/api/v1/todos', todoRouter);
 
 // ... rest of the app
-```
 
 // routes/todos.js
 const express = require('express');
