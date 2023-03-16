@@ -230,7 +230,7 @@ First, let's setup a POST route for our todo resource.
 
 // ... beginning of the app
 
-app.use('/api/v1/todos', todoRouter);
+app.use('/api/v1/todos', todoRouter); 
 
 // ... rest of the app
 
