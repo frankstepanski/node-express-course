@@ -242,9 +242,11 @@ Second, make sure we start our server.
 
 ![run server](images/running-server.png)
 
-In Postman, click the **new+** button to create a new request. A window will pop up. In the window, select **HTTP Request** from the dropdown menu.
+In Postman, click the **New** button to create a new request. A window will pop up.
 
 ![postman new button](images/postman-new-button.png)
+
+In the window, select **HTTP Request** from the dropdown menu.
 
 ![postman new](images/postman-new.png)
 
