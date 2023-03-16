@@ -281,5 +281,3 @@ Now, we can send a POST request to our API.
   **But what did we do actually?** :thinking:
 
   >We sent a POST request to our API. We sent a payload with the request. The payload contained a todo. We then handled the request in our route. We got the todo from the payload and sent it back to the client.
-
-  ![very cool](images/good-job.gif)
