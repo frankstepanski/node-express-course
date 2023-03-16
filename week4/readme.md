@@ -250,5 +250,9 @@ In the window, select **HTTP Request** from the dropdown menu.
 
 ![postman new](images/postman-new.png)
 
+Select **POST** from the dropdown menu.
+
+![postman post](images/postman-post.png)
+
 
 
