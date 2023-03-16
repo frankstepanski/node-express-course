@@ -218,20 +218,4 @@ We will not be using a form to send a POST request. Instead, we will be using [P
 
 [Postman](https://www.postman.com/) is a tool that we can use to test our API. It is a great tool to use when we are building an API. It allows us to send requests to our API and see the response.
 
-```
-
-
-``` 
-// POST request with payload in the body
-POST /todos
-{
-  "title": "Buy milk",
-  "completed": false
-}
-```
-
->**Note:** The body of the request is the part of the request that contains the data that we send to the server.
-
-
-
-
+![postman](images/postman.png)
