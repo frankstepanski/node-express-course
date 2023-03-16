@@ -238,7 +238,7 @@ app.use('/api/v1/todos', todoRouter);
 const express = require('express');
 const router = express.Router();
 
-router.post('/', (req, res, next) => {
+router.post('/', (req, res) => {
     const { todo } = req.body;
     res.send(`You sent: ${todo}`);
 });
