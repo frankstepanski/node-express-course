@@ -217,5 +217,35 @@ We will not be using a form to send a POST request. Instead, we will be using [P
 #### Postman
 
 [Postman](https://www.postman.com/) is a tool that we can use to test our API. It is a great tool to use when we are building an API. It allows us to send requests to our API and see the response.
+You can either download the Postman app or use the Postman web app. Either way, you will need to create an account.
 
 ![postman](images/postman.png)
+
+Once you have created an account, you can start sending requests to your API.
+
+First, let's setup a POST route for our todo resource.
+
+```
+// routes/todos.js
+const express = require('express');
+const router = express.Router();
+
+router.post('/', (req, res, next) => {
+    const { todo } = req.body;
+    res.send(`You sent: ${todo}`);
+});
+
+module.exports = router;
+```
+
+Next, make sure we start our server.
+
+![run server](images/run-server.png)
+
+Now, let's send a POST request to our API using Postman.
+
+
+
+
+
+
