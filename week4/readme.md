@@ -238,14 +238,15 @@ router.post('/', (req, res, next) => {
 module.exports = router;
 ```
 
-Next, make sure we start our server.
+Second, make sure we start our server.
 
 ![run server](images/run-server.png)
 
-Now, let's send a POST request to our API using Postman.
+In Postman, click the **new+** button to create a new request. A window will pop up. In the window, select **HTTP Request** from the dropdown menu.
 
+![postman new button](images/postman-new-button.png)
 
-
+![postman new](images/postman-new.png)
 
 
 
