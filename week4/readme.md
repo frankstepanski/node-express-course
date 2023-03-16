@@ -239,9 +239,8 @@ const express = require('express');
 const router = express.Router();
 
 router.post('/', (req, res) => {
-    const { todo } = req.body;
-    // sending back the todo that we received
-    res.json(todo);
+    const { todo } = req.body; // => get the todo from the payload
+    res.json(todo); // => send the todo back to the client
 });
 
 module.exports = router;
@@ -273,3 +272,6 @@ Now, we can send a POST request to our API.
 
  ![postman post body](images/postman-post-body.png)
 
+ - Click the **Send** button to send the request.
+ 
+  ![postman post send](images/postman-post-send.png)
