@@ -228,7 +228,7 @@ First, let's setup a POST route for our todo resource.
 ```
 // app.js
 
-// ... rest of the app
+// ... beginning of the app
 
 app.use('/api/v1/todos', todoRouter);
 
