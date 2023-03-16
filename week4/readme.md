@@ -240,7 +240,8 @@ const router = express.Router();
 
 router.post('/', (req, res) => {
     const { todo } = req.body;
-    res.send(`You sent: ${todo}`);
+    // sending back the todo that we received
+    res.json(todo);
 });
 
 module.exports = router;
