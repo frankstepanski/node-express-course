@@ -284,4 +284,21 @@ Now, we can send a POST request to our API.
 
   Using Postman, we can test our API. We can send requests to our API and see the response. We can also use Postman to test our API with different payloads.
 
+  Let's do something a little more interesting. 
   
+  Let's update our route to add to our todos array. We will also send back the updated todos array.
+
+  ```
+  const express = require('express');
+  const router = express.Router();
+
+  const todos = ['todo 1', 'todo 2', 'todo 3'];
+
+  // routes/todos.js
+  router.post('/', (req, res) => {
+    const { todo } = req.body;
+    todos.push(todo);
+});
+
+  ```
+  ```
