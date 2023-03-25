@@ -52,4 +52,16 @@ There are many different types of NoSQL databases, and they are often categorize
 
 ![mongo ranking](images/ranking.png)
 
-It is a document store, which means it stores data in documents. Documents are similar to JSON objects. They are a collection of key-value pairs. Documents are stored in collections.
+### Document Databases
+
+A record in MongoDB is a document, which is a data structure composed of field and value pairs. MongoDB documents are similar to JSON objects. The values of fields may include other documents, arrays, and arrays of documents.
+
+![document](images/document.png)
+
+MongoDB stores data records as BSON documents. BSON is a binary representation of JSON documents, though it contains more data types than JSON.
+
+The value of a field can be any of the [BSON data types](https://www.mongodb.com/docs/manual/reference/bson-types/), including other documents, arrays, and arrays of documents.
+
+Field names in a document must be unique. Field names cannot contain the null character.
+
+### Collections
