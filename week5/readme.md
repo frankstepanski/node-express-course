@@ -48,4 +48,8 @@ There are many different types of NoSQL databases, and they are often categorize
 
 ## MongoDB
 
-[MongoDB](https://www.mongodb.com/) is a NoSQL database that stores data in JSON-like documents. 
+[MongoDB](https://www.mongodb.com/) is a NoSQL database that stores data in JSON-like documents and is the most popular NoSQL database. 
+
+![mongo ranking](images/ranking.png)
+
+It is a document store, which means it stores data in documents. Documents are similar to JSON objects. They are a collection of key-value pairs. Documents are stored in collections.
