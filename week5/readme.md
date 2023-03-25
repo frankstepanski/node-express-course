@@ -97,12 +97,12 @@ MongoDB is a cross-platform database. It can be installed on Windows, macOS, and
 
 You have a couple options in installing and running MongoDB.
 
-  - Cloud - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) is a fully managed cloud database service. It is free to use for small databases. It is a good option if you want to get started quickly and don't want to worry about managing your own database server.
+  - **Cloud** - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) is a fully managed cloud database service. It is free to use for small databases. It is a good option if you want to get started quickly and don't want to worry about managing your own database server.
 
   ![atlas](images/atlas.png)
 
-  - Local - You can install a [MongoDB server](https://www.mongodb.com/docs/manual/administration/install-community/) on your local machine. You can download the [community edition](https://www.mongodb.com/download-center/community) for free. 
+  - **Local** - You can install a [MongoDB server](https://www.mongodb.com/docs/manual/administration/install-community/) on your local machine. You can download the [community edition](https://www.mongodb.com/download-center/community) for free. 
 
-  - Compass - [MongoDB Compass](https://www.mongodb.com/products/compass) is a GUI for MongoDB. It can be used either with a local MongoDB server or with MongoDB Atlas. It is free to use.
+  - **Compass** - [MongoDB Compass](https://www.mongodb.com/products/compass) is a GUI for MongoDB. It can be used either with a local MongoDB server or with MongoDB Atlas. It is free to use.
 
   ![compass](images/compass.png)
