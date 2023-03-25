@@ -101,5 +101,8 @@ You have a couple options in installing and running MongoDB.
 
   ![atlas](images/atlas.png)
 
+  - Local - You can install a [MongoDB server](https://www.mongodb.com/docs/manual/administration/install-community/) on your local machine. You can download the [community edition](https://www.mongodb.com/download-center/community) for free. 
 
-  - Local - You can install MongoDB on your local machine. You can download the [community edition](https://www.mongodb.com/download-center/community) for free. 
+  - Compass - [MongoDB Compass](https://www.mongodb.com/products/compass) is a GUI for MongoDB. It can be used either with a local MongoDB server or with MongoDB Atlas. It is free to use.
+
+  ![compass](images/compass.png)
