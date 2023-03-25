@@ -33,11 +33,11 @@ Cloud computing also rose in popularity, and developers began using public cloud
 
 There are many different types of NoSQL databases, and they are often categorized by the way they store data.
 
-  - [Key-value stores](https://www.mongodb.com/key-value-databases) store data in key-value pairs. The key is used to look up the value. The value can be any type of data, including a document. Key-value stores are often used for caching and session management.
-  - [Document stores](https://www.mongodb.com/document-databases) store data in documents. Documents are similar to JSON objects. They are a collection of key-value pairs. Documents are stored in collections. Document stores are often used for storing unstructured data.
-  - [Wide-column stores](https://www.mongodb.com/wide-column-databases) store data in tables. Each row in the table is a key-value pair. The key is a unique identifier for the row, and the value is a collection of key-value pairs. Wide-column stores are often used for storing time series data.
-  - [Graph stores](https://www.mongodb.com/graph-databases) store data in a graph structure. Nodes are connected by edges. Graph stores are often used for social networks and recommendation engines.
-  
+  - [Key-value stores](https://www.mongodb.com/key-value-databases) store data in key-value pairs. The key is used to look up the value. The value can be any type of data, including a document. Key-value stores are often used for caching and session management (Redis)
+  - [Document stores](https://www.mongodb.com/document-databases) store data in documents. Documents are similar to JSON objects. They are a collection of key-value pairs. Documents are stored in collections. Document stores are often used for storing unstructured data (MongoDB)
+  - [Wide-column stores](https://www.mongodb.com/wide-column-databases) store data in tables. Each row in the table is a key-value pair. The key is a unique identifier for the row, and the value is a collection of key-value pairs. Wide-column stores are often used for storing time series data (Cassandra)
+  - [Graph stores](https://www.mongodb.com/graph-databases) store data in a graph structure. Nodes are connected by edges. Graph stores are often used for social networks and recommendation engines (Neo4j)
+
 
 ## MongoDB
 
