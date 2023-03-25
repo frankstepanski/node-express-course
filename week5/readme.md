@@ -64,4 +64,18 @@ The value of a field can be any of the [BSON data types](https://www.mongodb.com
 
 Field names in a document must be unique. Field names cannot contain the null character.
 
+### Key Terms
+
+MongoDB is a **database server**  that can run multiple **databases**. Each database can contain multiple **collections**. Each collection can contain multiple **documents**.
+
+  - databases will contain collections
+  - collections will contain documents
+  - documents will contain fields
+  - fields will contain values 
+
+Yes, it feels like the russian nesting dolls of databases. 
+
+![nesting dolls](images/nesting-dolls.png)
+
+
 ### Collections
