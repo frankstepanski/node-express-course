@@ -75,7 +75,7 @@ MongoDB is a **database server**  that can run multiple **databases**. Each data
 
 Yes, it feels like the russian nesting dolls of databases. 
 
-![nesting dolls](images/nesting-dolls.gif)
+![nesting dolls](images/dolls.gif)
 
 
 ### Collections
