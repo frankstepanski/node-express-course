@@ -66,16 +66,30 @@ Field names in a document must be unique. Field names cannot contain the null ch
 
 ### Key Terms
 
-MongoDB is a **database server**  that can run multiple **databases**. Each database can contain multiple **collections**. Each collection can contain multiple **documents**.
+MongoDB is a database server. It is a program that runs on a server and stores data in a database. It is a component of a larger software stack.
+
+Each database can contain multiple **collections**. Each collection can contain multiple **documents**.
 
   - databases will contain collections
   - collections will contain documents
   - documents will contain fields
   - fields will contain values 
 
-Yes, it feels like the russian nesting dolls of databases. 
+>Yes, it feels like the russian nesting dolls of databases. 
 
-![nesting dolls](images/dolls.gif)
+### EcoSystem
+
+Let's review how MongoDB fits in a full-stack application.
+
+In your application, you will have a front-end that can be a single page application (SPA). You’ll have a backend with your server side logic and then the data layer. The data layer will have the database and the MongoDB server.
+
+On the backend server where you write your code you have drivers for the different languages (Node.js, Java, Python, etc). These drivers will interact with the MongoDB server.
+
+The MongoDB server will actually not directly write the data into files but instead talks to a storage engine (the default is WiredTiger) which does that. The MongoDB server gets the query from your driver and then forwards that information to the storage engine and the storage engine retrieves or stores that data in files.
+
+>Lot's of moving parts, but it's a powerful system.
+
+![high level](images/high-level.png)
 
 
 ### Collections
