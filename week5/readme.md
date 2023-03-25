@@ -58,7 +58,7 @@ A record in MongoDB is a document, which is a data structure composed of field a
 
 ![document](images/document.png)
 
-MongoDB stores data records as BSON documents. BSON is a binary representation of JSON documents, though it contains more data types than JSON.
+[MongoDB](https://www.youtube.com/watch?v=-bt_y4Loofg) stores data records as BSON documents. BSON is a binary representation of JSON documents, though it contains more data types than JSON.
 
 The value of a field can be any of the [BSON data types](https://www.mongodb.com/docs/manual/reference/bson-types/), including other documents, arrays, and arrays of documents.
 
