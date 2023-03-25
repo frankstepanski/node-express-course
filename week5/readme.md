@@ -91,5 +91,15 @@ The MongoDB server will actually not directly write the data into files but inst
 
 ![high level](images/high-level.png)
 
+### Installaion
 
-### Collections
+MongoDB is a cross-platform database. It can be installed on Windows, macOS, and Linux.
+
+You have a couple options in installing and running MongoDB.
+
+  - Cloud - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) is a fully managed cloud database service. It is free to use for small databases. It is a good option if you want to get started quickly and don't want to worry about managing your own database server.
+
+  ![atlas](images/atlas.png)
+
+
+  - Local - You can install MongoDB on your local machine. You can download the [community edition](https://www.mongodb.com/download-center/community) for free. 
