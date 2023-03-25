@@ -35,6 +35,7 @@ Cloud computing also rose in popularity, and developers began using public cloud
 
 NoSQL databases are schemaless. They store data in a format that is more flexible than the relational model. They are often referred to as “schemaless” because they don't require a schema to be defined before data is stored.
 Comparing the relational model to the NoSQL model, the relational model is like a spreadsheet, and the NoSQL model is like a JSON object.
+
 This flexibility makes NoSQL databases a good choice for storing data that is unstructured or that changes frequently.
 
 There are many different types of NoSQL databases, and they are often categorized by the way they store data.
