@@ -31,7 +31,14 @@ This model can be rigid and inflexible. It requires a lot of planning and foreth
 
 Cloud computing also rose in popularity, and developers began using public clouds to host their applications and data. They wanted the ability to distribute data across multiple servers and regions to make their applications resilient, to scale out instead of scale up, and to intelligently geo-place their data. Some NoSQL databases like MongoDB provide these capabilities.
 
+There are many different types of NoSQL databases, and they are often categorized by the way they store data.
 
-
+  - [Key-value stores](https://www.mongodb.com/key-value-databases) store data in key-value pairs. The key is used to look up the value. The value can be any type of data, including a document. Key-value stores are often used for caching and session management.
+  - [Document stores](https://www.mongodb.com/document-databases) store data in documents. Documents are similar to JSON objects. They are a collection of key-value pairs. Documents are stored in collections. Document stores are often used for storing unstructured data.
+  - [Wide-column stores](https://www.mongodb.com/wide-column-databases) store data in tables. Each row in the table is a key-value pair. The key is a unique identifier for the row, and the value is a collection of key-value pairs. Wide-column stores are often used for storing time series data.
+  - [Graph stores](https://www.mongodb.com/graph-databases) store data in a graph structure. Nodes are connected by edges. Graph stores are often used for social networks and recommendation engines.
+  
 
 ## MongoDB
+
+[MongoDB](https://www.mongodb.com/) is a NoSQL database that stores data in JSON-like documents. 
