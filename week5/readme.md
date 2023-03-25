@@ -31,7 +31,7 @@ This model can be rigid and inflexible. It requires a lot of planning and foreth
 
 Cloud computing also rose in popularity, and developers began using public clouds to host their applications and data. They wanted the ability to distribute data across multiple servers and regions to make their applications resilient, to scale out instead of scale up, and to intelligently geo-place their data. Some NoSQL databases like MongoDB provide these capabilities.
 
-### NoSQl
+### NoSQL
 
 NoSQL databases are schemaless. They store data in a format that is more flexible than the relational model. They are often referred to as “schemaless” because they don't require a schema to be defined before data is stored.
 Comparing the relational model to the NoSQL model, the relational model is like a spreadsheet, and the NoSQL model is like a JSON object.
