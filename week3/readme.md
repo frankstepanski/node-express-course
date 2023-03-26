@@ -202,6 +202,7 @@ The path is the part of a request URL after the hostname and port number, so in 
 the path is /about (in this example, the **hostname** is localhost, the port number is 8000).
 
 The HTTP verb is always included in the request, and it is one of a [number of options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) used to specify expected functionality. 
+
 GET requests are used for retrieving resources from a server.
 
 Express uses [app.get()](https://expressjs.com/en/4x/api.html#app.get) to register routes to match GET requests. 
@@ -302,7 +303,7 @@ There are many ways to end a response process: Calling response.send(), response
 
 >What is the difference between response.end() and response.send()?
 
-The difference is that **response.end()** does ends the response process, but it does not send any data back to the client.
+The difference is that **response.end()** ends the response process, but it does not send any data back to the client.
 
 >When would this be used? It is normally used in middleware where you need to end the response (i.e. error handling or logging, etc.)
 ___
