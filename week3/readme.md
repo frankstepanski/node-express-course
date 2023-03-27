@@ -384,10 +384,7 @@ const middleware = (req, res, next) => {
 >Using **next()** will execute the code after the current middleware function is finished. 
 Using **return next()** will immediately jump out of the callback the code below will be unreachable. Normally next() is used and only return next() when in some sort of conditional statement.
 
-**Third-party Middleware**
-
-Third-party middleware (aka Application-level) is middleware that is not built into Express, 
-but available as a separate Node.js module that can be installed using npm. 
+**Commonly Used Middleware**
 
 A few of the commonly used middleware packages that we will be using in this course are:
 
@@ -395,6 +392,7 @@ A few of the commonly used middleware packages that we will be using in this cou
   - [morgan](https://www.npmjs.com/package/morgan): provides HTTP request logging; logs HTTP requests to the console.
   - [helmet](https://www.npmjs.com/package/helmet): security middleware functions that set HTTP response headers to help protect your app from some well-known web vulnerabilities.
   - [static](https://expressjs.com/en/starter/static-files.html): serves static files such as images, CSS files, and JavaScript files.
+  - [json](https://expressjs.com/en/api.html#express.json): built-in middleware that parses incoming requests with JSON payloads and is based on body-parser.
 
 **Using Middleware**
 
