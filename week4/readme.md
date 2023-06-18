@@ -29,6 +29,8 @@ For example, a video game might consume an API that allows the code to draw grap
 You've seen a few methods available in the Express API, like app.use or app.get. 
 These are interfaces that you as a programmer can use to talk to other code.
 
+![API](images/API.png)
+
 There are also computer-to-computer APIs. These happen over a network and usually over the internet. These computers may be running different programming languages and/or different OSes, so common ways have been developed for them to communicate. Some send plain text, others might choose JSON or XML. They might send things over HTTP or over another protocol like FTP. Either way, both parties have to agree that they’re going to send data a certain way. In this chapter, the APIs you create will use JSON.
 
 
