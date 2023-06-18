@@ -7,9 +7,13 @@
   - link 4
 
 ## Objectives
-- RESTful APIs
-- CRUD HTTP Requests
-- Using Postman
+- Understand about what an API is
+  - API design principles 
+- HTTP Request Methods
+  - GET
+  - POST
+  - PUT
+  - DELETE
 - Error handling
 - MVC
 - Controllers
