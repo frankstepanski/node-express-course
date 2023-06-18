@@ -23,7 +23,7 @@ consumed by code.
 
 At some level, all UIs sit on top of software interfaces—that is, on top of some APIs.
 
-At a high level, APIs are ways for one piece of code to talk to another piece of code. 
+At a high level, [APIs](https://www.redhat.com/en/topics/api/what-are-application-programming-interfaces) are ways for one piece of code to talk to another piece of code. 
 This could mean a computer talking to itself or a computer talking to another computer over a network. 
 For example, a video game might consume an API that allows the code to draw graphics to the screen. 
 
