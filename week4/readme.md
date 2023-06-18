@@ -38,7 +38,9 @@ These computers may be running different programming languages and/or different 
 Some send plain text, while most others choose JSON. They might send things over HTTP or over another protocol like FTP. 
 Either way, both parties have to agree that they're going to send data a certain way.
 
+The APIs you will build are ones that you can build with Express. These APIs will take HTTP requests and respond with JSON data.
 
+### Designing an API
 
 When a web API follows the [constraints of REST](https://restfulapi.net/rest-architectural-constraints/), the API called a RESTful API.
 
