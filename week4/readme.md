@@ -26,6 +26,7 @@ At some level, all UIs sit on top of software interfaces—that is, on top of so
 At a high level, APIs are ways for one piece of code to talk to another piece of code. 
 This could mean a computer talking to itself or a computer talking to another computer over a network. 
 For example, a video game might consume an API that allows the code to draw graphics to the screen. 
+
 You've seen a few methods available in the Express API, like app.use or app.get. 
 These are interfaces that you as a programmer can use to talk to other code.
 
