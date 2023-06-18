@@ -2,7 +2,7 @@
 
 ## Table of Contents
   - [Building APIs](#building-apis)
-  - link 2
+  - [HTTP Request Methods](#http-request-methods)
   - link 3
   - link 4
 
