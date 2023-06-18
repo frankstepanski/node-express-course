@@ -40,7 +40,7 @@ Either way, both parties have to agree that they're going to send data a certain
 
 
 
-When a web API follows the [constraints of REST](https://restfulapi.net/rest-architectural-constraints/), the API called a RESTful API. :sleeping:
+When a web API follows the [constraints of REST](https://restfulapi.net/rest-architectural-constraints/), the API called a RESTful API.
 
 A RESTful API is all about URLs, which provide access to resources such as HTML, CSS, image, JSON, that are returned by a request.
 
