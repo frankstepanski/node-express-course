@@ -155,7 +155,7 @@ kill -9 <PID>
 Every time you make a change to one of your files, you will need to re-start your server in order for the changes to take effect
 You can automate this by using the [nodemon](https://www.npmjs.com/package/nodemon) package.
 
-The nodemon package will monitor any file changes and re-start it for you. 
+The nodemon package will monitor any file changes and re-start the server for you. 
 
 To install nodemon, run the following command:
 
@@ -202,6 +202,7 @@ The path is the part of a request URL after the hostname and port number, so in 
 the path is /about (in this example, the **hostname** is localhost, the port number is 8000).
 
 The HTTP verb is always included in the request, and it is one of a [number of options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) used to specify expected functionality. 
+
 GET requests are used for retrieving resources from a server.
 
 Express uses [app.get()](https://expressjs.com/en/4x/api.html#app.get) to register routes to match GET requests. 
@@ -302,7 +303,7 @@ There are many ways to end a response process: Calling response.send(), response
 
 >What is the difference between response.end() and response.send()?
 
-The difference is that **response.end()** does ends the response process, but it does not send any data back to the client.
+The difference is that **response.end()** ends the response process, but it does not send any data back to the client.
 
 >When would this be used? It is normally used in middleware where you need to end the response (i.e. error handling or logging, etc.)
 ___
@@ -383,10 +384,7 @@ const middleware = (req, res, next) => {
 >Using **next()** will execute the code after the current middleware function is finished. 
 Using **return next()** will immediately jump out of the callback the code below will be unreachable. Normally next() is used and only return next() when in some sort of conditional statement.
 
-**Third-party Middleware**
-
-Third-party middleware (aka Application-level) is middleware that is not built into Express, 
-but available as a separate Node.js module that can be installed using npm. 
+**Commonly Used Middleware**
 
 A few of the commonly used middleware packages that we will be using in this course are:
 
@@ -394,6 +392,7 @@ A few of the commonly used middleware packages that we will be using in this cou
   - [morgan](https://www.npmjs.com/package/morgan): provides HTTP request logging; logs HTTP requests to the console.
   - [helmet](https://www.npmjs.com/package/helmet): security middleware functions that set HTTP response headers to help protect your app from some well-known web vulnerabilities.
   - [static](https://expressjs.com/en/starter/static-files.html): serves static files such as images, CSS files, and JavaScript files.
+  - [json](https://expressjs.com/en/api.html#express.json): built-in middleware that parses incoming requests with JSON payloads and is based on body-parser.
 
 **Using Middleware**
 
