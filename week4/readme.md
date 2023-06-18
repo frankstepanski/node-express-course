@@ -55,7 +55,6 @@ A few of the most important principles are:
   - Use route parameters to specify which resource to access (e.g. /todos/:id)
   - Use query parameters to filter resources (e.g. /todos?completed=true)
 
-
 So for example, the URL /todos provides access to a collection of todo resources, while the URL /todo/1 provides access to a single todo resource. 
 A collection of resources is also considered one resource.
 
@@ -64,10 +63,6 @@ REST uses various representations of a resource such as JSON, XML, HTML, and pla
 The HTTP Protocol represents an [HTTP message](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages) as text, it may look like JSON, or even JavaScript, but it is always text.
 
 ![http messages](images/http-messages.png)
-
-### API Design
-
-
 
 ##  HTTP Request Methods
 
