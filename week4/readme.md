@@ -1,7 +1,7 @@
 # Week 4
 
 ## Table of Contents
-  - link 1
+  - [Building APIs](#building-apis)
   - link 2
   - link 3
   - link 4
@@ -15,7 +15,23 @@
 - Controllers
 - Routers
 
-## Representational state transfer (REST)
+## Building APIs
+
+API is a pretty broad term. It stands for application programming interface, which doesn't demystify
+the term much. A UI is meant to be consumed by human users, but a software interface is meant to be 
+consumed by code. 
+
+At some level, all UIs sit on top of software interfaces—that is, on top of some APIs.
+
+At a high level, APIs are ways for one piece of code to talk to another piece of code. 
+This could mean a computer talking to itself or a computer talking to another computer over a network. 
+For example, a video game might consume an API that allows the code to draw graphics to the screen. 
+You've seen a few methods available in the Express API, like app.use or app.get. 
+These are interfaces that you as a programmer can use to talk to other code.
+
+There are also computer-to-computer APIs. These happen over a network and usually over the internet. These computers may be running different programming languages and/or different OSes, so common ways have been developed for them to communicate. Some send plain text, others might choose JSON or XML. They might send things over HTTP or over another protocol like FTP. Either way, both parties have to agree that they’re going to send data a certain way. In this chapter, the APIs you create will use JSON.
+
+
 
 When a web API follows the [constraints of REST](https://restfulapi.net/rest-architectural-constraints/), the API called a RESTful API. :sleeping:
 
@@ -39,6 +55,10 @@ REST uses various representations of a resource such as JSON, XML, HTML, and pla
 The HTTP Protocol represents an [HTTP message](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages) as text, it may look like JSON, or even JavaScript, but it is always text.
 
 ![http messages](images/http-messages.png)
+
+### API Design
+
+
 
 ##  HTTP Request Methods
 
