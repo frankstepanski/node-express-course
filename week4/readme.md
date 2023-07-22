@@ -1,7 +1,7 @@
 # Week 4
 
 ## Table of Contents
-  - [Building APIs](#building-apis)
+  - [API Architecture](#api-architecture)
   - [HTTP Request Methods](#http-request-methods)
   - link 3
   - link 4
