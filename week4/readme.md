@@ -1,7 +1,7 @@
 # Week 4
 
 ## Table of Contents
-  - [Demystifying an API](#demystifying-api)
+  - [Demystifying API](#demystifying-api)
   - [HTTP Request Methods](#http-request-methods)
   - Postman
   - link 3
@@ -25,7 +25,7 @@
 - Controllers
 - Routers
 
-## Demystifying an API
+## Demystifying API
 
 The word "API" is a pretty broad term. It stands for application programming interface, which doesn't demystify
 the term much. A UI is meant to be consumed by human users, but a software interface is meant to be 
