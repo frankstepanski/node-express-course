@@ -28,7 +28,7 @@
 ## Demystifying API
 
 The word "API" is a pretty broad term. It stands for application programming interface, which doesn't demystify
-the term much. A UI is meant to be consumed by human users, but a software interface is meant to be 
+the term much. An UI (User Interface) is meant to be consumed by human users, but a software interface is meant to be 
 consumed by code. 
 
 At some level, all UIs sit on top of software interfaces—that is, on top of some APIs.
@@ -37,7 +37,7 @@ At a high level, [APIs](https://www.redhat.com/en/topics/api/what-are-applicatio
 This could mean a computer talking to itself or a computer talking to another computer over a network. 
 For example, a video game might consume an API that allows the code to draw graphics to the screen. 
 
-You've seen a few methods available in the Express API, like app.use or app.get. 
+You've seen a few methods available in the Express API, like app.use() or app.get(). 
 These are interfaces that you as a programmer can use to talk to other code.
 
 ![API](images/API.png)
