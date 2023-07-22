@@ -188,7 +188,7 @@ To stop the server, press **Ctrl + C** in your terminal window.
 
 ___
 
-### Routing 
+## Routing 
 
 Once the Express server is running and listening for requests, we need to define how the server should 
 respond to any given request. 
@@ -337,7 +337,7 @@ app.get("/about", (req, res, next) => {
 ```
 ___
 
-### Middleware
+## Middleware
 
 A web framework like Express.js operates through functions called [middleware](https://expressjs.com/en/guide/using-middleware.html) that sit between 
 an HTTP interaction on the web and the Node.js platform. Middleware is a general term applied to code that assists in listening for, analyzing, filtering, and handling HTTP communication
@@ -576,7 +576,7 @@ Then visit **localhost:8000/images/cat.jpg** in your browser. You should see the
 
 ___
 
-### JSON
+## JSON
 
 For REST APIs to be useful, they need to work with data in a format that is **easy** to consume. This is where [JSON](https://www.json.org/json-en.html) comes in.
 
@@ -743,7 +743,7 @@ There are many extensions that do this, a very popular one for the Chrome browse
 
 ___
 
-### Deployment
+## Deployment
 
 Let's try to deploy what we have learned so far to the cloud. :cloud:
 This way we can share our app with the world. :earth_americas:
@@ -816,6 +816,6 @@ Grab a :coffee: or a beverage :tropical_drink: of choice and enjoy the rest of y
 
 ![congrats](images/congrats.gif)
 
-### Code
+## Code
 
 Checkout the [repo](https://github.com/frankstepanski/node-express-course-code/tree/main/week3/src) for this week's lesson.
