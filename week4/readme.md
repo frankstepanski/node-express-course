@@ -20,7 +20,7 @@
 
 ## API Architecture
 
-API is a pretty broad term. It stands for application programming interface, which doesn't demystify
+the word "API" is a pretty broad term. It stands for application programming interface, which doesn't demystify
 the term much. A UI is meant to be consumed by human users, but a software interface is meant to be 
 consumed by code. 
 
