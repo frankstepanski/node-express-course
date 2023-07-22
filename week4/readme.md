@@ -1,13 +1,20 @@
 # Week 4
 
 ## Table of Contents
-  - [API Architecture](#api-architecture)
+  - [Demystifying an API](#demystifying-api)
   - [HTTP Request Methods](#http-request-methods)
+  - Postman
   - link 3
   - link 4
 
 ## Objectives
-- API design principles 
+- What is an API?
+  - Demystifying an API
+  - Designing an API
+  - Routes
+  - Endpoints
+  - HTTP Request Methods
+  - CRUD
 - Building Routes
   - GET
   - POST
@@ -18,9 +25,9 @@
 - Controllers
 - Routers
 
-## API Architecture
+## Demystifying an API
 
-the word "API" is a pretty broad term. It stands for application programming interface, which doesn't demystify
+The word "API" is a pretty broad term. It stands for application programming interface, which doesn't demystify
 the term much. A UI is meant to be consumed by human users, but a software interface is meant to be 
 consumed by code. 
 

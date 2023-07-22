@@ -6,6 +6,7 @@
   - [Middleware](#middleware)
   - [JSON](#json)
   - [Deployment](#deployment)
+  - [Code](#code)
 
 ## Objectives
 - Understand the basics of Express
@@ -814,3 +815,7 @@ Test out a few of the routes you have created. :smile:
 Grab a :coffee: or a beverage :tropical_drink: of choice and enjoy the rest of your day. :sunglasses:
 
 ![congrats](images/congrats.gif)
+
+### Code
+
+Checkout the ![repo](https://github.com/frankstepanski/node-express-course-code/tree/main/week3/src) for this week's lesson.
