@@ -818,4 +818,4 @@ Grab a :coffee: or a beverage :tropical_drink: of choice and enjoy the rest of y
 
 ### Code
 
-Checkout the ![repo](https://github.com/frankstepanski/node-express-course-code/tree/main/week3/src) for this week's lesson.
+Checkout the [repo](https://github.com/frankstepanski/node-express-course-code/tree/main/week3/src) for this week's lesson.
