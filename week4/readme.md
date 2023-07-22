@@ -7,9 +7,8 @@
   - link 4
 
 ## Objectives
-- Understand about what an API is
-  - API design principles 
-- HTTP Request Methods
+- API design principles 
+- Building Routes
   - GET
   - POST
   - PUT
@@ -19,7 +18,7 @@
 - Controllers
 - Routers
 
-## Building APIs
+## API Architecture
 
 API is a pretty broad term. It stands for application programming interface, which doesn't demystify
 the term much. A UI is meant to be consumed by human users, but a software interface is meant to be 
