@@ -394,6 +394,9 @@ A few of the commonly used middleware packages that we will be using in this cou
   - [static](https://expressjs.com/en/starter/static-files.html): serves static files such as images, CSS files, and JavaScript files.
   - [json](https://expressjs.com/en/api.html#express.json): built-in middleware that parses incoming requests with JSON payloads and is based on body-parser.
 
+
+![middleware](images/middleware.png)
+
 **Using Middleware**
 
 To test out a middleware function, we can create a simple one that logs the request method and the request path to the console.
